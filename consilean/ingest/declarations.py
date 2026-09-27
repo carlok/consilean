@@ -30,23 +30,41 @@ class Declaration:
     raw_sig: str
 
 
-def module_name(path: Path, root: Path) -> str:
-    """Module name for a file under `root/LeanFrontier`, matching the pilot."""
-    rel = path.relative_to(root / "LeanFrontier").as_posix()
-    return "LeanFrontier." + rel[:-5].replace("/", ".")
+def module_name(path: Path, root: Path, namespace: str = "LeanFrontier") -> str:
+    """Module name for a file under `root/namespace`, matching the LeanFrontier pilot."""
+    rel = path.relative_to(root / namespace).as_posix()
+    return f"{namespace}." + rel[:-5].replace("/", ".")
 
 
-def load_declarations(root: Path, *, blank_block_comments: bool = False) -> list[Declaration]:
-    """Parse public theorem/lemma/def/abbrev declarations under `LeanFrontier/`.
+def load_declarations(
+    root: Path,
+    *,
+    namespace: str = "LeanFrontier",
+    blank_block_comments: bool = False,
+    search_root: Path | None = None,
+) -> list[Declaration]:
+    """Parse public theorem/lemma/def/abbrev declarations.
+
+    `search_root`, when set, is a tree that is not a single Lean package.
+    Module names are then the relative path. `.lake` directories are skipped.
 
     `blank_block_comments` runs `strip_comments` first. That also blanks
     `/--` docstrings, so it is a measured variant, not the locked baseline.
     """
+    if search_root is None:
+        files = sorted((root / namespace).glob("**/*.lean"))
+    else:
+        files = sorted(
+            path for path in search_root.glob("**/*.lean") if ".lake" not in path.relative_to(search_root).parts
+        )
     declarations: list[Declaration] = []
-    for path in sorted(root.glob("LeanFrontier/**/*.lean")):
-        source = path.read_text(encoding="utf-8")
+    for path in files:
+        source = path.read_text(encoding="utf-8", errors="replace")
         code = strip_comments(source) if blank_block_comments else LINE_COMMENT_RE.sub("", source)
-        module = module_name(path, root)
+        if search_root is None:
+            module = module_name(path, root, namespace)
+        else:
+            module = path.relative_to(search_root).as_posix()[:-5].replace("/", ".")
         for match in DECL_RE.finditer(code):
             priv = match.group("priv")
             if priv and "private" in priv:

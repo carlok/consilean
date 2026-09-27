@@ -210,6 +210,22 @@ def alpha_statement(statement: Statement) -> Statement:
     return Statement(tuple(binders), rename(statement.body, env))
 
 
+def as_forall(source: str) -> str | None:
+    """The signature as a Lean proposition, or None if it does not parse.
+
+    Binders stay in the source's own names. This is the goal fed to a probe,
+    not the normal form.
+    """
+    statement = parse_statement(source)
+    if statement is None:
+        return None
+    body = pretty(statement.body)
+    if not statement.binders:
+        return body
+    binders = " ".join(f"({binder.name} : {pretty(binder.ty)})" for binder in statement.binders)
+    return f"∀ {binders}, {body}"
+
+
 def pretty_statement(statement: Statement) -> str:
     parts = [f"({binder.name} : {pretty(binder.ty)})" for binder in statement.binders]
     body = pretty(statement.body)

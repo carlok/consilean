@@ -1,0 +1,6 @@
+# Pinned for the coverage smoke. The checkout is fetched into corpora/cache.
+repo = "https://github.com/TauCetiProject/TauCeti"
+revision = "28230862f94034c80d86fa2ea8ad864e76943a03"
+namespace = "TauCeti"
+lean = "v4.35.0-rc3"
+mathlib = "master"

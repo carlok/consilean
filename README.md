@@ -28,7 +28,7 @@ Sprint 1 ranks theorems and lemmas with the preregistered score (name-free Weisf
 uv run consilean-sprint1
 ```
 
-On the pinned corpus the √−1 twin is the top pair. The notation equivalence is kernel-checked in [`lean/IsSquareModEq.lean`](lean/IsSquareModEq.lean). The semantic arm and the tactic probes were not run. Sprints 2–5 have not started.
+On the pinned corpus the √−1 twin is the top pair. The notation equivalence is kernel-checked in [`lean/IsSquareModEq.lean`](lean/IsSquareModEq.lean). Tactic probes of the far-near controls are in [`docs/generated/sprint1-probes.md`](docs/generated/sprint1-probes.md): none closed. A coverage smoke of Mathlib, Prove2Me, and Tau Ceti, with no pair ranking, is in [`docs/generated/coverage.md`](docs/generated/coverage.md). The semantic arm was not run. Sprints 2–5 have not started.
 
 Tables are written to `docs/generated/`. The preregistered tests are in [`docs/PREREGISTRATION.md`](docs/PREREGISTRATION.md).
 
