@@ -1,0 +1,545 @@
+{
+  "generating_command": "uv run consilean-baseline",
+  "corpus": {
+    "repo": "https://github.com/carlok/LeanFrontier",
+    "revision": "79800a5709a415e43230ffe1349bf89946f697c1",
+    "namespace": "LeanFrontier",
+    "lean": "v4.34.0",
+    "mathlib": "v4.34.0"
+  },
+  "faithful": {
+    "text": {
+      "public_declarations": 451,
+      "pairs_above_cutoff": 888,
+      "cutoff": 0.25,
+      "twin": {
+        "score": 0.41431163439551044,
+        "distance": 2,
+        "left": "LeanFrontier.NumberTheory.MarkovTree.ModularRoot.exists_sq_modEq_neg_one_markovNumber",
+        "right": "LeanFrontier.NumberTheory.MarkovTree.QuadraticResidue.isSquare_neg_one_mod_markovNumber",
+        "rank": 163,
+        "of": 888
+      },
+      "top_similar": [
+        {
+          "score": 0.9078251866337923,
+          "distance": 2,
+          "left": "LeanFrontier.NumberTheory.CalkinWilf.pair_positive_coprime",
+          "right": "LeanFrontier.NumberTheory.SternBrocot.pair_positive_coprime"
+        },
+        {
+          "score": 0.8165559428112319,
+          "distance": 2,
+          "left": "LeanFrontier.NumberTheory.CalkinWilf.existsUnique_pair_of_coprime",
+          "right": "LeanFrontier.NumberTheory.SternBrocot.existsUnique_pair_of_coprime"
+        },
+        {
+          "score": 0.7348121918066712,
+          "distance": 1,
+          "left": "LeanFrontier.Dynamics.LogisticConjugacy.tentMapIcc",
+          "right": "LeanFrontier.Dynamics.LogisticMap.tentMap_mem_Icc"
+        },
+        {
+          "score": 0.682538594962728,
+          "distance": 1,
+          "left": "LeanFrontier.Probability.KochenStone.ksRatio",
+          "right": "LeanFrontier.Probability.PairwiseBorelCantelli.pairwiseRatio"
+        },
+        {
+          "score": 0.6758440439913586,
+          "distance": 2,
+          "left": "LeanFrontier.NumberTheory.MarkovTree.Coverage.existsUnique_pathMoves_of_nonBacktracking",
+          "right": "LeanFrontier.NumberTheory.MarkovTree.Oriented.pathMoves_nonBacktracking"
+        },
+        {
+          "score": 0.6644622123863353,
+          "distance": 1,
+          "left": "LeanFrontier.NumberTheory.MarkovTree.Coverage.existsUnique_pathMoves_of_nonBacktracking",
+          "right": "LeanFrontier.NumberTheory.MarkovTree.SternBrocot.sternMoves"
+        },
+        {
+          "score": 0.6644003729084038,
+          "distance": 1,
+          "left": "LeanFrontier.NumberTheory.SternDiatomic.Enumeration.exists_fusc_eq_of_coprime",
+          "right": "LeanFrontier.NumberTheory.SternDiatomic.coprime_fusc_fusc_succ"
+        },
+        {
+          "score": 0.661067273857579,
+          "distance": 1,
+          "left": "LeanFrontier.NumberTheory.MarkovTree.Coverage.existsUnique_pathMoves_of_nonBacktracking",
+          "right": "LeanFrontier.NumberTheory.MarkovTree.SternBrocot.sternMoves_nonBacktracking"
+        },
+        {
+          "score": 0.6602523988951157,
+          "distance": 1,
+          "left": "LeanFrontier.Dynamics.LogisticConjugacy.logisticMapIcc",
+          "right": "LeanFrontier.Dynamics.LogisticMap.logisticMap_mem_Icc"
+        },
+        {
+          "score": 0.6595551380744086,
+          "distance": 2,
+          "left": "LeanFrontier.LinearAlgebra.FibonacciMatrix.fibMatrix",
+          "right": "LeanFrontier.LinearAlgebra.HoradamCompanionMatrix.companionMatrix"
+        },
+        {
+          "score": 0.6459890312697838,
+          "distance": 1,
+          "left": "LeanFrontier.LinearAlgebra.FibonacciMatrix.trace_fibMatrix_pow_succ",
+          "right": "LeanFrontier.LinearAlgebra.HoradamCompanionMatrixSpecializations.trace_fibMatrix_pow_succ_eq_lucas"
+        },
+        {
+          "score": 0.6330307034996634,
+          "distance": 1,
+          "left": "LeanFrontier.Geometry.FordCircleTangency.dist_euclideanCenter_sq",
+          "right": "LeanFrontier.NumberTheory.FordCircle.centerDistSq"
+        },
+        {
+          "score": 0.6329477103894882,
+          "distance": 1,
+          "left": "LeanFrontier.Probability.KochenStone.kochenStone",
+          "right": "LeanFrontier.Probability.PairwiseBorelCantelli.measure_limsup_eq_one_of_pairwise_indep"
+        },
+        {
+          "score": 0.6313597303337104,
+          "distance": 1,
+          "left": "LeanFrontier.NumberTheory.MarkovTree.Oriented.pathMoves_nonBacktracking",
+          "right": "LeanFrontier.NumberTheory.MarkovTree.SternBrocot.sternMoves_nonBacktracking"
+        },
+        {
+          "score": 0.6157817104091717,
+          "distance": 1,
+          "left": "LeanFrontier.NumberTheory.MarkovTree.ChildLabels.markovNumber_pos",
+          "right": "LeanFrontier.NumberTheory.MarkovTree.MarkovNumber.OrientedNode.markovNumber"
+        }
+      ],
+      "top_no_import_path": [
+        {
+          "score": 0.5236753739483211,
+          "distance": null,
+          "left": "LeanFrontier.Probability.MeasurePaleyZygmund.paleyZygmund",
+          "right": "LeanFrontier.Probability.PMFPaleyZygmund.is"
+        },
+        {
+          "score": 0.4333638460007022,
+          "distance": null,
+          "left": "LeanFrontier.Geometry.InversiveGeometry.reflect_reflect",
+          "right": "LeanFrontier.NumberTheory.DescartesCircle.reflect_reflect"
+        },
+        {
+          "score": 0.42884563353411403,
+          "distance": null,
+          "left": "LeanFrontier.NumberTheory.LucasNumber.sum_range_lucas",
+          "right": "LeanFrontier.NumberTheory.Tribonacci.tribonacci_two_mul_sum_add_one"
+        },
+        {
+          "score": 0.41532327004598213,
+          "distance": null,
+          "left": "LeanFrontier.Analysis.FibonacciReciprocal.three_pow_le_two_pow_mul_fib",
+          "right": "LeanFrontier.LinearAlgebra.FibonacciMatrix.fibMatrix_pow_succ"
+        },
+        {
+          "score": 0.41511991250661423,
+          "distance": null,
+          "left": "LeanFrontier.NumberTheory.LucasNumber.sum_range_lucas",
+          "right": "LeanFrontier.NumberTheory.PowerSums.sum_odd_eq_sq"
+        },
+        {
+          "score": 0.41188137186776325,
+          "distance": null,
+          "left": "LeanFrontier.NumberTheory.LucasNumber.sum_range_lucas",
+          "right": "LeanFrontier.NumberTheory.PowerSums.sum_cubes_eq_sum_sq"
+        },
+        {
+          "score": 0.38506117431227566,
+          "distance": null,
+          "left": "LeanFrontier.NumberTheory.LucasNumber.sum_range_lucas",
+          "right": "LeanFrontier.NumberTheory.Padovan.padovan_sum_add_two"
+        },
+        {
+          "score": 0.37377880522389456,
+          "distance": null,
+          "left": "LeanFrontier.NumberTheory.HoradamSequence.W_add_two",
+          "right": "LeanFrontier.NumberTheory.SylvesterSequence.sylvesterNumber_succ_eq_sq_sub_add_one"
+        },
+        {
+          "score": 0.36957896235324894,
+          "distance": null,
+          "left": "LeanFrontier.Combinatorics.Josephus.survivor_succ",
+          "right": "LeanFrontier.NumberTheory.HoradamSequence.W_add_two"
+        },
+        {
+          "score": 0.3636362886823919,
+          "distance": null,
+          "left": "LeanFrontier.Probability.MeasurePaleyZygmund.paleyZygmund",
+          "right": "LeanFrontier.Probability.PaleyZygmund.bounds"
+        },
+        {
+          "score": 0.36330606164371543,
+          "distance": null,
+          "left": "LeanFrontier.LinearAlgebra.HoradamCompanionMatrixSpecializations.W_fibonacci_eq_fib",
+          "right": "LeanFrontier.NumberTheory.MarkovTree.FibonacciSpine.at"
+        },
+        {
+          "score": 0.34044838878713674,
+          "distance": null,
+          "left": "LeanFrontier.NumberTheory.Padovan.padovan_sum_add_two",
+          "right": "LeanFrontier.NumberTheory.Tribonacci.tribonacci_two_mul_sum_add_one"
+        },
+        {
+          "score": 0.3378955422004001,
+          "distance": null,
+          "left": "LeanFrontier.NumberTheory.LucasNumber.sum_range_lucas",
+          "right": "LeanFrontier.NumberTheory.SylvesterSequence.sum_range_inv_sylvesterNumber"
+        },
+        {
+          "score": 0.33537290842118894,
+          "distance": null,
+          "left": "LeanFrontier.Analysis.FibonacciReciprocal.three_pow_le_two_pow_mul_fib",
+          "right": "LeanFrontier.LinearAlgebra.FibonacciMatrix.trace_fibMatrix_pow_succ"
+        },
+        {
+          "score": 0.32447306931133607,
+          "distance": null,
+          "left": "LeanFrontier.NumberTheory.LucasNumber.fib_two_mul_eq_fib_mul_lucas",
+          "right": "LeanFrontier.NumberTheory.MarkovTree.FibonacciSpine.sternNode_fibonacciSpine_even"
+        }
+      ],
+      "top_distance_at_least_4": [
+        {
+          "score": 0.4720349337015911,
+          "distance": 4,
+          "left": "LeanFrontier.NumberTheory.MarkovTree.Oriented.State.Positive",
+          "right": "LeanFrontier.NumberTheory.MarkovTree.UniquenessConjecture.State.Permutes"
+        },
+        {
+          "score": 0.45295501527465576,
+          "distance": 5,
+          "left": "LeanFrontier.NumberTheory.MarkovTree.MarkovNumber.State.coordinate",
+          "right": "LeanFrontier.NumberTheory.MarkovTree.UniquenessConjecture.State.maxCoord"
+        },
+        {
+          "score": 0.4036001456674426,
+          "distance": 4,
+          "left": "LeanFrontier.NumberTheory.MarkovTree.MarkovNumber.State.coordinate",
+          "right": "LeanFrontier.NumberTheory.MarkovTree.Paths.move"
+        },
+        {
+          "score": 0.37126284242026314,
+          "distance": 4,
+          "left": "LeanFrontier.NumberTheory.MarkovTree.Oriented.State.Positive",
+          "right": "LeanFrontier.NumberTheory.MarkovTree.UniquenessConjecture.State.maxCoord"
+        },
+        {
+          "score": 0.36940222958423835,
+          "distance": 4,
+          "left": "LeanFrontier.NumberTheory.MarkovTree.Oriented.State.Positive",
+          "right": "LeanFrontier.NumberTheory.MarkovTree.UniquenessConjecture.State.coordMultiset"
+        },
+        {
+          "score": 0.3641556153251014,
+          "distance": 4,
+          "left": "LeanFrontier.NumberTheory.MarkovTree.MarkovNumber.State.coordinate",
+          "right": "LeanFrontier.NumberTheory.MarkovTree.Paths.move_isSolution"
+        },
+        {
+          "score": 0.3564229492558747,
+          "distance": 4,
+          "left": "LeanFrontier.NumberTheory.MarkovTree.MarkovNumber.State.coordinate",
+          "right": "LeanFrontier.NumberTheory.MarkovTree.Paths.move_involutive"
+        },
+        {
+          "score": 0.34323490699843345,
+          "distance": 5,
+          "left": "LeanFrontier.NumberTheory.MarkovTree.MarkovNumber.markovNumber_eq_max",
+          "right": "LeanFrontier.NumberTheory.MarkovTree.UniquenessConjecture.State.maxCoord"
+        },
+        {
+          "score": 0.336432602210836,
+          "distance": 4,
+          "left": "LeanFrontier.NumberTheory.CalkinWilfSternBrocot.pair_eq_sternBrocot_iff_reverse",
+          "right": "LeanFrontier.NumberTheory.MarkovTree.Paths.walk_reverse"
+        },
+        {
+          "score": 0.33423952230930115,
+          "distance": 4,
+          "left": "LeanFrontier.NumberTheory.MarkovTree.Paths.State.IsSolution",
+          "right": "LeanFrontier.NumberTheory.MarkovTree.UniquenessConjecture.State.maxCoord"
+        }
+      ],
+      "modules": 89,
+      "directed_internal_import_edges": 72
+    },
+    "constants": {
+      "entrypoints": 264,
+      "pairs": 34716,
+      "drop_instances": false,
+      "twin": {
+        "rank": 5307,
+        "of": 34716,
+        "score": 0.08107670904708818,
+        "shared_constants": [
+          "LeanFrontier.MarkovTree.OrientedNode",
+          "LeanFrontier.MarkovTree.OrientedNode.markovNumber",
+          "Neg.neg",
+          "OfNat.ofNat"
+        ],
+        "only_is_square": [
+          "AddCommGroup.toDivisionAddCommMonoid",
+          "AddGroupWithOne.toAddMonoidWithOne",
+          "AddMonoidWithOne.toOne",
+          "CommRing.toCommSemiring",
+          "CommRing.toRing",
+          "CommSemiring.toSemiring",
+          "Distrib.toMul",
+          "Int.natAbs",
+          "IsSquare",
+          "NegZeroClass.toNeg",
+          "One.toOfNat1",
+          "Ring.toAddCommGroup",
+          "Ring.toAddGroupWithOne",
+          "SubNegZeroMonoid.toNegZeroClass",
+          "SubtractionCommMonoid.toSubtractionMonoid",
+          "SubtractionMonoid.toSubNegZeroMonoid",
+          "ZMod",
+          "ZMod.commRing",
+          "instDistribOfSemiring"
+        ],
+        "only_mod_eq": [
+          "Exists",
+          "HPow.hPow",
+          "Int",
+          "Int.ModEq",
+          "Int.instMonoid",
+          "Int.instNegInt",
+          "Monoid.toNPow",
+          "NPow.toPow",
+          "Nat",
+          "instHPow",
+          "instOfNat",
+          "instOfNatNat"
+        ]
+      },
+      "top": [
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.Mediant.div_lt_mediant",
+          "right": "LeanFrontier.Mediant.mediant_lt_div"
+        },
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.Mediant.crossDet_left_mediant",
+          "right": "LeanFrontier.Mediant.crossDet_mediant_right"
+        },
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.MarkovTree.sternNode_fibonacciSpine_even",
+          "right": "LeanFrontier.MarkovTree.sternNode_fibonacciSpine_odd"
+        },
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.MarkovTree.divergesBelow_commonAncestor_of_incomparable",
+          "right": "LeanFrontier.MarkovTree.incomparable_of_divergesBelow_commonAncestor"
+        },
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.MarkovTree.commonPrefix_isPrefix_right",
+          "right": "LeanFrontier.MarkovTree.isPrefix_commonPrefix"
+        },
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.MarkovTree.commonPrefix_isPrefix_left",
+          "right": "LeanFrontier.MarkovTree.isPrefix_commonPrefix"
+        },
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.MarkovTree.commonPrefix_isPrefix_left",
+          "right": "LeanFrontier.MarkovTree.commonPrefix_isPrefix_right"
+        },
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.MarkovTree.commonAncestor_isSuffix_right",
+          "right": "LeanFrontier.MarkovTree.isSuffix_commonAncestor"
+        },
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.MarkovTree.commonAncestor_isSuffix_left",
+          "right": "LeanFrontier.MarkovTree.isSuffix_commonAncestor"
+        },
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.MarkovTree.commonAncestor_isSuffix_left",
+          "right": "LeanFrontier.MarkovTree.commonAncestor_isSuffix_right"
+        }
+      ]
+    }
+  },
+  "corrected": {
+    "import_graph": {
+      "modules": 89,
+      "internal_edges": 72,
+      "external_edges": 209,
+      "internal_per_module": 0.809,
+      "isolated_from_corpus": 33,
+      "max_in_degree": 4,
+      "reused_modules": 47,
+      "top_in_degree": [
+        [
+          "LeanFrontier.NumberTheory.MarkovTree.SternBrocot",
+          4
+        ],
+        [
+          "LeanFrontier.NumberTheory.MarkovTree.MarkovNumber",
+          3
+        ],
+        [
+          "LeanFrontier.NumberTheory.MarkovTree.Reachability",
+          3
+        ],
+        [
+          "LeanFrontier.NumberTheory.Mediant",
+          3
+        ],
+        [
+          "LeanFrontier.NumberTheory.SternBrocot",
+          3
+        ],
+        [
+          "LeanFrontier.Topology.Furstenberg",
+          3
+        ],
+        [
+          "LeanFrontier.LinearAlgebra.HoradamCompanionMatrix",
+          2
+        ],
+        [
+          "LeanFrontier.NumberTheory.Farey",
+          2
+        ],
+        [
+          "LeanFrontier.NumberTheory.FordCircle",
+          2
+        ],
+        [
+          "LeanFrontier.NumberTheory.LucasNumber",
+          2
+        ]
+      ]
+    },
+    "text_strip_comments": {
+      "public_declarations": 440,
+      "pairs_above_cutoff": 1731,
+      "twin": {
+        "score": 0.5742251329039985,
+        "distance": 2,
+        "left": "LeanFrontier.NumberTheory.MarkovTree.ModularRoot.exists_sq_modEq_neg_one_markovNumber",
+        "right": "LeanFrontier.NumberTheory.MarkovTree.QuadraticResidue.isSquare_neg_one_mod_markovNumber",
+        "rank": 171,
+        "of": 1731
+      }
+    },
+    "constants_drop_instances": {
+      "entrypoints": 264,
+      "pairs": 34716,
+      "twin": {
+        "rank": 4421,
+        "of": 34716,
+        "score": 0.09286576071178336,
+        "shared_constants": [
+          "LeanFrontier.MarkovTree.OrientedNode",
+          "LeanFrontier.MarkovTree.OrientedNode.markovNumber",
+          "Neg.neg",
+          "OfNat.ofNat"
+        ],
+        "only_is_square": [
+          "AddCommGroup.toDivisionAddCommMonoid",
+          "AddGroupWithOne.toAddMonoidWithOne",
+          "AddMonoidWithOne.toOne",
+          "CommRing.toCommSemiring",
+          "CommRing.toRing",
+          "CommSemiring.toSemiring",
+          "Distrib.toMul",
+          "Int.natAbs",
+          "IsSquare",
+          "NegZeroClass.toNeg",
+          "One.toOfNat1",
+          "Ring.toAddCommGroup",
+          "Ring.toAddGroupWithOne",
+          "SubNegZeroMonoid.toNegZeroClass",
+          "SubtractionCommMonoid.toSubtractionMonoid",
+          "SubtractionMonoid.toSubNegZeroMonoid",
+          "ZMod",
+          "ZMod.commRing"
+        ],
+        "only_mod_eq": [
+          "Exists",
+          "HPow.hPow",
+          "Int",
+          "Int.ModEq",
+          "Monoid.toNPow",
+          "NPow.toPow",
+          "Nat"
+        ]
+      },
+      "top": [
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.Mediant.div_lt_mediant",
+          "right": "LeanFrontier.Mediant.mediant_lt_div"
+        },
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.Mediant.crossDet_left_mediant",
+          "right": "LeanFrontier.Mediant.crossDet_mediant_right"
+        },
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.MarkovTree.sternNode_fibonacciSpine_even",
+          "right": "LeanFrontier.MarkovTree.sternNode_fibonacciSpine_odd"
+        },
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.MarkovTree.divergesBelow_commonAncestor_of_incomparable",
+          "right": "LeanFrontier.MarkovTree.incomparable_of_divergesBelow_commonAncestor"
+        },
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.MarkovTree.commonPrefix_isPrefix_right",
+          "right": "LeanFrontier.MarkovTree.isPrefix_commonPrefix"
+        },
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.MarkovTree.commonPrefix_isPrefix_left",
+          "right": "LeanFrontier.MarkovTree.isPrefix_commonPrefix"
+        },
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.MarkovTree.commonPrefix_isPrefix_left",
+          "right": "LeanFrontier.MarkovTree.commonPrefix_isPrefix_right"
+        },
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.MarkovTree.commonAncestor_isSuffix_right",
+          "right": "LeanFrontier.MarkovTree.isSuffix_commonAncestor"
+        },
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.MarkovTree.commonAncestor_isSuffix_left",
+          "right": "LeanFrontier.MarkovTree.isSuffix_commonAncestor"
+        },
+        {
+          "score": 1.0,
+          "left": "LeanFrontier.MarkovTree.commonAncestor_isSuffix_left",
+          "right": "LeanFrontier.MarkovTree.commonAncestor_isSuffix_right"
+        }
+      ]
+    },
+    "twin_module_distance": {
+      "modules": [
+        "LeanFrontier.NumberTheory.MarkovTree.ModularRoot",
+        "LeanFrontier.NumberTheory.MarkovTree.QuadraticResidue"
+      ],
+      "faithful": 2,
+      "corrected": 2
+    }
+  }
+}

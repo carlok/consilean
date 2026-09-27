@@ -1,0 +1,29 @@
+[project]
+name = "consilean"
+version = "0.1.0"
+description = "Score pairs of Lean statements by similarity and dependency-graph distance."
+readme = "README.md"
+authors = [
+    { name = "Carlo Perassi", email = "carlo.perassi@gmail.com" }
+]
+requires-python = ">=3.12"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+dependencies = []
+
+[project.scripts]
+consilean-baseline = "consilean.baselines.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["uv_build>=0.10.4,<0.11.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "consilean"
+module-root = ""
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

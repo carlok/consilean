@@ -1,0 +1,6 @@
+# Pinned corpus. The checkout is fetched into corpora/cache and is not committed.
+repo = "https://github.com/carlok/LeanFrontier"
+revision = "79800a5709a415e43230ffe1349bf89946f697c1"
+namespace = "LeanFrontier"
+lean = "v4.34.0"
+mathlib = "v4.34.0"

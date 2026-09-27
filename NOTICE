@@ -1,0 +1,10 @@
+consilean
+Copyright 2026 Carlo Perassi
+
+This product includes code from lean-corpus-density
+(https://github.com/carlok/lean-corpus-density), licensed under the
+Apache License, Version 2.0:
+
+  consilean/vendor/import_graph.py
+  source: tools/import_graph.py
+  blob: d48190298d212ca8a0233e4b6909b7c5f36a0386
