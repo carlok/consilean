@@ -36,7 +36,13 @@ Sprint 2 freezes Mathlib deprecations whose statements differ, then measures H2 
 uv run consilean-sprint2
 ```
 
-Sprints 3–5 have not started.
+Sprint 3 lists the section 5 controls and does not call a model. The budget in [`corpora/sprint3-budget.toml`](corpora/sprint3-budget.toml) is closed until both caps are set above zero.
+
+```bash
+uv run consilean-sprint3
+```
+
+Sprints 4 and 5 have not started. H1 is not measured.
 
 Tables are written to `docs/generated/`. The preregistered tests, including the 27 September amendment on how recall at k is counted, are in [`docs/PREREGISTRATION.md`](docs/PREREGISTRATION.md).
 

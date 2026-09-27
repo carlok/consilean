@@ -1,0 +1,48 @@
+{
+  "budget_open": false,
+  "generating_command": "uv run consilean-sprint3",
+  "per_pair_tokens": 0,
+  "targets": [
+    {
+      "label": "fibonacci-spine-horadam",
+      "left": "W_fibonacci_eq_fib",
+      "right": "markovFib_vieta_recurrence"
+    },
+    {
+      "label": "paley-measure-finite",
+      "left": "MeasurePaleyZygmund.paleyZygmund",
+      "right": "PaleyZygmund.paleyZygmund"
+    },
+    {
+      "label": "paley-measure-pmf",
+      "left": "MeasurePaleyZygmund.paleyZygmund",
+      "right": "pmf_paleyZygmund"
+    },
+    {
+      "label": "lucas-tribonacci",
+      "left": "sum_range_lucas",
+      "right": "tribonacci_two_mul_sum_add_one"
+    },
+    {
+      "label": "lucas-padovan",
+      "left": "sum_range_lucas",
+      "right": "padovan_sum_add_two"
+    },
+    {
+      "label": "tribonacci-padovan",
+      "left": "tribonacci_two_mul_sum_add_one",
+      "right": "padovan_sum_add_two"
+    },
+    {
+      "label": "reflect",
+      "left": "InversiveGeometry.reflect_reflect",
+      "right": "DescartesCircle.reflect_reflect"
+    },
+    {
+      "label": "a053067",
+      "left": "A053067 residue / natFixedA",
+      "right": "formal-conjectures OEIS a"
+    }
+  ],
+  "total_tokens": 0
+}

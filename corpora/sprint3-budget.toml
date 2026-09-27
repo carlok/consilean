@@ -1,0 +1,4 @@
+# Sprint 3 does not call a model until both caps are positive integers.
+# The operator sets them. Do not invent a budget here.
+per_pair_tokens = 0
+total_tokens = 0
