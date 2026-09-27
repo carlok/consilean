@@ -38,6 +38,10 @@ Replay the corpus in time slices. Top-ranked far pairs are later connected (by a
 - Uncertainty: 1000 bootstrap resamples, 95% percentile interval. The seed and the config are stored with the run.
 - Report the result for every window. A handful of famous links is not the evaluation.
 
+## Amendment 2026-09-27
+
+H2 recall at k is the fraction of frozen pairs whose partner is among the k nearest declarations to the old one. A single global top-k list cannot hold more true pairs than k, so it is not the recall of a set. The neighbor order is the one induced by the preregistered primary score: normal-form matches first, then name-free Weisfeiler–Lehman cosine. A tie does not push the partner down. The weights are unchanged.
+
 ## Stopping
 
 Score the preregistered far set once. A miss on a sprint exit is written down as the result. It is not a reason to change the primary score in place. Do not start a sprint whose entry condition fails; write down why instead.
