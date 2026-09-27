@@ -1,0 +1,4097 @@
+{
+  "generating_command": "uv run consilean-probes",
+  "revision": "79800a5709a415e43230ffe1349bf89946f697c1",
+  "timeout_seconds": 10,
+  "tactics": [
+    "rfl",
+    "simp",
+    "norm_num",
+    "tauto",
+    "omega",
+    "decide",
+    "exact?",
+    "apply?",
+    "aesop",
+    "grind"
+  ],
+  "build_returncode": 0,
+  "pairs": [
+    {
+      "list": "fibonacci-spine-horadam",
+      "left": "LeanFrontier.LinearAlgebra.HoradamCompanionMatrixSpecializations.W_fibonacci_eq_fib",
+      "right": "LeanFrontier.NumberTheory.MarkovTree.FibonacciSpine.markovFib_vieta_recurrence",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "timeout",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "timeout",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "paley-measure-finite",
+      "left": "LeanFrontier.Probability.MeasurePaleyZygmund.paleyZygmund",
+      "right": "LeanFrontier.Probability.PaleyZygmund.paleyZygmund",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "timeout",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "timeout",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "timeout",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "paley-measure-pmf",
+      "left": "LeanFrontier.Probability.MeasurePaleyZygmund.paleyZygmund",
+      "right": "LeanFrontier.Probability.PMFPaleyZygmund.pmf_paleyZygmund",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "timeout",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "timeout",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "timeout",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "lucas-tribonacci",
+      "left": "LeanFrontier.NumberTheory.LucasNumber.sum_range_lucas",
+      "right": "LeanFrontier.NumberTheory.Tribonacci.tribonacci_two_mul_sum_add_one",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "lucas-padovan",
+      "left": "LeanFrontier.NumberTheory.LucasNumber.sum_range_lucas",
+      "right": "LeanFrontier.NumberTheory.Padovan.padovan_sum_add_two",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "tribonacci-padovan",
+      "left": "LeanFrontier.NumberTheory.Tribonacci.tribonacci_two_mul_sum_add_one",
+      "right": "LeanFrontier.NumberTheory.Padovan.padovan_sum_add_two",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "reflect",
+      "left": "LeanFrontier.Geometry.InversiveGeometry.reflect_reflect",
+      "right": "LeanFrontier.NumberTheory.DescartesCircle.reflect_reflect",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "no-import-path",
+      "left": "LeanFrontier.Combinatorics.Josephus.OneIndexed.josephus_one",
+      "right": "LeanFrontier.NumberTheory.LucasNumber.lucas_one",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "no-import-path",
+      "left": "LeanFrontier.Dynamics.LogisticConjugacy.ulamMapIcc_bijective",
+      "right": "LeanFrontier.LinearAlgebra.FibonacciMatrix.isUnit_fibMatrix",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "timeout",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "no-import-path",
+      "left": "LeanFrontier.Dynamics.LogisticConjugacy.ulamMapIcc_bijective",
+      "right": "LeanFrontier.NumberTheory.MarkovTree.SternBrocot.sternMoves_injective",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "no-import-path",
+      "left": "LeanFrontier.Dynamics.LogisticConjugacy.ulamMapIcc_bijective",
+      "right": "LeanFrontier.NumberTheory.SternDiatomic.Enumeration.fusc_surjective",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "no-import-path",
+      "left": "LeanFrontier.Dynamics.LogisticConjugacy.ulamMapIcc_bijective",
+      "right": "LeanFrontier.NumberTheory.SylvesterSequence.strictMono_sylvesterNumber",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "no-import-path",
+      "left": "LeanFrontier.GroupTheory.ChangeRinging.isChain_adjSwap_rows",
+      "right": "LeanFrontier.NumberTheory.MarkovTree.SternBrocot.sternMoves_nonBacktracking",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "timeout",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "no-import-path",
+      "left": "LeanFrontier.LinearAlgebra.FibonacciMatrix.isUnit_fibMatrix",
+      "right": "LeanFrontier.NumberTheory.MarkovTree.SternBrocot.sternMoves_injective",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "no-import-path",
+      "left": "LeanFrontier.LinearAlgebra.FibonacciMatrix.isUnit_fibMatrix",
+      "right": "LeanFrontier.NumberTheory.SternDiatomic.Enumeration.fusc_surjective",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "no-import-path",
+      "left": "LeanFrontier.LinearAlgebra.FibonacciMatrix.isUnit_fibMatrix",
+      "right": "LeanFrontier.NumberTheory.SylvesterSequence.strictMono_sylvesterNumber",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "no-import-path",
+      "left": "LeanFrontier.NumberTheory.MarkovTree.SternBrocot.sternMoves_injective",
+      "right": "LeanFrontier.NumberTheory.SylvesterSequence.strictMono_sylvesterNumber",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "distance-at-least-4",
+      "left": "LeanFrontier.NumberTheory.DescartesCircle.isQuadruple_reflect",
+      "right": "LeanFrontier.NumberTheory.MarkovEquation.isSolution_jump",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "distance-at-least-4",
+      "left": "LeanFrontier.NumberTheory.DescartesCircle.eq_or_eq_reflect",
+      "right": "LeanFrontier.NumberTheory.MarkovEquation.isSolution_jump",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "distance-at-least-4",
+      "left": "LeanFrontier.NumberTheory.DescartesCircle.mul_reflect_eq",
+      "right": "LeanFrontier.NumberTheory.MarkovEquation.mul_jump_eq",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "timeout",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "distance-at-least-4",
+      "left": "LeanFrontier.NumberTheory.DescartesCircle.eq_or_eq_reflect",
+      "right": "LeanFrontier.NumberTheory.MarkovEquation.mul_jump_eq",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "distance-at-least-4",
+      "left": "LeanFrontier.NumberTheory.DescartesCircle.isQuadruple_reflect",
+      "right": "LeanFrontier.NumberTheory.MarkovEquation.mul_jump_eq",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "distance-at-least-4",
+      "left": "LeanFrontier.NumberTheory.DescartesCircle.mul_reflect_eq",
+      "right": "LeanFrontier.NumberTheory.MarkovEquation.isSolution_jump",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "timeout",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "distance-at-least-4",
+      "left": "LeanFrontier.NumberTheory.CalkinWilfSternBrocot.pair_reverse_eq_sternBrocot",
+      "right": "LeanFrontier.NumberTheory.MarkovTree.Paths.walk_reverse",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "distance-at-least-4",
+      "left": "LeanFrontier.NumberTheory.MarkovEquation.isSolution_jump",
+      "right": "LeanFrontier.NumberTheory.MarkovTree.SternBrocot.sternMoves_nonBacktracking",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "timeout",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "distance-at-least-4",
+      "left": "LeanFrontier.NumberTheory.CalkinWilfSternBrocot.pair_reverse_eq_sternBrocot",
+      "right": "LeanFrontier.NumberTheory.MarkovTree.Symmetry.branchPermState_walk",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "distance-at-least-4",
+      "left": "LeanFrontier.NumberTheory.MarkovTree.Symmetry.branchPermState_walk",
+      "right": "LeanFrontier.NumberTheory.SternDiatomic.coprime_fusc_fusc_succ",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    }
+  ]
+}

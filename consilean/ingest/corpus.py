@@ -42,13 +42,14 @@ def load_spec(path: Path) -> CorpusSpec:
     )
 
 
-def ensure_checkout(spec: CorpusSpec, cache: Path) -> Path:
+def ensure_checkout(spec: CorpusSpec, cache: Path, *, override_env: str | None = "CONSILEAN_LEANFRONTIER") -> Path:
     """Return a checkout of `spec.revision`.
 
     `CONSILEAN_LEANFRONTIER`, when set, must already be that commit.
-    Otherwise the commit is fetched into `cache`.
+    Pass `override_env=None` for a different corpus. Otherwise the commit
+    is fetched into `cache`.
     """
-    override = os.environ.get("CONSILEAN_LEANFRONTIER")
+    override = os.environ.get(override_env) if override_env else None
     if override:
         return _require_pin(Path(override).resolve(), spec.revision)
     if _head(cache) == spec.revision:

@@ -26,10 +26,14 @@ Most theorem and lemma signatures do not parse. An unparsed signature gets a uni
 
 The semantic arm was not run. This sprint spends no tokens, the local embedding model was not fetched, and MELD was not scored. It is not part of the primary rank.
 
-Tactic probes were not run. They need the LeanFrontier environment, and running them in another checkout would write build files there. The far-near table therefore has no closed, open, or timeout column. What it does show is pairs whose raw name-free graphs match. Those are not the pilot's Paley–Zygmund, `reflect`, or Fibonacci-spine controls.
+Tactic probes ran in the gitignored cache of the pinned LeanFrontier commit, not in the sibling checkout. The command is `uv run consilean-probes`. Outcomes are [`generated/sprint1-probes.md`](generated/sprint1-probes.md). The list includes the section 5 controls and the current top far pairs. No direction closed. Some attempts timed out at the 10 second budget. The rest were open. The bounded tactics did not prove those connections.
+
+## Coverage smoke
+
+`uv run consilean-coverage` writes [`generated/coverage.md`](generated/coverage.md). Mathlib `v4.34.0`, the local Prove2Me missions tree, and a pinned Tau Ceti checkout were read. On every corpus the number of signatures that parse is smaller than the number of declarations. That table is not a ranking and not a measurement of H1, H2, or H3. Prove2Me is not one Lean package, so it has no import graph.
 
 Dropping the highest in-degree modules, at the preregistered 1% and 5%, leaves the twin's modules at the same distance. The twin is a near pair.
 
 ## Not started
 
-Sprints 2–5. Sprint 2 stays closed until a later run is ready to measure H2 and H3 with this score, including the pairs the fragment cannot parse.
+Sprints 2–5. The probe list now exists, and nothing on it closed. Sprint 2 stays closed until the statement fragment can see the declarations it currently skips. That widening is the first Sprint 2 task, not a measurement.
