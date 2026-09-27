@@ -18,6 +18,65 @@ from consilean.views.wl import cosine, wl_features
 KS = (1, 5, 10, 50)
 
 
+def aggregate(outcomes: list[dict], parsed_declarations: int) -> dict:
+    """Turn per-pair outcomes into the recall table."""
+    hits = {k: 0 for k in KS}
+    evaluated = 0
+    unparsed = 0
+    missing = 0
+    ranks: list[int | None] = []
+    for item in outcomes:
+        if item["status"] == "missing":
+            missing += 1
+            continue
+        evaluated += 1
+        if item["status"] == "unparsed":
+            unparsed += 1
+            ranks.append(None)
+            continue
+        rank = item["rank"]
+        ranks.append(rank)
+        for k in KS:
+            if rank <= k:
+                hits[k] += 1
+    return {
+        "frozen_pairs": len(outcomes),
+        "evaluated": evaluated,
+        "missing_declaration": missing,
+        "unparsed": unparsed,
+        "parsed_declarations": parsed_declarations,
+        "parsed_ranks": ranks,
+        "recovered": hits,
+        "recall": {str(k): (hits[k] / evaluated if evaluated else None) for k in KS},
+        "primary_k": 10,
+    }
+
+
+def pair_outcomes(declarations: list[Declaration], pairs: list[dict]) -> tuple[int, list[dict]]:
+    """Rank each pair once. Later windows reuse the same snapshot views."""
+    views = [_view(decl) for decl in declarations]
+    index = {f"{decl.module}.{decl.name}": i for i, decl in enumerate(declarations)}
+    nf_groups: dict[str, list[int]] = defaultdict(list)
+    for i, (nf, _wl) in enumerate(views):
+        if nf is not None:
+            nf_groups[nf].append(i)
+    postings, norms = _postings(views)
+    parsed = sum(1 for _nf, wl in views if wl is not None)
+    outcomes = []
+    for pair in pairs:
+        old = index.get(pair["old"])
+        new = index.get(pair["new"])
+        if old is None or new is None:
+            outcomes.append({**pair, "status": "missing"})
+            continue
+        if views[old][1] is None or views[new][1] is None:
+            outcomes.append({**pair, "status": "unparsed"})
+            continue
+        rank = _partner_rank(old, new, views, nf_groups, postings, norms)
+        outcomes.append({**pair, "status": "ranked", "rank": rank})
+    return parsed, outcomes
+
+
 def recall_at_k(
     declarations: list[Declaration],
     pairs: list[dict],
@@ -33,6 +92,7 @@ def recall_at_k(
     evaluated = 0
     unparsed = 0
     missing = 0
+    parsed_ranks: list[int | None] = []
     for pair in pairs:
         old = index.get(pair["old"])
         new = index.get(pair["new"])
@@ -42,16 +102,21 @@ def recall_at_k(
         evaluated += 1
         if views[old][1] is None or views[new][1] is None:
             unparsed += 1
+            parsed_ranks.append(None)
             continue
         rank = _partner_rank(old, new, views, nf_groups, postings, norms)
+        parsed_ranks.append(rank)
         for k in KS:
             if rank <= k:
                 hits[k] += 1
+    parsed_declarations = sum(1 for _nf, wl in views if wl is not None)
     return {
         "frozen_pairs": len(pairs),
         "evaluated": evaluated,
         "missing_declaration": missing,
         "unparsed": unparsed,
+        "parsed_declarations": parsed_declarations,
+        "parsed_ranks": parsed_ranks,
         "recovered": hits,
         "recall": {str(k): (hits[k] / evaluated if evaluated else None) for k in KS},
         "primary_k": 10,

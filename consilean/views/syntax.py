@@ -10,7 +10,42 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-_SYMBOLS = ("↔", "→", "∃", "∀", "≡", "∧", "∨", "∣", "≠", "≤", "≥", "∈", "∉", "⊆", "⊇", "⁻¹", "<", ">", "/")
+_SYMBOLS = (
+    "→+*",
+    "→+",
+    "→*",
+    "←+*",
+    "←+",
+    "←*",
+    "↔",
+    "→",
+    "←",
+    "↦",
+    "=>",
+    "∃",
+    "∀",
+    "≡",
+    "∧",
+    "∨",
+    "∣",
+    "≠",
+    "≤",
+    "≥",
+    "∈",
+    "∉",
+    "⊆",
+    "⊇",
+    "⁻¹",
+    "<",
+    ">",
+    "/",
+    "⊕",
+    "⊗",
+    "∑",
+    "∏",
+    "∫",
+)
+_ARROWS = {"→+*", "→+", "→*", "←+*", "←+", "←*", "→", "←"}
 _SINGLE = set("()[]{}:,^+-*=.")
 
 
@@ -170,7 +205,10 @@ def normal_form(source: str) -> str | None:
 
 def rewrite_statement(statement: Statement) -> Statement:
     return Statement(
-        tuple(Binder(binder.name, _rewrite(binder.ty)) for binder in statement.binders),
+        tuple(
+            Binder(binder.name, _rewrite(binder.ty) if binder.ty is not None else None)
+            for binder in statement.binders
+        ),
         _rewrite(statement.body),
     )
 
@@ -221,7 +259,7 @@ def alpha_statement(statement: Statement) -> Statement:
     env: dict[str, str] = {}
     binders: list[Binder] = []
     for binder in statement.binders:
-        ty = rename(binder.ty, env)
+        ty = rename(binder.ty, env) if binder.ty is not None else None
         new = fresh()
         env[binder.name] = new
         binders.append(Binder(new, ty))
@@ -245,7 +283,12 @@ def as_forall(source: str) -> str | None:
 
 
 def pretty_statement(statement: Statement) -> str:
-    parts = [f"({binder.name} : {pretty(binder.ty)})" for binder in statement.binders]
+    parts = []
+    for binder in statement.binders:
+        if binder.ty is None:
+            parts.append(f"({binder.name})")
+        else:
+            parts.append(f"({binder.name} : {pretty(binder.ty)})")
     body = pretty(statement.body)
     if parts:
         return " ".join(parts) + " : " + body
@@ -276,6 +319,12 @@ def pretty(expr: object) -> str:
     if isinstance(expr, ModEq):
         return f"{pretty(expr.left)} ≡ {pretty(expr.right)} [ZMOD {pretty(expr.modulus)}]"
     if isinstance(expr, Quant):
+        if expr.kind == "fun":
+            if expr.ty is None:
+                return f"fun {expr.var} => {pretty(expr.body)}"
+            return f"fun ({expr.var} : {pretty(expr.ty)}) => {pretty(expr.body)}"
+        if expr.kind in {"∑", "∏", "∫"}:
+            return f"{expr.kind} {expr.var}, {pretty(expr.body)}"
         head = "∃" if expr.kind == "exists" else "∀"
         if expr.ty is None:
             return f"{head} {expr.var}, {pretty(expr.body)}"
@@ -369,7 +418,8 @@ def formula_graph(statement: Statement, *, keep_names: bool) -> tuple[list[str],
         var(binder.name)
         node = new("binder")
         link(node, var(binder.name), "var")
-        link(node, go(binder.ty), "ty")
+        if binder.ty is not None:
+            link(node, go(binder.ty), "ty")
     go(statement.body)
     return labels, adj
 
@@ -505,8 +555,10 @@ class _Parser:
             names.append(self.pop())
         if not names:
             raise ParseError("binder")
-        self.expect(":")
-        ty = self.expr()
+        ty = None
+        if self.peek() == ":":
+            self.pop()
+            ty = self.expr()
         self.expect(closer)
         for name in names:
             self.bound.add(name)
@@ -539,9 +591,9 @@ class _Parser:
 
     def _arrow(self) -> object:
         left = self._and()
-        if self.peek() == "→":
-            self.pop()
-            return Bin("→", left, self._arrow())
+        if self.peek() in _ARROWS:
+            op = self.pop()
+            return Bin(op, left, self._arrow())
         return left
 
     def _and(self) -> object:
@@ -568,7 +620,7 @@ class _Parser:
 
     def _add(self) -> object:
         left = self._mul()
-        while self.peek() in {"+", "-"}:
+        while self.peek() in {"+", "-", "⊕", "⊗"}:
             op = self.pop()
             left = Bin(op, left, self._mul())
         return left
@@ -591,7 +643,22 @@ class _Parser:
         if self.peek() == "-":
             self.pop()
             return Neg(self._unary())
+        if self.peek() in {"∑", "∏", "∫"}:
+            return self._bigop()
         return self._app()
+
+    def _bigop(self) -> Quant:
+        op = self.pop()
+        name = "_sum"
+        if _is_name(self.peek() or ""):
+            name = self.pop()
+            self.bound.add(name)
+        if self.peek() in {"∈", "∉"}:
+            self.pop()
+            self.expr()
+        if self.peek() == ",":
+            self.pop()
+        return Quant(op, name, None, self.expr())
 
     def _app(self) -> object:
         node = self._postfix(self._atom())
@@ -624,6 +691,10 @@ class _Parser:
         token = self.peek()
         if token is None:
             raise ParseError("atom")
+        if token == "(" and self.i + 1 < len(self.tokens) and self.tokens[self.i + 1] == ")":
+            self.pop()
+            self.pop()
+            return Const("Unit")
         if token == "(":
             self.pop()
             expr = self.expr()
@@ -636,12 +707,34 @@ class _Parser:
             return self._quant("exists")
         if token == "∀":
             return self._quant("forall")
+        if token in {"fun", "λ"}:
+            return self._fun()
         self.pop()
         if token.isdigit():
             return NatLit(token)
         if _is_name(token):
             return _resolve(token, self.bound)
         raise ParseError(token)
+
+    def _fun(self) -> object:
+        self.pop()
+        binders: list[Binder] = []
+        while self.peek() not in {"=>", "↦", None}:
+            if self.peek() in {"(", "{", "["}:
+                binders.extend(self._binder_group())
+            elif _is_name(self.peek() or ""):
+                name = self.pop()
+                self.bound.add(name)
+                binders.append(Binder(name, None))
+            else:
+                break
+        if self.peek() not in {"=>", "↦"}:
+            raise ParseError("fun")
+        self.pop()
+        body = self.expr()
+        for binder in reversed(binders):
+            body = Quant("fun", binder.name, binder.ty, body)
+        return body
 
     def _quant(self, kind: str) -> Quant:
         self.pop()
