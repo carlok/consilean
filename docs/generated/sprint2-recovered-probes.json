@@ -1,0 +1,1968 @@
+{
+  "generating_command": "uv run consilean-h2-probes",
+  "results": [
+    {
+      "list": "h2-recovered-k10",
+      "left": "Mathlib.Algebra.MvPolynomial.Equiv.sumToIter_C",
+      "right": "Mathlib.Algebra.MvPolynomial.Equiv.sumRingEquiv_C",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "timeout",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "h2-recovered-k10",
+      "left": "Mathlib.Algebra.Order.Ring.Unbundled.Basic.two_mul_le_add_of_sq_eq_mul",
+      "right": "Mathlib.Algebra.Order.Ring.Unbundled.Basic.two_mul_le_add_of_sq_le_mul",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "h2-recovered-k10",
+      "left": "Mathlib.Analysis.Normed.Lp.PiLp.dist_toLp_single_same",
+      "right": "Mathlib.Analysis.Normed.Lp.PiLp.dist_single_same",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "timeout",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "timeout"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "h2-recovered-k10",
+      "left": "Mathlib.Analysis.Normed.Lp.PiLp.edist_toLp_single_same",
+      "right": "Mathlib.Analysis.Normed.Lp.PiLp.edist_single_same",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "h2-recovered-k10",
+      "left": "Mathlib.Analysis.Normed.Lp.PiLp.nndist_toLp_single_same",
+      "right": "Mathlib.Analysis.Normed.Lp.PiLp.nndist_single_same",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "h2-recovered-k10",
+      "left": "Mathlib.LinearAlgebra.AffineSpace.Combination.affineCombination_affineCombinationSingleWeights",
+      "right": "Mathlib.LinearAlgebra.AffineSpace.Combination.affineCombination_piSingle",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "h2-recovered-k10",
+      "left": "Mathlib.LinearAlgebra.AffineSpace.FiniteDimensional.finite_of_fin_dim_affineIndependent",
+      "right": "Mathlib.LinearAlgebra.AffineSpace.FiniteDimensional.finiteDimensional_iff_finite",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "h2-recovered-k10",
+      "left": "Mathlib.LinearAlgebra.AffineSpace.FiniteDimensional.finite_set_of_fin_dim_affineIndependent",
+      "right": "Mathlib.LinearAlgebra.AffineSpace.FiniteDimensional.finiteDimensional_iff_setFinite",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "h2-recovered-k10",
+      "left": "Mathlib.NumberTheory.ModularForms.LevelOne.DimensionFormula.divDiscriminant_apply",
+      "right": "Mathlib.NumberTheory.ModularForms.LevelOne.DimensionFormula.discriminantEquiv_apply",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "h2-recovered-k10",
+      "left": "Mathlib.NumberTheory.NumberField.House.house_pow_le",
+      "right": "Mathlib.NumberTheory.NumberField.House.house_pow",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "h2-recovered-k10",
+      "left": "Mathlib.Probability.Distributions.Poisson.Basic.poissonPMF",
+      "right": "Mathlib.Probability.Distributions.Poisson.Basic.poissonMeasure",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "h2-recovered-k10",
+      "left": "Mathlib.SetTheory.Ordinal.Exponential.omega0_opow_mul_nat_lt",
+      "right": "Mathlib.SetTheory.Ordinal.Exponential.opow_mul_lt_opow",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "list": "h2-recovered-k10",
+      "left": "Mathlib.SetTheory.Ordinal.Topology.IsAcc",
+      "right": "Mathlib.Topology.Defs.Filter.AccPt",
+      "directions": [
+        {
+          "direction": "iff",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "left_to_right",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        },
+        {
+          "direction": "right_to_left",
+          "outcome": "open",
+          "tactic": null,
+          "attempts": [
+            {
+              "tactic": "rfl",
+              "outcome": "open"
+            },
+            {
+              "tactic": "simp",
+              "outcome": "open"
+            },
+            {
+              "tactic": "norm_num",
+              "outcome": "open"
+            },
+            {
+              "tactic": "tauto",
+              "outcome": "open"
+            },
+            {
+              "tactic": "omega",
+              "outcome": "open"
+            },
+            {
+              "tactic": "decide",
+              "outcome": "open"
+            },
+            {
+              "tactic": "exact?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "apply?",
+              "outcome": "open"
+            },
+            {
+              "tactic": "aesop",
+              "outcome": "open"
+            },
+            {
+              "tactic": "grind",
+              "outcome": "open"
+            }
+          ],
+          "detail": ""
+        }
+      ]
+    }
+  ]
+}

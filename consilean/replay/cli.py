@@ -16,25 +16,39 @@ MATHLIB_REV = "5ed2965256430c3649e86755f9576b54eca72435"
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.parse_args()
+    parser.add_argument(
+        "--label",
+        default="",
+        help="suffix for a later run, so the frozen H2 files are not overwritten",
+    )
+    args = parser.parse_args()
+    label = f"-{args.label}" if args.label else ""
     from consilean.ingest.corpus import repo_root
 
     root = repo_root()
     mathlib = _mathlib_root(root)
     if mathlib is None:
         raise SystemExit("local Mathlib v4.34.0 tree not found")
-    frozen = collect_ground_truth(mathlib)
-    frozen["corpus"] = "Mathlib"
-    frozen["revision"] = MATHLIB_REV
-    frozen["generating_command"] = GENERATING_COMMAND
     out = root / "docs" / "generated"
     out.mkdir(parents=True, exist_ok=True)
-    freeze_path = out / "sprint2-ground-truth.json"
-    # Score only the pairs just frozen. The hash is stored with them.
+    command = f"{GENERATING_COMMAND} --label {args.label}" if label else GENERATING_COMMAND
+    if label:
+        frozen = json.loads((out / "sprint2-ground-truth.json").read_text(encoding="utf-8"))
+    else:
+        frozen = collect_ground_truth(mathlib)
+        frozen["corpus"] = "Mathlib"
+        frozen["revision"] = MATHLIB_REV
+        frozen["generating_command"] = GENERATING_COMMAND
+        (out / "sprint2-ground-truth.json").write_text(
+            json.dumps(frozen, indent=2) + "\n", encoding="utf-8"
+        )
+    # Score the frozen pairs. A labeled run does not replace the freeze.
     declarations = load_declarations(mathlib, namespace="Mathlib")
     measured = recall_at_k(declarations, frozen["pairs"])
+    measured.pop("parsed_ranks", None)
+    measured.pop("parsed_declarations", None)
     report = {
-        "generating_command": GENERATING_COMMAND,
+        "generating_command": command,
         "revision": MATHLIB_REV,
         "ground_truth_sha256": frozen["sha256"],
         "ground_truth_count": frozen["count"],
@@ -52,9 +66,11 @@ def main() -> None:
             "reason": "No equivalence was closed by the checker in this run, so the published list is empty.",
         },
     }
-    freeze_path.write_text(json.dumps(frozen, indent=2) + "\n", encoding="utf-8")
-    (out / "sprint2-h2.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-    (out / "sprint2-h2.md").write_text(_markdown(report, frozen), encoding="utf-8")
+    (out / f"sprint2-h2{label}.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    (out / f"sprint2-h2{label}.md").write_text(_markdown(report, frozen), encoding="utf-8")
+    if label:
+        print(f"wrote {out / f'sprint2-h2{label}.md'}")
+        return
     (out / "sprint2-duplicates.md").write_text(
         "\n".join(
             [
@@ -70,7 +86,7 @@ def main() -> None:
     )
     print(f"frozen {frozen['count']} sha256 {frozen['sha256'][:12]}")
     print(f"recall@10 {measured['recall'].get('10')}")
-    print(f"wrote {freeze_path}")
+    print(f"wrote {out / f'sprint2-h2{label}.md'}")
 
 
 def _mathlib_root(root: Path) -> Path | None:

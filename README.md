@@ -30,7 +30,7 @@ uv run consilean-sprint1
 
 On the pinned corpus the √−1 twin is the top pair. The notation equivalence is kernel-checked in [`lean/IsSquareModEq.lean`](lean/IsSquareModEq.lean). Tactic probes of the far-near controls are in [`docs/generated/sprint1-probes.md`](docs/generated/sprint1-probes.md): none closed. A coverage smoke of Mathlib, Prove2Me, and Tau Ceti, with no pair ranking, is in [`docs/generated/coverage.md`](docs/generated/coverage.md). The semantic arm was not run.
 
-Sprint 2 freezes Mathlib deprecations whose statements differ, then measures H2 recall at k. Aliases and identical statements are excluded. The result is in [`docs/generated/sprint2-h2.md`](docs/generated/sprint2-h2.md). H3 replay was not measured: every frozen `since` date is already earlier than that Mathlib revision. The checker-closed duplicate list is empty.
+Sprint 2 freezes Mathlib deprecations whose statements differ, then measures H2 recall at k. Aliases and identical statements are excluded. The first result is [`docs/generated/sprint2-h2.md`](docs/generated/sprint2-h2.md). A second ranking of that same frozen set, after a wider statement reader, is [`docs/generated/sprint2-h2-run2.md`](docs/generated/sprint2-h2-run2.md). Neighbor recall of those pairs on Mathlib `v4.28.0`, extracted read-only, is [`docs/generated/sprint2-h3.md`](docs/generated/sprint2-h3.md). That is not the preregistered precision-at-k comparison. Tactic probes of the pairs recovered at k = 10 in the first H2 run are in [`docs/generated/sprint2-recovered-probes.json`](docs/generated/sprint2-recovered-probes.json). None closed, so [`docs/generated/sprint2-duplicates.md`](docs/generated/sprint2-duplicates.md) stays empty.
 
 ```bash
 uv run consilean-sprint2
@@ -42,9 +42,19 @@ Sprint 3 lists the section 5 controls and does not call a model. The budget in [
 uv run consilean-sprint3
 ```
 
-Sprints 4 and 5 have not started. H1 is not measured.
+H1 is not measured.
 
 Tables are written to `docs/generated/`. The preregistered tests, including the 27 September amendment on how recall at k is counted, are in [`docs/PREREGISTRATION.md`](docs/PREREGISTRATION.md).
+
+## Future
+
+Sprint 3 calls stay blocked until both caps in [`corpora/sprint3-budget.toml`](corpora/sprint3-budget.toml) are set and an assistant is chosen. The targets are already in [`docs/generated/sprint3-targets.md`](docs/generated/sprint3-targets.md). H1 is the measurement after calls exist.
+
+Sprint 4 is a cross-project index: digests, near-duplicate clusters, recorded bridges, and a query for whether a statement is already somewhere. Mathlib, Tau Ceti, and Prove2Me have only been counted.
+
+Sprint 5 is papers, and only after a positive H1 or a positive result on the preregistered H3 metric.
+
+Nothing is submitted to LeanFrontier until a probe or a checked proof closes a bridge. That repo is not edited from here.
 
 ## Requirements
 

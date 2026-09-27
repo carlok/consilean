@@ -22,7 +22,7 @@ run from a Mathlib `v4.34.0` lake project. The LeanFrontier twin is that fact at
 
 The name-free kernel, on the statements as written, does not see the twin as the same formula. The keep-names variant is further away. The normal form is what puts the pair first. Both cosines are in the generated table.
 
-Many theorem and lemma signatures still do not parse. An unparsed signature gets a unique label, so it cannot match anything. The fragment now includes implicit and instance binders, comparisons, division, inverses, and indexing, as well as quantifiers and `[ZMOD …]`. The count of signatures that parse is in the generated Sprint 1 table. The twin stays the top pair. Elaborated `Expr` graphs were not built: LeanDojo and LeanExplore index Mathlib, not this LeanFrontier pin, and an exporter would mean building LeanFrontier.
+Many theorem and lemma signatures still do not parse. An unparsed signature gets a unique label, so it cannot match anything. The fragment now includes implicit, instance, and untyped binders, comparisons, division, inverses, indexing, `fun`, hom arrows such as `→+*`, and big operators, as well as quantifiers and `[ZMOD …]`. The count of signatures that parse is in the generated Sprint 1 table. The twin stays the top pair. Elaborated `Expr` graphs were not built: LeanDojo and LeanExplore index Mathlib, not this LeanFrontier pin, and an exporter would mean building LeanFrontier.
 
 The semantic arm was not run. This sprint spends no tokens, the local embedding model was not fetched, and MELD was not scored. It is not part of the primary rank.
 
@@ -36,4 +36,4 @@ Dropping the highest in-degree modules, at the preregistered 1% and 5%, leaves t
 
 ## Not started
 
-Sprints 2–5. The probe list now exists, and nothing on it closed. Sprint 2 stays closed until the statement fragment can see the declarations it currently skips. That widening is the first Sprint 2 task, not a measurement.
+The probe list exists, and nothing on it closed. Later sprints are in the README.

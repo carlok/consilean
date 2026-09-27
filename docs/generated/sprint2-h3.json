@@ -1,0 +1,146 @@
+{
+  "generating_command": "uv run consilean-h3",
+  "scored_revision": "5ed2965256430c3649e86755f9576b54eca72435",
+  "snapshot_tag": "v4.28.0",
+  "snapshot_date": "2026-02-16",
+  "ground_truth_sha256": "0422b93e652fe527c9ce434ea66d8e3fcd0e4f3a267f49a55f7496bf30abb232",
+  "note": "Neighbor recall of frozen deprecations whose since date is after the snapshot. A missing declaration on that snapshot is not recovered.",
+  "windows": [
+    {
+      "months": 1,
+      "end": "2026-03-16",
+      "pairs": 32,
+      "h3": {
+        "frozen_pairs": 32,
+        "evaluated": 3,
+        "missing_declaration": 29,
+        "unparsed": 0,
+        "parsed_declarations": 70591,
+        "recovered": {
+          "1": 1,
+          "5": 1,
+          "10": 1,
+          "50": 1
+        },
+        "recall": {
+          "1": 0.3333333333333333,
+          "5": 0.3333333333333333,
+          "10": 0.3333333333333333,
+          "50": 0.3333333333333333
+        },
+        "primary_k": 10
+      },
+      "random_recall_at_10": 0.00014166312508853945,
+      "declarations": 193127,
+      "parsed": 70591,
+      "bootstrap_recall_at_10": {
+        "draws": 1000,
+        "p2_5": 0.0,
+        "p50": 0.3333333333333333,
+        "p97_5": 1.0
+      }
+    },
+    {
+      "months": 3,
+      "end": "2026-05-16",
+      "pairs": 126,
+      "h3": {
+        "frozen_pairs": 126,
+        "evaluated": 15,
+        "missing_declaration": 111,
+        "unparsed": 10,
+        "parsed_declarations": 70591,
+        "recovered": {
+          "1": 1,
+          "5": 2,
+          "10": 2,
+          "50": 2
+        },
+        "recall": {
+          "1": 0.06666666666666667,
+          "5": 0.13333333333333333,
+          "10": 0.13333333333333333,
+          "50": 0.13333333333333333
+        },
+        "primary_k": 10
+      },
+      "random_recall_at_10": 0.00014166312508853945,
+      "declarations": 193127,
+      "parsed": 70591,
+      "bootstrap_recall_at_10": {
+        "draws": 1000,
+        "p2_5": 0.0,
+        "p50": 0.13333333333333333,
+        "p97_5": 0.3333333333333333
+      }
+    },
+    {
+      "months": 6,
+      "end": "2026-08-16",
+      "pairs": 173,
+      "h3": {
+        "frozen_pairs": 173,
+        "evaluated": 23,
+        "missing_declaration": 150,
+        "unparsed": 17,
+        "parsed_declarations": 70591,
+        "recovered": {
+          "1": 2,
+          "5": 3,
+          "10": 3,
+          "50": 3
+        },
+        "recall": {
+          "1": 0.08695652173913043,
+          "5": 0.13043478260869565,
+          "10": 0.13043478260869565,
+          "50": 0.13043478260869565
+        },
+        "primary_k": 10
+      },
+      "random_recall_at_10": 0.00014166312508853945,
+      "declarations": 193127,
+      "parsed": 70591,
+      "bootstrap_recall_at_10": {
+        "draws": 1000,
+        "p2_5": 0.0,
+        "p50": 0.13043478260869565,
+        "p97_5": 0.2608695652173913
+      }
+    },
+    {
+      "months": 12,
+      "end": "2027-02-16",
+      "pairs": 189,
+      "h3": {
+        "frozen_pairs": 189,
+        "evaluated": 28,
+        "missing_declaration": 161,
+        "unparsed": 21,
+        "parsed_declarations": 70591,
+        "recovered": {
+          "1": 2,
+          "5": 3,
+          "10": 3,
+          "50": 3
+        },
+        "recall": {
+          "1": 0.07142857142857142,
+          "5": 0.10714285714285714,
+          "10": 0.10714285714285714,
+          "50": 0.10714285714285714
+        },
+        "primary_k": 10
+      },
+      "random_recall_at_10": 0.00014166312508853945,
+      "declarations": 193127,
+      "parsed": 70591,
+      "bootstrap_recall_at_10": {
+        "draws": 1000,
+        "p2_5": 0.0,
+        "p50": 0.10714285714285714,
+        "p97_5": 0.21428571428571427
+      }
+    }
+  ]
+}
