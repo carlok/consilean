@@ -1,0 +1,1336 @@
+{
+  "pairs": [
+    {
+      "old": "Mathlib.Algebra.Module.Equiv.Basic.ofLinear_apply",
+      "new": "Mathlib.Algebra.Module.Equiv.Basic.coe_ofLinearMap",
+      "since": "2026-06-23",
+      "old_statement": "{h\u2081 h\u2082} (x : M) : (ofLinear f g h\u2081 h\u2082 : M \u2243\u209b\u2097[\u03c3\u2081\u2082] M\u2082) x = f x",
+      "new_statement": "(h\u2081 h\u2082) : \u21d1(ofLinearMap f g h\u2081 h\u2082 : M \u2243\u209b\u2097[\u03c3\u2081\u2082] M\u2082) = f"
+    },
+    {
+      "old": "Mathlib.Algebra.MvPolynomial.Equiv.eval\u2082_const_pUnitAlgEquiv",
+      "new": "Mathlib.Algebra.MvPolynomial.Equiv.eval\u2082_const_uniqueAlgEquiv",
+      "since": "2026-04-15",
+      "old_statement": "{f : MvPolynomial PUnit R} {\u03c6 : R \u2192+* S} {a : S} : ((MvPolynomial.pUnitAlgEquiv R) f : Polynomial R).eval\u2082 \u03c6 a = f.eval\u2082 \u03c6 (fun _ \u21a6 a)",
+      "new_statement": "[Unique \u03c3] {f : MvPolynomial \u03c3 R} {\u03c6 : R \u2192+* S} {a : S} : ((MvPolynomial.uniqueAlgEquiv R \u03c3) f : Polynomial R).eval\u2082 \u03c6 a = f.eval\u2082 \u03c6 (fun _ \u21a6 a)"
+    },
+    {
+      "old": "Mathlib.Algebra.MvPolynomial.Equiv.eval\u2082_const_pUnitAlgEquiv_symm",
+      "new": "Mathlib.Algebra.MvPolynomial.Equiv.eval\u2082_const_uniqueAlgEquiv_symm",
+      "since": "2026-04-15",
+      "old_statement": "{f : Polynomial R} {\u03c6 : R \u2192+* S} {a : S} : ((MvPolynomial.pUnitAlgEquiv R).symm f : MvPolynomial Unit R).eval\u2082 \u03c6 (fun _ \u21a6 a) = f.eval\u2082 \u03c6 a",
+      "new_statement": "[Unique \u03c3] {f : Polynomial R} {\u03c6 : R \u2192+* S} {a : S} : ((MvPolynomial.uniqueAlgEquiv R \u03c3).symm f : MvPolynomial \u03c3 R).eval\u2082 \u03c6 (fun _ \u21a6 a) = f.eval\u2082 \u03c6 a"
+    },
+    {
+      "old": "Mathlib.Algebra.MvPolynomial.Equiv.eval\u2082_pUnitAlgEquiv",
+      "new": "Mathlib.Algebra.MvPolynomial.Equiv.eval\u2082_uniqueAlgEquiv",
+      "since": "2026-04-15",
+      "old_statement": "{f : MvPolynomial PUnit R} {\u03c6 : R \u2192+* S} {a : PUnit \u2192 S} : ((MvPolynomial.pUnitAlgEquiv R) f : Polynomial R).eval\u2082 \u03c6 (a default) = f.eval\u2082 \u03c6 a",
+      "new_statement": "[Unique \u03c3] {f : MvPolynomial \u03c3 R} {\u03c6 : R \u2192+* S} {a : \u03c3 \u2192 S} : ((MvPolynomial.uniqueAlgEquiv R \u03c3) f : Polynomial R).eval\u2082 \u03c6 (a default) = f.eval\u2082 \u03c6 a"
+    },
+    {
+      "old": "Mathlib.Algebra.MvPolynomial.Equiv.eval\u2082_pUnitAlgEquiv_symm",
+      "new": "Mathlib.Algebra.MvPolynomial.Equiv.eval\u2082_uniqueAlgEquiv_symm",
+      "since": "2026-04-15",
+      "old_statement": "{f : Polynomial R} {\u03c6 : R \u2192+* S} {a : Unit \u2192 S} : ((MvPolynomial.pUnitAlgEquiv R).symm f : MvPolynomial Unit R).eval\u2082 \u03c6 a = f.eval\u2082 \u03c6 (a ())",
+      "new_statement": "[Unique \u03c3] {f : Polynomial R} {\u03c6 : R \u2192+* S} {a : \u03c3 \u2192 S} : ((MvPolynomial.uniqueAlgEquiv R \u03c3).symm f : MvPolynomial \u03c3 R).eval\u2082 \u03c6 a = f.eval\u2082 \u03c6 (a default)"
+    },
+    {
+      "old": "Mathlib.Algebra.MvPolynomial.Equiv.iterToSum",
+      "new": "Mathlib.Algebra.MvPolynomial.Equiv.sumRingEquiv",
+      "since": "2026-06-18",
+      "old_statement": ": MvPolynomial S\u2081 (MvPolynomial S\u2082 R) \u2192+* MvPolynomial (S\u2081 \u2295 S\u2082) R",
+      "new_statement": ": MvPolynomial (S\u2081 \u2295 S\u2082) R \u2243+* MvPolynomial S\u2081 (MvPolynomial S\u2082 R)"
+    },
+    {
+      "old": "Mathlib.Algebra.MvPolynomial.Equiv.iterToSum_C_C",
+      "new": "Mathlib.Algebra.MvPolynomial.Equiv.sumRingEquiv_symm_C_C",
+      "since": "2026-06-18",
+      "old_statement": "(a : R) : iterToSum R S\u2081 S\u2082 (C (C a)) = C a",
+      "new_statement": "(r : R) : (sumRingEquiv R S\u2081 S\u2082).symm (C <| C r) = C r"
+    },
+    {
+      "old": "Mathlib.Algebra.MvPolynomial.Equiv.iterToSum_C_X",
+      "new": "Mathlib.Algebra.MvPolynomial.Equiv.sumRingEquiv_symm_C_X",
+      "since": "2026-06-18",
+      "old_statement": "(c : S\u2082) : iterToSum R S\u2081 S\u2082 (C (X c)) = X (Sum.inr c)",
+      "new_statement": "(s : S\u2082) : (sumRingEquiv R S\u2081 S\u2082).symm (C <| X s) = X (.inr s)"
+    },
+    {
+      "old": "Mathlib.Algebra.MvPolynomial.Equiv.iterToSum_X",
+      "new": "Mathlib.Algebra.MvPolynomial.Equiv.sumRingEquiv_symm_X",
+      "since": "2026-06-18",
+      "old_statement": "(b : S\u2081) : iterToSum R S\u2081 S\u2082 (X b) = X (Sum.inl b)",
+      "new_statement": "(s : S\u2081) : (sumRingEquiv R S\u2081 S\u2082).symm (X s) = X (.inl s)"
+    },
+    {
+      "old": "Mathlib.Algebra.MvPolynomial.Equiv.pUnitAlgEquiv_monomial",
+      "new": "Mathlib.Algebra.MvPolynomial.Equiv.uniqueAlgEquiv_monomial",
+      "since": "2026-04-15",
+      "old_statement": "{d : PUnit \u2192\u2080 \u2115} {r : R} : MvPolynomial.pUnitAlgEquiv R (MvPolynomial.monomial d r) = Polynomial.monomial (d ()) r",
+      "new_statement": "[Unique \u03c3] {d : \u03c3 \u2192\u2080 \u2115} {r : R} : (MvPolynomial.uniqueAlgEquiv R \u03c3) (MvPolynomial.monomial d r) = Polynomial.monomial (d default) r"
+    },
+    {
+      "old": "Mathlib.Algebra.MvPolynomial.Equiv.pUnitAlgEquiv_symm_monomial",
+      "new": "Mathlib.Algebra.MvPolynomial.Equiv.uniqueAlgEquiv_symm_monomial",
+      "since": "2026-04-15",
+      "old_statement": "{d : PUnit \u2192\u2080 \u2115} {r : R} : (MvPolynomial.pUnitAlgEquiv R).symm (Polynomial.monomial (d ()) r) = MvPolynomial.monomial d r",
+      "new_statement": "[Unique \u03c3] {d : \u03c3 \u2192\u2080 \u2115} {r : R} : (MvPolynomial.uniqueAlgEquiv R \u03c3).symm (Polynomial.monomial (d default) r) = MvPolynomial.monomial d r"
+    },
+    {
+      "old": "Mathlib.Algebra.MvPolynomial.Equiv.sumToIter",
+      "new": "Mathlib.Algebra.MvPolynomial.Equiv.sumRingEquiv",
+      "since": "2026-06-18",
+      "old_statement": ": MvPolynomial (S\u2081 \u2295 S\u2082) R \u2192+* MvPolynomial S\u2081 (MvPolynomial S\u2082 R)",
+      "new_statement": ": MvPolynomial (S\u2081 \u2295 S\u2082) R \u2243+* MvPolynomial S\u2081 (MvPolynomial S\u2082 R)"
+    },
+    {
+      "old": "Mathlib.Algebra.MvPolynomial.Equiv.sumToIter_C",
+      "new": "Mathlib.Algebra.MvPolynomial.Equiv.sumRingEquiv_C",
+      "since": "2026-06-18",
+      "old_statement": "(a : R) : sumToIter R S\u2081 S\u2082 (C a) = C (C a)",
+      "new_statement": "(r : R) : sumRingEquiv R S\u2081 S\u2082 (C r) = C (C r)"
+    },
+    {
+      "old": "Mathlib.Algebra.MvPolynomial.Equiv.sumToIter_Xl",
+      "new": "Mathlib.Algebra.MvPolynomial.Equiv.sumRingEquiv_X_inl",
+      "since": "2026-06-18",
+      "old_statement": "(b : S\u2081) : sumToIter R S\u2081 S\u2082 (X (Sum.inl b)) = X b",
+      "new_statement": "(s : S\u2081) : sumRingEquiv R S\u2081 S\u2082 (X <| .inl s) = X s"
+    },
+    {
+      "old": "Mathlib.Algebra.MvPolynomial.Equiv.sumToIter_Xr",
+      "new": "Mathlib.Algebra.MvPolynomial.Equiv.sumRingEquiv_X_inr",
+      "since": "2026-06-18",
+      "old_statement": "(c : S\u2082) : sumToIter R S\u2081 S\u2082 (X (Sum.inr c)) = C (X c)",
+      "new_statement": "(s : S\u2082) : sumRingEquiv R S\u2081 S\u2082 (X <| .inr s) = C (X s)"
+    },
+    {
+      "old": "Mathlib.Algebra.Order.BigOperators.Group.Finset.abs_sum_of_nonneg",
+      "new": "Mathlib.Algebra.Order.BigOperators.Group.Finset.abs_sum_of_nonneg",
+      "since": "2026-09-01",
+      "old_statement": "' {G : Type*} [AddCommGroup G] [LinearOrder G] [AddLeftMono G] {f : \u03b9 \u2192 G} {s : Finset \u03b9} (hf : \u2200 i, 0 \u2264 f i) : |\u2211 i \u2208 s, f i| = \u2211 i \u2208 s, f i",
+      "new_statement": "{G : Type*} [AddCommGroup G] [LinearOrder G] [AddLeftMono G] {f : \u03b9 \u2192 G} {s : Finset \u03b9} (hf : \u2200 i \u2208 s, 0 \u2264 f i) : |\u2211 i \u2208 s, f i| = \u2211 i \u2208 s, f i"
+    },
+    {
+      "old": "Mathlib.Algebra.Order.BigOperators.Ring.Finset.sum_sq_le_sum_mul_sum_of_sq_eq_mul",
+      "new": "Mathlib.Algebra.Order.BigOperators.Ring.Finset.sum_sq_le_sum_mul_sum_of_sq_le_mul",
+      "since": "2026-05-12",
+      "old_statement": "[CommSemiring R] [LinearOrder R] [IsStrictOrderedRing R] [ExistsAddOfLE R] (s : Finset \u03b9) {r f g : \u03b9 \u2192 R} (hf : \u2200 i \u2208 s, 0 \u2264 f i) (hg : \u2200 i \u2208 s, 0 \u2264 g i) (ht : \u2200 i \u2208 s, r i ^ 2 = f i * g i) : (\u2211 i \u2208 s, r i) ^ 2 \u2264 (\u2211 i \u2208 s, f i) * \u2211 i \u2208 s, g i",
+      "new_statement": "[CommSemiring R] [LinearOrder R] [IsStrictOrderedRing R] [ExistsAddOfLE R] (s : Finset \u03b9) {r f g : \u03b9 \u2192 R} (hf : \u2200 i \u2208 s, 0 \u2264 f i) (hg : \u2200 i \u2208 s, 0 \u2264 g i) (ht : \u2200 i \u2208 s, r i ^ 2 \u2264 f i * g i) : (\u2211 i \u2208 s, r i) ^ 2 \u2264 (\u2211 i \u2208 s, f i) * \u2211 i \u2208 s, g i"
+    },
+    {
+      "old": "Mathlib.Algebra.Order.Ring.Unbundled.Basic.two_mul_le_add_of_sq_eq_mul",
+      "new": "Mathlib.Algebra.Order.Ring.Unbundled.Basic.two_mul_le_add_of_sq_le_mul",
+      "since": "2026-04-20",
+      "old_statement": "[ExistsAddOfLE R] [MulPosStrictMono R] [PosMulStrictMono R] [AddLeftReflectLE R] [AddLeftMono R] {a b r : R} (ha : 0 \u2264 a) (hb : 0 \u2264 b) (ht : r ^ 2 = a * b) : 2 * r \u2264 a + b",
+      "new_statement": "[ExistsAddOfLE R] [MulPosStrictMono R] [PosMulStrictMono R] [AddLeftReflectLE R] [AddLeftMono R] {a b r : R} (ha : 0 \u2264 a) (hb : 0 \u2264 b) (ht : r ^ 2 \u2264 a * b) : 2 * r \u2264 a + b"
+    },
+    {
+      "old": "Mathlib.Algebra.Polynomial.Derivative.degree_derivative_eq",
+      "new": "Mathlib.Algebra.Polynomial.Derivative.degree_derivative",
+      "since": "2026-06-03",
+      "old_statement": "(p : R[X]) (hp : 0 < natDegree p) : degree (derivative p) = (natDegree p - 1 : \u2115)",
+      "new_statement": "(hp : p.natDegree \u2260 0) : degree (derivative p) = \u2191(natDegree p - 1)"
+    },
+    {
+      "old": "Mathlib.Algebra.SkewMonoidAlgebra.Basic.map_sum",
+      "new": "Mathlib.LinearAlgebra.QuadraticForm.Basis.map_finsuppSum",
+      "since": "2026-07-04",
+      "old_statement": "{N P : Type*} [AddCommMonoid N] [AddCommMonoid P] {H : Type*} [FunLike H N P] [AddMonoidHomClass H N P] (h : H) (f : SkewMonoidAlgebra k G) (g : G \u2192 k \u2192 N) : h (sum f g) = sum f fun a b \u21a6 h (g a b)",
+      "new_statement": "(Q : QuadraticMap R M N) (f : \u03b9 \u2192\u2080 R) (g : \u03b9 \u2192 R \u2192 M) : Q (f.sum g) = f.sum (fun i r \u21a6 Q (g i r)) + \u2211 p \u2208 f.support.sym2 with \u00ac p.IsDiag, polarSym2 Q (p.map fun i \u21a6 g i (f i))"
+    },
+    {
+      "old": "Mathlib.AlgebraicTopology.Quasicategory.InnerFibration.Quasicategory",
+      "new": "Mathlib.AlgebraicTopology.Quasicategory.InnerFibration.quasicategory_iff_of_isTerminal",
+      "since": "2026-06-08",
+      "old_statement": ".from_innerFibrations (S : SSet) [Quasicategory S] {X : SSet} (t : Limits.IsTerminal X) : innerFibrations (t.from S)",
+      "new_statement": "{X Y : SSet} (p : X \u27f6 Y) (hY : IsTerminal Y) : Quasicategory X \u2194 InnerFibration p"
+    },
+    {
+      "old": "Mathlib.AlgebraicTopology.Quasicategory.InnerFibration.quasicategory_of_from_innerFibrations",
+      "new": "Mathlib.AlgebraicTopology.Quasicategory.InnerFibration.quasicategory_iff_of_isTerminal",
+      "since": "2026-06-08",
+      "old_statement": "(S : SSet) {X : SSet} (t : Limits.IsTerminal X) (h : innerFibrations (t.from S)) : Quasicategory S",
+      "new_statement": "{X Y : SSet} (p : X \u27f6 Y) (hY : IsTerminal Y) : Quasicategory X \u2194 InnerFibration p"
+    },
+    {
+      "old": "Mathlib.Analysis.Convex.StdSimplex.image_linearMap",
+      "new": "Mathlib.Analysis.Convex.StdSimplex.map",
+      "since": "2026-08-29",
+      "old_statement": "(f : X \u2192 Y) : Set.image (FunOnFinite.linearMap S S f) (stdSimplex S X) \u2286 stdSimplex S Y",
+      "new_statement": "(f : X \u2192 Y) (s : stdSimplex S X) : stdSimplex S Y"
+    },
+    {
+      "old": "Mathlib.Analysis.InnerProductSpace.PiL2.EuclideanSpace",
+      "new": "Mathlib.Analysis.Normed.Lp.PiLp.dist_single_same",
+      "since": "2026-03-15",
+      "old_statement": ".dist_single_same (i : \u03b9) (a b : \ud835\udd5c) : dist (EuclideanSpace.single i (a : \ud835\udd5c)) (EuclideanSpace.single i (b : \ud835\udd5c)) = dist a b",
+      "new_statement": "(i : \u03b9) (b\u2081 b\u2082 : \u03b2 i) : dist (single p i b\u2081) (single p i b\u2082) = dist b\u2081 b\u2082"
+    },
+    {
+      "old": "Mathlib.Analysis.InnerProductSpace.PiL2.EuclideanSpace",
+      "new": "Mathlib.Analysis.Normed.Lp.PiLp.edist_single_same",
+      "since": "2026-03-15",
+      "old_statement": ".edist_single_same (i : \u03b9) (a b : \ud835\udd5c) : edist (EuclideanSpace.single i (a : \ud835\udd5c)) (EuclideanSpace.single i (b : \ud835\udd5c)) = edist a b",
+      "new_statement": "(i : \u03b9) (b\u2081 b\u2082 : \u03b2 i) : edist (single p i b\u2081) (single p i b\u2082) = edist b\u2081 b\u2082"
+    },
+    {
+      "old": "Mathlib.Analysis.InnerProductSpace.PiL2.EuclideanSpace",
+      "new": "Mathlib.Analysis.Normed.Lp.PiLp.nndist_single_same",
+      "since": "2026-03-15",
+      "old_statement": ".nndist_single_same (i : \u03b9) (a b : \ud835\udd5c) : nndist (EuclideanSpace.single i (a : \ud835\udd5c)) (EuclideanSpace.single i (b : \ud835\udd5c)) = nndist a b",
+      "new_statement": "(i : \u03b9) (b\u2081 b\u2082 : \u03b2 i) : nndist (single p i b\u2081) (single p i b\u2082) = nndist b\u2081 b\u2082"
+    },
+    {
+      "old": "Mathlib.Analysis.InnerProductSpace.PiL2.EuclideanSpace",
+      "new": "Mathlib.Analysis.Normed.Lp.PiLp.nnnorm_single",
+      "since": "2026-03-15",
+      "old_statement": ".nnnorm_single (i : \u03b9) (a : \ud835\udd5c) : \u2016EuclideanSpace.single i (a : \ud835\udd5c)\u2016\u208a = \u2016a\u2016\u208a",
+      "new_statement": "(i : \u03b9) (b : \u03b2 i) : \u2016single p i b\u2016\u208a = \u2016b\u2016\u208a"
+    },
+    {
+      "old": "Mathlib.Analysis.InnerProductSpace.PiL2.EuclideanSpace",
+      "new": "Mathlib.Analysis.Normed.Lp.PiLp.norm_single",
+      "since": "2026-03-15",
+      "old_statement": ".norm_single (i : \u03b9) (a : \ud835\udd5c) : \u2016EuclideanSpace.single i (a : \ud835\udd5c)\u2016 = \u2016a\u2016",
+      "new_statement": "(i : \u03b9) (b : \u03b2 i) : \u2016single p i b\u2016 = \u2016b\u2016"
+    },
+    {
+      "old": "Mathlib.Analysis.InnerProductSpace.PiL2.EuclideanSpace",
+      "new": "Mathlib.Analysis.Normed.Lp.PiLp.ofLp_single",
+      "since": "2026-03-15",
+      "old_statement": ".ofLp_single (i : \u03b9) (a : \ud835\udd5c) : ofLp (single i a) = Pi.single i a",
+      "new_statement": "(i : \u03b9) (a : \u03b2 i) : ofLp (single p i a) = Pi.single i a"
+    },
+    {
+      "old": "Mathlib.Analysis.InnerProductSpace.PiL2.EuclideanSpace",
+      "new": "Mathlib.Analysis.Normed.Lp.PiLp.single_apply",
+      "since": "2026-03-15",
+      "old_statement": ".single_apply (i : \u03b9) (a : \ud835\udd5c) (j : \u03b9) : (EuclideanSpace.single i a) j = ite (j = i) a 0",
+      "new_statement": "[Zero \ud835\udd5c] (i : \u03b9) (a : \ud835\udd5c) (j : \u03b9) : (single p i a : PiLp p (fun _ \u21a6 \ud835\udd5c)) j = ite (j = i) a 0"
+    },
+    {
+      "old": "Mathlib.Analysis.InnerProductSpace.PiL2.EuclideanSpace",
+      "new": "Mathlib.Analysis.Normed.Lp.PiLp.single_eq_zero_iff",
+      "since": "2026-03-15",
+      "old_statement": ".single_eq_zero_iff {i : \u03b9} {a : \ud835\udd5c} : EuclideanSpace.single i a = 0 \u2194 a = 0",
+      "new_statement": "(p : \u211d\u22650\u221e) (i : \u03b9) {a : \u03b2 i} : single p i a = 0 \u2194 a = 0"
+    },
+    {
+      "old": "Mathlib.Analysis.InnerProductSpace.PiL2.EuclideanSpace",
+      "new": "Mathlib.Analysis.Normed.Lp.PiLp.toLp_single",
+      "since": "2026-03-15",
+      "old_statement": ".toLp_single (i : \u03b9) (a : \ud835\udd5c) : toLp _ (Pi.single i a) = single i a",
+      "new_statement": "(i : \u03b9) (a : \u03b2 i) : toLp p (Pi.single i a) = single p i a"
+    },
+    {
+      "old": "Mathlib.Analysis.InnerProductSpace.Projection.Basic.orthogonalProjectionFn_norm_sq",
+      "new": "Mathlib.Analysis.InnerProductSpace.Projection.Basic.norm_sq_eq_add_norm_sq_starProjection",
+      "since": "2026-06-10",
+      "old_statement": "[K.HasOrthogonalProjection] (v : E) : \u2016v\u2016 * \u2016v\u2016 = \u2016v - K.orthogonalProjectionFn v\u2016 * \u2016v - K.orthogonalProjectionFn v\u2016 + \u2016K.orthogonalProjectionFn v\u2016 * \u2016K.orthogonalProjectionFn v\u2016",
+      "new_statement": "(x : E) (S : Submodule \ud835\udd5c E) [S.HasOrthogonalProjection] : \u2016x\u2016 ^ 2 = \u2016S.starProjection x\u2016 ^ 2 + \u2016S\u15ee.starProjection x\u2016 ^ 2"
+    },
+    {
+      "old": "Mathlib.Analysis.Matrix.Hermitian.isHermitian_iff_isSymmetric",
+      "new": "Mathlib.Analysis.Matrix.Hermitian.isSymmetric_toEuclideanLin_iff",
+      "since": "2026-03-30",
+      "old_statement": "[Fintype n] [DecidableEq n] : IsHermitian A \u2194 A.toEuclideanLin.IsSymmetric",
+      "new_statement": "[Fintype n] [DecidableEq n] : A.toEuclideanLin.IsSymmetric \u2194 A.IsHermitian"
+    },
+    {
+      "old": "Mathlib.Analysis.Normed.Affine.ContinuousAffineMap.toConstProdContinuousLinearMap",
+      "new": "Mathlib.Analysis.Normed.Affine.ContinuousAffineMap.decompLinearIsometryEquiv",
+      "since": "2026-03-03",
+      "old_statement": "",
+      "new_statement": ": (V \u2192\u1d2c[\ud835\udd5c] W) \u2243\u2097\u1d62[R] W \u00d7 (V \u2192L[\ud835\udd5c] W)"
+    },
+    {
+      "old": "Mathlib.Analysis.Normed.Affine.ContinuousAffineMap.toConstProdContinuousLinearMap_fst",
+      "new": "Mathlib.Analysis.Normed.Affine.ContinuousAffineMap.fst_decompLinearIsometryEquiv",
+      "since": "2026-03-03",
+      "old_statement": "(f : V \u2192\u1d2c[\ud835\udd5c] W) : (toConstProdContinuousLinearMap \ud835\udd5c V W f).fst = f 0",
+      "new_statement": "(f : V \u2192\u1d2c[\ud835\udd5c] W) : (decompLinearIsometryEquiv \ud835\udd5c R V W f).1 = f 0"
+    },
+    {
+      "old": "Mathlib.Analysis.Normed.Affine.ContinuousAffineMap.toConstProdContinuousLinearMap_snd",
+      "new": "Mathlib.Analysis.Normed.Affine.ContinuousAffineMap.snd_decompLinearIsometryEquiv",
+      "since": "2026-03-03",
+      "old_statement": "(f : V \u2192\u1d2c[\ud835\udd5c] W) : (toConstProdContinuousLinearMap \ud835\udd5c V W f).snd = f.contLinear",
+      "new_statement": "(f : V \u2192\u1d2c[\ud835\udd5c] W) : (decompLinearIsometryEquiv \ud835\udd5c R V W f).2 = f.contLinear"
+    },
+    {
+      "old": "Mathlib.Analysis.Normed.Lp.PiLp.dist_toLp_single_same",
+      "new": "Mathlib.Analysis.Normed.Lp.PiLp.dist_single_same",
+      "since": "2026-03-15",
+      "old_statement": "(i : \u03b9) (b\u2081 b\u2082 : \u03b2 i) : dist (toLp p (Pi.single i b\u2081)) (toLp p (Pi.single i b\u2082)) = dist b\u2081 b\u2082",
+      "new_statement": "(i : \u03b9) (b\u2081 b\u2082 : \u03b2 i) : dist (single p i b\u2081) (single p i b\u2082) = dist b\u2081 b\u2082"
+    },
+    {
+      "old": "Mathlib.Analysis.Normed.Lp.PiLp.edist_toLp_single_same",
+      "new": "Mathlib.Analysis.Normed.Lp.PiLp.edist_single_same",
+      "since": "2026-03-15",
+      "old_statement": "(i : \u03b9) (b\u2081 b\u2082 : \u03b2 i) : edist (toLp p (Pi.single i b\u2081)) (toLp p (Pi.single i b\u2082)) = edist b\u2081 b\u2082",
+      "new_statement": "(i : \u03b9) (b\u2081 b\u2082 : \u03b2 i) : edist (single p i b\u2081) (single p i b\u2082) = edist b\u2081 b\u2082"
+    },
+    {
+      "old": "Mathlib.Analysis.Normed.Lp.PiLp.nndist_toLp_single_same",
+      "new": "Mathlib.Analysis.Normed.Lp.PiLp.nndist_single_same",
+      "since": "2026-03-15",
+      "old_statement": "(i : \u03b9) (b\u2081 b\u2082 : \u03b2 i) : nndist (toLp p (Pi.single i b\u2081)) (toLp p (Pi.single i b\u2082)) = nndist b\u2081 b\u2082",
+      "new_statement": "(i : \u03b9) (b\u2081 b\u2082 : \u03b2 i) : nndist (single p i b\u2081) (single p i b\u2082) = nndist b\u2081 b\u2082"
+    },
+    {
+      "old": "Mathlib.Analysis.Normed.Lp.PiLp.nnnorm_toLp_single",
+      "new": "Mathlib.Analysis.Normed.Lp.PiLp.nnnorm_single",
+      "since": "2026-03-15",
+      "old_statement": "(i : \u03b9) (b : \u03b2 i) : \u2016toLp p (Pi.single i b)\u2016\u208a = \u2016b\u2016\u208a",
+      "new_statement": "(i : \u03b9) (b : \u03b2 i) : \u2016single p i b\u2016\u208a = \u2016b\u2016\u208a"
+    },
+    {
+      "old": "Mathlib.Analysis.Normed.Module.Complemented.linearProjOfClosedCompl",
+      "new": "Mathlib.Topology.Algebra.Module.Complement.projectionOntoL",
+      "since": "2026-06-07",
+      "old_statement": "(h : IsCompl p q) (hp : IsClosed (p : Set E)) (hq : IsClosed (q : Set E)) : E \u2192L[\ud835\udd5c] p",
+      "new_statement": "(h : IsTopCompl p q) : M \u2192L[R] p"
+    },
+    {
+      "old": "Mathlib.Analysis.Normed.Module.Complemented.prodEquivOfClosedCompl",
+      "new": "Mathlib.Topology.Algebra.Module.Complement.prodEquivOfIsTopCompl",
+      "since": "2026-06-07",
+      "old_statement": "(h : IsCompl p q) (hp : IsClosed (p : Set E)) (hq : IsClosed (q : Set E)) : (p \u00d7 q) \u2243L[\ud835\udd5c] E",
+      "new_statement": "(h : IsTopCompl p q) : (p \u00d7 q) \u2243L[R] M"
+    },
+    {
+      "old": "Mathlib.Analysis.Normed.Module.Dual.NormedSpace",
+      "new": "Mathlib.Analysis.LocallyConvex.SeparatingDual.eq_iff_forall_dual_eq",
+      "since": "2026-03-18",
+      "old_statement": ".eq_iff_forall_dual_eq {x y : E} : x = y \u2194 \u2200 g : StrongDual \ud835\udd5c E, g x = g y",
+      "new_statement": "{x y : V} : x = y \u2194 \u2200 g : StrongDual R V, g x = g y"
+    },
+    {
+      "old": "Mathlib.Combinatorics.SimpleGraph.Clique.isClique_iff_induce_eq",
+      "new": "Mathlib.Combinatorics.SimpleGraph.Clique.induce_eq_top",
+      "since": "2026-04-23",
+      "old_statement": ": G.IsClique s \u2194 G.induce s = \u22a4",
+      "new_statement": ": G.induce s = \u22a4 \u2194 G.IsClique s"
+    },
+    {
+      "old": "Mathlib.Combinatorics.SimpleGraph.Walk.Basic.nil_iff_eq_nil",
+      "new": "Mathlib.Combinatorics.SimpleGraph.Walk.Basic.eq_nil_iff_nil",
+      "since": "2026-05-11",
+      "old_statement": ": \u2200 {p : G.Walk v v}, p.Nil \u2194 p = nil",
+      "new_statement": "{p : G.Walk v v} : p = nil \u2194 p.Nil"
+    },
+    {
+      "old": "Mathlib.Combinatorics.SimpleGraph.Walk.Basic.support_eq_cons",
+      "new": "Mathlib.Combinatorics.SimpleGraph.Walk.Basic.cons_tail_support",
+      "since": "2026-03-16",
+      "old_statement": "{u v : V} (p : G.Walk u v) : p.support = u :: p.support.tail",
+      "new_statement": "(p : G.Walk u v) : u :: p.support.tail = p.support"
+    },
+    {
+      "old": "Mathlib.Combinatorics.SimpleGraph.Walk.Decomp.rotate_eq_nil",
+      "new": "Mathlib.Combinatorics.SimpleGraph.Walk.Decomp.nil_rotate",
+      "since": "2026-05-11",
+      "old_statement": "{c : G.Walk v v} (h) : c.rotate u h = nil \u2194 c = nil",
+      "new_statement": "{c : G.Walk v v} (h) : (c.rotate u h).Nil \u2194 c.Nil"
+    },
+    {
+      "old": "Mathlib.Combinatorics.SimpleGraph.Walk.Maps.map_eq_nil_iff",
+      "new": "Mathlib.Combinatorics.SimpleGraph.Walk.Maps.nil_map_iff",
+      "since": "2026-05-12",
+      "old_statement": "{p : G.Walk u u} : p.map f = nil \u2194 p = nil",
+      "new_statement": ": (p.map f).Nil \u2194 p.Nil"
+    },
+    {
+      "old": "Mathlib.Combinatorics.SimpleGraph.Walk.Operations.support_eq_concat",
+      "new": "Mathlib.Combinatorics.SimpleGraph.Walk.Operations.dropLast_support_concat",
+      "since": "2026-03-16",
+      "old_statement": "(p : G.Walk u v) : p.support = p.support.dropLast.concat v",
+      "new_statement": "(p : G.Walk u v) : p.support.dropLast ++ [v] = p.support"
+    },
+    {
+      "old": "Mathlib.Computability.Encoding.finEncodingBoolBool",
+      "new": "Mathlib.Computability.Encoding.encodingBoolBool",
+      "since": "2026-05-07",
+      "old_statement": "",
+      "new_statement": ": Encoding Bool Bool"
+    },
+    {
+      "old": "Mathlib.Computability.Encoding.finEncodingNatBool",
+      "new": "Mathlib.Computability.Encoding.encodingNatBool",
+      "since": "2026-05-07",
+      "old_statement": "",
+      "new_statement": ": Encoding \u2115 Bool"
+    },
+    {
+      "old": "Mathlib.Computability.Encoding.finEncodingNat\u0393",
+      "new": "Mathlib.Computability.Encoding.encodingNat\u0393'",
+      "since": "2026-05-07",
+      "old_statement": "'",
+      "new_statement": ": Encoding \u2115 \u0393'"
+    },
+    {
+      "old": "Mathlib.Computability.Encoding.unaryFinEncodingNat",
+      "new": "Mathlib.Computability.Encoding.unaryEncodingNat",
+      "since": "2026-05-07",
+      "old_statement": "",
+      "new_statement": ": Encoding \u2115 Bool"
+    },
+    {
+      "old": "Mathlib.Data.ENat.SuccOrder.succ_def",
+      "new": "Mathlib.Data.PNat.Order.succ_eq_add_one",
+      "since": "2026-05-25",
+      "old_statement": "(m : \u2115\u221e) : Order.succ m = m + 1",
+      "new_statement": "(n : \u2115+) : Order.succ n = n + 1"
+    },
+    {
+      "old": "Mathlib.Data.Finsupp.Indicator.single_eq_indicator",
+      "new": "Mathlib.Data.Finsupp.Indicator.indicator_singleton",
+      "since": "2026-04-27",
+      "old_statement": "(b : \u03b1) : single i b = indicator {i} (fun _ _ => b)",
+      "new_statement": "(a : \u03b9) (f : \u2200 j \u2208 ({a} : Finset \u03b9), \u03b1) : indicator {a} f = single a (f a (mem_singleton_self a))"
+    },
+    {
+      "old": "Mathlib.Data.Finsupp.Single.single_eq_set_indicator",
+      "new": "Mathlib.Data.Finsupp.Single.set_indicator_singleton",
+      "since": "2026-04-27",
+      "old_statement": ": \u21d1(single a b) = Set.indicator {a} fun _ => b",
+      "new_statement": "(a : \u03b1) (f : \u03b1 \u2192 M) : Set.indicator {a} f = \u21d1(single a (f a))"
+    },
+    {
+      "old": "Mathlib.Data.List.Pairwise.tfae_cons_self",
+      "new": "Mathlib.Data.List.Pairwise.tfae_cons_of_mem",
+      "since": "2026-08-14",
+      "old_statement": ": TFAE (a :: a :: l) \u2194 TFAE (a :: l)",
+      "new_statement": "(h : a \u2208 l) : TFAE (a :: l) \u2194 TFAE l"
+    },
+    {
+      "old": "Mathlib.Data.Nat.Choose.Central.four_pow_le_two_mul_add_one_mul_central_binom",
+      "new": "Mathlib.Data.Nat.Choose.Central.four_pow_le_two_mul_add_one_mul_centralBinom",
+      "since": "2026-09-13",
+      "old_statement": "(n : \u2115) : 4 ^ n \u2264 (2 * n + 1) * (2 * n).choose n",
+      "new_statement": "(n : \u2115) : 4 ^ n \u2264 (2 * n + 1) * centralBinom n"
+    },
+    {
+      "old": "Mathlib.Data.PNat.Basic.le_one_iff",
+      "new": "Mathlib.Algebra.Order.IsBotOne.le_one_iff_eq_one",
+      "since": "2026-05-07",
+      "old_statement": "{n : \u2115+} : n \u2264 1 \u2194 n = 1",
+      "new_statement": ": a \u2264 1 \u2194 a = 1"
+    },
+    {
+      "old": "Mathlib.Data.PNat.Basic.one_lt_of_lt",
+      "new": "Mathlib.Algebra.Order.IsBotOne.one_lt_of_gt",
+      "since": "2026-05-07",
+      "old_statement": "{a b : \u2115+} (hab : a < b) : 1 < b",
+      "new_statement": "(h : a < b) : 1 < b"
+    },
+    {
+      "old": "Mathlib.Data.Set.Basic.not_top_subset",
+      "new": "Mathlib.Data.Set.Basic.not_univ_subset",
+      "since": "2026-03-12",
+      "old_statement": ": \u00ac\u22a4 \u2286 s \u2194 \u2203 a, a \u2209 s",
+      "new_statement": ": \u00acuniv \u2286 s \u2194 \u2203 a, a \u2209 s"
+    },
+    {
+      "old": "Mathlib.Data.Sym.Sym2.fromRelOrderEmbedding",
+      "new": "Mathlib.Data.Sym.Sym2.fromRelOrderIso",
+      "since": "2026-03-11",
+      "old_statement": ": { r : \u03b1 \u2192 \u03b1 \u2192 Prop // Std.Symm r } \u21aao Set (Sym2 \u03b1)",
+      "new_statement": ": { r : \u03b1 \u2192 \u03b1 \u2192 Prop // Std.Symm r } \u2243o Set (Sym2 \u03b1)"
+    },
+    {
+      "old": "Mathlib.Geometry.Euclidean.Projection.orthogonalProjection_affineSpan_singleton",
+      "new": "Mathlib.Geometry.Euclidean.Projection.orthogonalProjection_singleton",
+      "since": "2026-09-01",
+      "old_statement": "(p\u2081 p\u2082 : P) : orthogonalProjection (affineSpan \ud835\udd5c {p\u2081}) p\u2082 = p\u2081",
+      "new_statement": "(p\u2081 p\u2082 : P) : orthogonalProjection ({p\u2081} : AffineSubspace \ud835\udd5c P) p\u2082 = p\u2081"
+    },
+    {
+      "old": "Mathlib.Geometry.Manifold.Instances.Sphere.mfderiv_coe_sphere_injective",
+      "new": "Mathlib.Geometry.Manifold.Instances.Sphere.injective_mvfderiv_subtypeVal_sphere",
+      "since": "2026-08-02",
+      "old_statement": "{n : \u2115} [Fact (finrank \u211d E = n + 1)] (v : sphere (0 : E) 1) : Injective (mfderiv (\ud835\udce1 n) \ud835\udcd8(\u211d, E) ((\u2191) : sphere (0 : E) 1 \u2192 E) v)",
+      "new_statement": "{n : \u2115} [Fact (finrank \u211d E = n + 1)] (v : sphere (0 : E) 1) : Injective (mvfderiv (\ud835\udce1 n) ((\u2191) : sphere (0 : E) 1 \u2192 E) v)"
+    },
+    {
+      "old": "Mathlib.Geometry.Manifold.Instances.Sphere.range_mfderiv_coe_sphere",
+      "new": "Mathlib.Geometry.Manifold.Instances.Sphere.range_mvfderiv_subtypeVal",
+      "since": "2026-08-02",
+      "old_statement": "{n : \u2115} [Fact (finrank \u211d E = n + 1)] (v : sphere (0 : E) 1) : (mfderiv (\ud835\udce1 n) \ud835\udcd8(\u211d, E) ((\u2191) : sphere (0 : E) 1 \u2192 E) v : TangentSpace (\ud835\udce1 n) v \u2192L[\u211d] E).range = (\u211d \u2219 (v : E))\u15ee",
+      "new_statement": "{n : \u2115} [Fact (finrank \u211d E = n + 1)] (v : sphere (0 : E) 1) : (mvfderiv (\ud835\udce1 n) ((\u2191) : sphere (0 : E) 1 \u2192 E) v).range = (\u211d \u2219 (v : E))\u15ee"
+    },
+    {
+      "old": "Mathlib.GroupTheory.Coxeter.Length.length_mul_ge_length_sub_length",
+      "new": "Mathlib.GroupTheory.Coxeter.Length.length_le_length_mul_add_left",
+      "since": "2026-03-25",
+      "old_statement": "' (w\u2081 w\u2082 : W) : \u2113 w\u2082 - \u2113 w\u2081 \u2264 \u2113 (w\u2081 * w\u2082)",
+      "new_statement": "(w\u2081 w\u2082 : W) : \u2113 w\u2082 \u2264 \u2113 (w\u2081 * w\u2082) + \u2113 w\u2081"
+    },
+    {
+      "old": "Mathlib.GroupTheory.Coxeter.Length.length_mul_ge_length_sub_length",
+      "new": "Mathlib.GroupTheory.Coxeter.Length.length_le_length_mul_add_right",
+      "since": "2026-03-25",
+      "old_statement": "(w\u2081 w\u2082 : W) : \u2113 w\u2081 - \u2113 w\u2082 \u2264 \u2113 (w\u2081 * w\u2082)",
+      "new_statement": "(w\u2081 w\u2082 : W) : \u2113 w\u2081 \u2264 \u2113 (w\u2081 * w\u2082) + \u2113 w\u2082"
+    },
+    {
+      "old": "Mathlib.GroupTheory.PGroup.commutative_of_card_eq_prime_sq",
+      "new": "Mathlib.GroupTheory.PGroup.isMulCommutative_of_card_eq_prime_sq",
+      "since": "2026-05-26",
+      "old_statement": "(hG : Nat.card G = p ^ 2) : \u2200 a b : G, a * b = b * a",
+      "new_statement": "(hG : Nat.card G = p ^ 2) : IsMulCommutative G"
+    },
+    {
+      "old": "Mathlib.LinearAlgebra.AffineSpace.AffineSubspace.Basic.coe_affineSpan_singleton",
+      "new": "Mathlib.LinearAlgebra.AffineSpace.AffineSubspace.Basic.affineSpan_singleton",
+      "since": "2026-09-01",
+      "old_statement": "(p : P) : (affineSpan k ({p} : Set P) : Set P) = {p}",
+      "new_statement": "(x : P) : affineSpan k ({x} : Set P) = {x}"
+    },
+    {
+      "old": "Mathlib.LinearAlgebra.AffineSpace.Combination.affineCombinationSingleWeights",
+      "new": "Mathlib.LinearAlgebra.Pi.single",
+      "since": "2026-04-16",
+      "old_statement": "[DecidableEq \u03b9] (i : \u03b9) : \u03b9 \u2192 k",
+      "new_statement": "[DecidableEq \u03b9] (i : \u03b9) : \u03c6 i \u2192\u2097[R] (i : \u03b9) \u2192 \u03c6 i"
+    },
+    {
+      "old": "Mathlib.LinearAlgebra.AffineSpace.Combination.affineCombination_affineCombinationSingleWeights",
+      "new": "Mathlib.LinearAlgebra.AffineSpace.Combination.affineCombination_piSingle",
+      "since": "2026-04-16",
+      "old_statement": "[DecidableEq \u03b9] (p : \u03b9 \u2192 P) {i : \u03b9} (hi : i \u2208 s) : s.affineCombination k p (affineCombinationSingleWeights k i) = p i",
+      "new_statement": "[DecidableEq \u03b9] (p : \u03b9 \u2192 P) {i : \u03b9} (hi : i \u2208 s) : s.affineCombination k p (Pi.single i 1) = p i"
+    },
+    {
+      "old": "Mathlib.LinearAlgebra.AffineSpace.FiniteDimensional.finite_of_fin_dim_affineIndependent",
+      "new": "Mathlib.LinearAlgebra.AffineSpace.FiniteDimensional.finiteDimensional_iff_finite",
+      "since": "2026-09-01",
+      "old_statement": "{p : \u03b9 \u2192 P} (hi : AffineIndependent k p) [FiniteDimensional k (vectorSpan k (Set.range p))] : Finite \u03b9",
+      "new_statement": "{p : \u03b9 \u2192 P} (hi : AffineIndependent k p) : FiniteDimensional k (vectorSpan k (Set.range p)) \u2194 Finite \u03b9"
+    },
+    {
+      "old": "Mathlib.LinearAlgebra.AffineSpace.FiniteDimensional.finite_set_of_fin_dim_affineIndependent",
+      "new": "Mathlib.LinearAlgebra.AffineSpace.FiniteDimensional.finiteDimensional_iff_setFinite",
+      "since": "2026-09-01",
+      "old_statement": "{s : Set \u03b9} {f : s \u2192 P} (hi : AffineIndependent k f) [FiniteDimensional k (vectorSpan k (Set.range f))] : s.Finite",
+      "new_statement": "{s : Set \u03b9} {f : s \u2192 P} (hi : AffineIndependent k f) : FiniteDimensional k (vectorSpan k (Set.range f)) \u2194 s.Finite"
+    },
+    {
+      "old": "Mathlib.LinearAlgebra.Contraction.dualTensorHomEquiv_eq_dualTensorHomEquivOfBasis",
+      "new": "Mathlib.LinearAlgebra.Contraction.dualTensorHomEquivOfBasis_eq_dualTensorHomEquiv",
+      "since": "2026-08-31",
+      "old_statement": "(b : Basis \u03b9 R M) [DecidableEq \u03b9] [Fintype \u03b9] : have",
+      "new_statement": "[DecidableEq \u03b9] [Fintype \u03b9] (b : Basis \u03b9 R M) : dualTensorHomEquivOfBasis b = dualTensorHomEquiv R M N"
+    },
+    {
+      "old": "Mathlib.LinearAlgebra.Finsupp.Pi.LinearEquiv",
+      "new": "Mathlib.Algebra.MonoidAlgebra.Module.uniqueLinearEquiv_apply",
+      "since": "2026-05-06",
+      "old_statement": ".finsuppUnique_apply (\u03b1 : Type*) [Unique \u03b1] (f : \u03b1 \u2192\u2080 M) : LinearEquiv.finsuppUnique R M \u03b1 f = f default",
+      "new_statement": "[One M] [Subsingleton M] (x : S[M]) : uniqueLinearEquiv R M x = x.coeff 1"
+    },
+    {
+      "old": "Mathlib.LinearAlgebra.Finsupp.Pi.LinearEquiv",
+      "new": "Mathlib.Algebra.MonoidAlgebra.Module.uniqueLinearEquiv_symm_apply",
+      "since": "2026-05-06",
+      "old_statement": ".finsuppUnique_symm_apply (\u03b1 : Type*) [Unique \u03b1] (m : M) : (LinearEquiv.finsuppUnique R M \u03b1).symm m = Finsupp.single default m",
+      "new_statement": "[One M] [Subsingleton M] (s : S) : (uniqueLinearEquiv R M).symm s = .single 1 s"
+    },
+    {
+      "old": "Mathlib.LinearAlgebra.Matrix.Reindex.reindexAlgEquiv_apply",
+      "new": "Mathlib.LinearAlgebra.Matrix.Reindex.coe_reindexAlgEquiv",
+      "since": "2026-06-06",
+      "old_statement": "(e : m \u2243 n) (M : Matrix m m A) : reindexAlgEquiv R A e M = reindex e e M",
+      "new_statement": "(e : m \u2243 n) : \u21d1(reindexAlgEquiv R A e) = reindex e e"
+    },
+    {
+      "old": "Mathlib.LinearAlgebra.Matrix.Reindex.reindexLinearEquiv_apply",
+      "new": "Mathlib.LinearAlgebra.Matrix.Reindex.coe_reindexLinearEquiv",
+      "since": "2026-06-06",
+      "old_statement": "(e\u2098 : m \u2243 m') (e\u2099 : n \u2243 n') (M : Matrix m n A) : reindexLinearEquiv R A e\u2098 e\u2099 M = reindex e\u2098 e\u2099 M",
+      "new_statement": "(e\u2098 : m \u2243 m') (e\u2099 : n \u2243 n') : \u21d1(reindexLinearEquiv R A e\u2098 e\u2099) = reindex e\u2098 e\u2099"
+    },
+    {
+      "old": "Mathlib.LinearAlgebra.Matrix.SpecialLinearGroup.transvection_mulVec_single_other",
+      "new": "Mathlib.LinearAlgebra.Matrix.SpecialLinearGroup.transvection_smul_single_snd",
+      "since": "2026-06-22",
+      "old_statement": "{i j : \u03b9} (hij : i \u2260 j) (b : F) : (transvection hij b).1 *\u1d65 (Pi.single j (1 : F)) = Pi.single j 1 + b \u2022 Pi.single i 1",
+      "new_statement": "{i j : \u03b9} (hij : i \u2260 j) (b : F) : (transvection hij b) \u2022 (Pi.single j 1 : \u03b9 \u2192 F) = Pi.single j 1 + b \u2022 Pi.single i 1"
+    },
+    {
+      "old": "Mathlib.LinearAlgebra.Matrix.SpecialLinearGroup.transvection_mulVec_single_self",
+      "new": "Mathlib.LinearAlgebra.Matrix.SpecialLinearGroup.transvection_smul_single_fst",
+      "since": "2026-06-22",
+      "old_statement": "{i j : \u03b9} (hij : i \u2260 j) (b : F) : (transvection hij b).1 *\u1d65 (Pi.single i (1 : F)) = Pi.single i 1",
+      "new_statement": "{i j : \u03b9} (hij : i \u2260 j) (b : F) : (transvection hij b) \u2022 (Pi.single i 1 : \u03b9 \u2192 F) = Pi.single i 1"
+    },
+    {
+      "old": "Mathlib.Logic.Equiv.Fin.Rotate.finRotate_succ_apply",
+      "new": "Mathlib.Logic.Equiv.Fin.Rotate.finRotate_apply",
+      "since": "2026-03-29",
+      "old_statement": "(i : Fin (n + 1)) : finRotate (n + 1) i = i + 1",
+      "new_statement": "(i : Fin n) : haveI"
+    },
+    {
+      "old": "Mathlib.Logic.Equiv.Fin.Rotate.finRotate_succ_symm_apply",
+      "new": "Mathlib.Logic.Equiv.Fin.Rotate.finRotate_symm_apply",
+      "since": "2026-03-29",
+      "old_statement": "[NeZero n] (i : Fin n) : (finRotate _).symm i = i - 1",
+      "new_statement": "(i : Fin n) : haveI"
+    },
+    {
+      "old": "Mathlib.MeasureTheory.Function.ConditionalExpectation.Real.ae_bdd_condExp_of_ae_bdd",
+      "new": "Mathlib.MeasureTheory.Function.ConditionalExpectation.Real.ae_bdd_abs_condExp_of_ae_bdd_abs",
+      "since": "2026-05-05",
+      "old_statement": "{R : \u211d\u22650} {f : \u03b1 \u2192 \u211d} (hbdd : \u2200\u1d50 x \u2202\u03bc, |f x| \u2264 R) : \u2200\u1d50 x \u2202\u03bc, |(\u03bc[f | m]) x| \u2264 R",
+      "new_statement": "{R : E} {f : \u03b1 \u2192 E} (hbdd : \u2200\u1d50 x \u2202\u03bc, |f x| \u2264 R) : \u2200\u1d50 x \u2202\u03bc, |\u03bc[f | m] x| \u2264 R"
+    },
+    {
+      "old": "Mathlib.MeasureTheory.Function.ConditionalExpectation.Real.eLpNorm_one_condExp_le_eLpNorm",
+      "new": "Mathlib.MeasureTheory.Function.ConditionalExpectation.Real.eLpNorm_condExp_le_eLpNorm",
+      "since": "2026-07-01",
+      "old_statement": "(f : \u03b1 \u2192 E) : eLpNorm (\u03bc[f | m]) 1 \u03bc \u2264 eLpNorm f 1 \u03bc",
+      "new_statement": "(f : \u03b1 \u2192 E) {p : \u211d\u22650\u221e} (hp : 1 \u2264 p) : eLpNorm (\u03bc[f | m]) p \u03bc \u2264 eLpNorm f p \u03bc"
+    },
+    {
+      "old": "Mathlib.MeasureTheory.Measure.Typeclasses.SFinite.forall_measure_inter_spanningSets_eq_zero",
+      "new": "Mathlib.MeasureTheory.Measure.Restrict.forall_measure_inter_isCountablySpanning_eq_zero",
+      "since": "2026-03-13",
+      "old_statement": "[MeasurableSpace \u03b1] {\u03bc : Measure \u03b1} [SigmaFinite \u03bc] (s : Set \u03b1) : (\u2200 n, \u03bc (s \u2229 spanningSets \u03bc n) = 0) \u2194 \u03bc s = 0",
+      "new_statement": "{C : Set (Set \u03b1)} (hC : IsCountablySpanning C) : (\u2200 t \u2208 C, \u03bc (s \u2229 t) = 0) \u2194 \u03bc s = 0"
+    },
+    {
+      "old": "Mathlib.NumberTheory.Modular.c_eq_zero",
+      "new": "Mathlib.NumberTheory.Modular.eq_one_or_neg_one_of_mem_fdo_mem_fdo",
+      "since": "2026-03-19",
+      "old_statement": "(hz : z \u2208 \ud835\udc9f\u1d52) (hg : g \u2022 z \u2208 \ud835\udc9f\u1d52) : g 1 0 = 0",
+      "new_statement": "(hz : z \u2208 \ud835\udc9f\u1d52) (hg : g \u2022 z \u2208 \ud835\udc9f\u1d52) : g = 1 \u2228 g = -1"
+    },
+    {
+      "old": "Mathlib.NumberTheory.ModularForms.LevelOne.DimensionFormula.divDiscriminant",
+      "new": "Mathlib.NumberTheory.ModularForms.LevelOne.DimensionFormula.discriminantEquiv",
+      "since": "2026-05-18",
+      "old_statement": "(f : CuspForm \ud835\udcae\u2112 k) : ModularForm \ud835\udcae\u2112 (k - 12)",
+      "new_statement": ": CuspForm \ud835\udcae\u2112 k \u2243\u2097[\u2102] ModularForm \ud835\udcae\u2112 (k - 12)"
+    },
+    {
+      "old": "Mathlib.NumberTheory.ModularForms.LevelOne.DimensionFormula.divDiscriminant_apply",
+      "new": "Mathlib.NumberTheory.ModularForms.LevelOne.DimensionFormula.discriminantEquiv_apply",
+      "since": "2026-05-18",
+      "old_statement": "(f : CuspForm \ud835\udcae\u2112 k) (z : \u210d) : (divDiscriminant f) z = f z / \u0394 z",
+      "new_statement": "(f : CuspForm \ud835\udcae\u2112 k) (z : \u210d) : (discriminantEquiv f) z = f z / \u0394 z"
+    },
+    {
+      "old": "Mathlib.NumberTheory.NumberField.House.house_pow_le",
+      "new": "Mathlib.NumberTheory.NumberField.House.house_pow",
+      "since": "2026-08-28",
+      "old_statement": "(\u03b1 : K) (i : \u2115) : house (\u03b1 ^ i) \u2264 house \u03b1 ^ i",
+      "new_statement": "(\u03b1 : K) (i : \u2115) : house (\u03b1 ^ i) = house \u03b1 ^ i"
+    },
+    {
+      "old": "Mathlib.Order.BooleanAlgebra.Basic.eq_of_sdiff_eq_sdiff",
+      "new": "Mathlib.Order.BooleanAlgebra.Basic.sdiff_right_inj",
+      "since": "2026-04-16",
+      "old_statement": "(hxz : x \u2264 z) (hyz : y \u2264 z) (h : z \\ x = z \\ y) : x = y",
+      "new_statement": "(hxz : x \u2264 z) (hyz : y \u2264 z) : z \\ x = z \\ y \u2194 x = y"
+    },
+    {
+      "old": "Mathlib.Order.Filter.EventuallyConst.eventuallyConst_preimage",
+      "new": "Mathlib.Order.Filter.EventuallyConst.eventuallyEmptyOrUniv_preimage",
+      "since": "2026-08-25",
+      "old_statement": "{s : Set \u03b2} {f : \u03b1 \u2192 \u03b2} : EventuallyConst (f \u207b\u00b9' s) l \u2194 EventuallyConst s (map f l)",
+      "new_statement": "{s : Set \u03b2} {f : \u03b1 \u2192 \u03b2} : EventuallyEmptyOrUniv (f \u207b\u00b9' s) l \u2194 EventuallyEmptyOrUniv s (map f l)"
+    },
+    {
+      "old": "Mathlib.Order.Filter.EventuallyConst.eventuallyConst_set",
+      "new": "Mathlib.Order.Filter.EventuallyConst.eventuallyEmptyOrUniv_iff",
+      "since": "2026-08-25",
+      "old_statement": "{s : Set \u03b1} : EventuallyConst s l \u2194 (\u2200\u1da0 x in l, x \u2208 s) \u2228 (\u2200\u1da0 x in l, x \u2209 s)",
+      "new_statement": "{s : Set \u03b1} : EventuallyEmptyOrUniv s l \u2194 (\u2200\u1da0 x in l, x \u2208 s) \u2228 (\u2200\u1da0 x in l, x \u2209 s)"
+    },
+    {
+      "old": "Mathlib.Order.Filter.EventuallyConst.eventuallyConst_set",
+      "new": "Mathlib.Order.Filter.EventuallyConst.eventuallyEmptyOrUniv_iff'",
+      "since": "2026-08-25",
+      "old_statement": "' {s : Set \u03b1} : EventuallyConst s l \u2194 (s =\u1da0[l] (\u2205 : Set \u03b1)) \u2228 s =\u1da0[l] univ",
+      "new_statement": "{s : Set \u03b1} : EventuallyEmptyOrUniv s l \u2194 (s =\u1da0[l] (\u2205 : Set \u03b1)) \u2228 s =\u1da0[l] univ"
+    },
+    {
+      "old": "Mathlib.Order.LiminfLimsup.bliminf_sup_le_inf_aux_left",
+      "new": "Mathlib.Order.LiminfLimsup.blimsup_and_le_inf",
+      "since": "2026-09-03",
+      "old_statement": ": (blimsup u f fun x => p x \u2227 q x) \u2264 blimsup u f p",
+      "new_statement": ": (blimsup u f fun x => p x \u2227 q x) \u2264 blimsup u f p \u2293 blimsup u f q"
+    },
+    {
+      "old": "Mathlib.Order.LiminfLimsup.bliminf_sup_le_inf_aux_right",
+      "new": "Mathlib.Order.LiminfLimsup.blimsup_and_le_inf",
+      "since": "2026-09-03",
+      "old_statement": ": (blimsup u f fun x => p x \u2227 q x) \u2264 blimsup u f q",
+      "new_statement": ": (blimsup u f fun x => p x \u2227 q x) \u2264 blimsup u f p \u2293 blimsup u f q"
+    },
+    {
+      "old": "Mathlib.Order.LiminfLimsup.bliminf_sup_le_or_aux_left",
+      "new": "Mathlib.Order.LiminfLimsup.blimsup_sup_le_or",
+      "since": "2026-09-03",
+      "old_statement": ": blimsup u f p \u2264 blimsup u f fun x => p x \u2228 q x",
+      "new_statement": ": blimsup u f p \u2294 blimsup u f q \u2264 blimsup u f fun x => p x \u2228 q x"
+    },
+    {
+      "old": "Mathlib.Order.LiminfLimsup.bliminf_sup_le_or_aux_right",
+      "new": "Mathlib.Order.LiminfLimsup.blimsup_sup_le_or",
+      "since": "2026-09-03",
+      "old_statement": ": blimsup u f q \u2264 blimsup u f fun x => p x \u2228 q x",
+      "new_statement": ": blimsup u f p \u2294 blimsup u f q \u2264 blimsup u f fun x => p x \u2228 q x"
+    },
+    {
+      "old": "Mathlib.Probability.Distributions.Geometric.geometricPMF",
+      "new": "Mathlib.Probability.Distributions.Geometric.geometricMeasure",
+      "since": "2026-03-08",
+      "old_statement": "(hp_pos : 0 < p) (hp_le_one : p \u2264 1) : PMF \u2115",
+      "new_statement": "(p : unitInterval) : Measure \u2115"
+    },
+    {
+      "old": "Mathlib.Probability.Distributions.Geometric.geometricPMFReal",
+      "new": "Mathlib.Probability.Distributions.Geometric.geometricMeasure",
+      "since": "2026-03-08",
+      "old_statement": "(p : \u211d) (n : \u2115) : \u211d",
+      "new_statement": "(p : unitInterval) : Measure \u2115"
+    },
+    {
+      "old": "Mathlib.Probability.Distributions.Geometric.geometricPMFRealSum",
+      "new": "Mathlib.Probability.Distributions.Geometric.hasSum_one_geometricMeasure",
+      "since": "2026-03-08",
+      "old_statement": "(hp_pos : 0 < p) (hp_le_one : p \u2264 1) : HasSum (fun n \u21a6 geometricPMFReal p n) 1",
+      "new_statement": "(hp : p \u2260 0) : HasSum (fun n \u21a6 (1 - p : \u211d) ^ n * p) 1"
+    },
+    {
+      "old": "Mathlib.Probability.Distributions.Geometric.geometricPMFReal_nonneg",
+      "new": "Mathlib.MeasureTheory.Measure.Real.measureReal_nonneg",
+      "since": "2026-03-08",
+      "old_statement": "{n : \u2115} (hp_pos : 0 < p) (hp_le_one : p \u2264 1) : 0 \u2264 geometricPMFReal p n",
+      "new_statement": ": 0 \u2264 \u03bc.real s"
+    },
+    {
+      "old": "Mathlib.Probability.Distributions.Geometric.geometricPMFReal_pos",
+      "new": "Mathlib.Probability.Distributions.Geometric.geometricMeasure_real_singleton_pos",
+      "since": "2026-03-08",
+      "old_statement": "{n : \u2115} (hp_pos : 0 < p) (hp_lt_one : p < 1) : 0 < geometricPMFReal p n",
+      "new_statement": "(h1 : p \u2260 0) (h2 : p \u2260 1) n : 0 < (geometricMeasure p).real {n}"
+    },
+    {
+      "old": "Mathlib.Probability.Distributions.Poisson.Basic.poissonPMF",
+      "new": "Mathlib.Probability.Distributions.Poisson.Basic.poissonMeasure",
+      "since": "2026-03-08",
+      "old_statement": "(r : \u211d\u22650) : PMF \u2115",
+      "new_statement": "(r : \u211d\u22650) : Measure \u2115"
+    },
+    {
+      "old": "Mathlib.Probability.Distributions.Poisson.Basic.poissonPMFReal",
+      "new": "Mathlib.Probability.Distributions.Poisson.Basic.poissonMeasure",
+      "since": "2026-03-08",
+      "old_statement": "(r : \u211d\u22650) (n : \u2115) : \u211d",
+      "new_statement": "(r : \u211d\u22650) : Measure \u2115"
+    },
+    {
+      "old": "Mathlib.Probability.Distributions.Poisson.Basic.poissonPMFReal_nonneg",
+      "new": "Mathlib.MeasureTheory.Measure.Real.measureReal_nonneg",
+      "since": "2026-03-08",
+      "old_statement": "{r : \u211d\u22650} {n : \u2115} : 0 \u2264 poissonPMFReal r n",
+      "new_statement": ": 0 \u2264 \u03bc.real s"
+    },
+    {
+      "old": "Mathlib.Probability.Distributions.Poisson.Basic.poissonPMFReal_ofReal_eq_poissonPMF",
+      "new": "Mathlib.Probability.Distributions.Poisson.Basic.poissonMeasure",
+      "since": "2026-03-08",
+      "old_statement": "(r : \u211d\u22650) (n : \u2115) : ENNReal.ofReal (poissonPMFReal r n) = poissonPMF r n",
+      "new_statement": "(r : \u211d\u22650) : Measure \u2115"
+    },
+    {
+      "old": "Mathlib.Probability.Distributions.Poisson.PoissonLimitThm.binomial_tendsto_poissonPMFReal_atTop",
+      "new": "Mathlib.Probability.Distributions.Poisson.PoissonLimitThm.tendsto_choose_mul_pow_of_tendsto_mul_atTop",
+      "since": "2026-03-08",
+      "old_statement": "{r : \u211d\u22650} {p : \u2115 \u2192 unitInterval} (hr : Tendsto (fun n => n * (p n : \u211d)) atTop (\ud835\udcdd r)) : Tendsto (fun n \u21a6 Bin(n, p n) {k}) atTop (\ud835\udcdd (poissonMeasure r {k}))",
+      "new_statement": "(hr : Tendsto (fun n => n * p n) atTop (\ud835\udcdd r)) : Tendsto (fun n => n.choose k * (p n) ^ k * (1 - p n) ^ (n - k)) atTop (\ud835\udcdd (Real.exp (-r) * (r ^ k) / k.factorial))"
+    },
+    {
+      "old": "Mathlib.RingTheory.DividedPowerAlgebra.Init.mkAlgHom_C",
+      "new": "Mathlib.RingTheory.DividedPowerAlgebra.Init.coe_C",
+      "since": "2026-06-19",
+      "old_statement": "(a : R) : RingCon.mk\u2090 R (ringCon R M) (C a) = algebraMap R (DividedPowerAlgebra R M) a",
+      "new_statement": "(a : R) : \u2191(C (\u03c3"
+    },
+    {
+      "old": "Mathlib.RingTheory.DividedPowerAlgebra.Init.mkRingHom_C",
+      "new": "Mathlib.RingTheory.DividedPowerAlgebra.Init.coe_C",
+      "since": "2026-06-19",
+      "old_statement": "(a : R) : RingCon.mk' (ringCon R M) (C a) = algebraMap R (DividedPowerAlgebra R M) a",
+      "new_statement": "(a : R) : \u2191(C (\u03c3"
+    },
+    {
+      "old": "Mathlib.RingTheory.Ideal.Operations.inf_eq_mul_of_isCoprime",
+      "new": "Mathlib.RingTheory.Ideal.Operations.mul_eq_inf_of_isCoprime",
+      "since": "2026-03-10",
+      "old_statement": "(coprime : IsCoprime I J) : I \u2293 J = I * J",
+      "new_statement": "(coprime : IsCoprime I J) : I * J = I \u2293 J"
+    },
+    {
+      "old": "Mathlib.RingTheory.Ideal.Operations.isRadical_bot_of_noZeroDivisors",
+      "new": "Mathlib.RingTheory.Ideal.Operations.isRadical_bot",
+      "since": "2026-08-03",
+      "old_statement": "{R} [CommSemiring R] [NoZeroDivisors R] : (\u22a5 : Ideal R).IsRadical",
+      "new_statement": "[IsReduced R] : (\u22a5 : Ideal R).IsRadical"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Aleph.aleph0_lt_iff_aleph_one_le",
+      "new": "Mathlib.SetTheory.Cardinal.Aleph.aleph_one_le_iff",
+      "since": "2026-03-23",
+      "old_statement": "{c} : \u2135\u2080 < c \u2194 \u2135\u2081 \u2264 c",
+      "new_statement": "{c : Cardinal} : \u2135\u2081 \u2264 c \u2194 \u2135\u2080 < c"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Aleph.aleph1_le_mk",
+      "new": "Mathlib.SetTheory.Cardinal.Basic.aleph0_lt_mk",
+      "since": "2026-03-23",
+      "old_statement": "(\u03b1 : Type*) [Uncountable \u03b1] : \u2135\u2081 \u2264 #\u03b1",
+      "new_statement": "[Uncountable \u03b1] : \u2135\u2080 < #\u03b1"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Aleph.aleph1_le_mk_iff",
+      "new": "Mathlib.SetTheory.Cardinal.Basic.aleph0_lt_mk_iff",
+      "since": "2026-03-23",
+      "old_statement": "{\u03b1 : Type*} : \u2135\u2081 \u2264 #\u03b1 \u2194 Uncountable \u03b1",
+      "new_statement": ": \u2135\u2080 < #\u03b1 \u2194 Uncountable \u03b1"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Aleph.aleph_one_le_lift",
+      "new": "Mathlib.SetTheory.Cardinal.Order.aleph0_lt_lift",
+      "since": "2026-03-23",
+      "old_statement": ": \u2135\u2081 \u2264 lift.{v} c \u2194 \u2135\u2081 \u2264 c",
+      "new_statement": "{c : Cardinal.{u}} : \u2135\u2080 < lift.{v} c \u2194 \u2135\u2080 < c"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Aleph.countable_iff_lt_aleph_one",
+      "new": "Mathlib.SetTheory.Cardinal.Basic.le_aleph0_iff_set_countable",
+      "since": "2026-03-23",
+      "old_statement": "{\u03b1 : Type*} (s : Set \u03b1) : s.Countable \u2194 #s < \u2135\u2081",
+      "new_statement": "{s : Set \u03b1} : #s \u2264 \u2135\u2080 \u2194 s.Countable"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Aleph.lift_lt_aleph_one",
+      "new": "Mathlib.SetTheory.Cardinal.Order.lift_le_aleph0",
+      "since": "2026-03-23",
+      "old_statement": ": lift.{v} c < \u2135\u2081 \u2194 c < \u2135\u2081",
+      "new_statement": "{c : Cardinal.{u}} : lift.{v} c \u2264 \u2135\u2080 \u2194 c \u2264 \u2135\u2080"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Aleph.preAleph_add_one",
+      "new": "Mathlib.SetTheory.Cardinal.Aleph.succ_preAleph",
+      "since": "2026-03-24",
+      "old_statement": "(o : Ordinal) : preAleph (o + 1) = succ (preAleph o)",
+      "new_statement": "(o : Ordinal) : succ (preAleph o) = preAleph (o + 1)"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Aleph.preAleph_succ",
+      "new": "Mathlib.SetTheory.Cardinal.Aleph.succ_preAleph",
+      "since": "2026-03-24",
+      "old_statement": "(o : Ordinal) : preAleph (succ o) = succ (preAleph o)",
+      "new_statement": "(o : Ordinal) : succ (preAleph o) = preAleph (o + 1)"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Aleph.preBeth_succ",
+      "new": "Mathlib.SetTheory.Cardinal.Aleph.preBeth_add_one",
+      "since": "2026-05-26",
+      "old_statement": "(o : Ordinal) : preBeth (succ o) = 2 ^ preBeth o",
+      "new_statement": "(o : Ordinal) : preBeth (o + 1) = 2 ^ preBeth o"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Basic.exists_eq_natCast_of_iSup_eq",
+      "new": "Mathlib.Order.SuccPred.CompleteLinearOrder.exists_eq_ciSup_of_not_isSuccLimit",
+      "since": "2026-04-13",
+      "old_statement": "{\u03b9 : Type u} [Nonempty \u03b9] (f : \u03b9 \u2192 Cardinal.{v}) (hf : BddAbove (range f)) (n : \u2115) (h : \u2a06 i, f i = n) : \u2203 i, f i = n",
+      "new_statement": "(hbdd : BddAbove (range f)) (hf : \u00ac IsSuccLimit (\u2a06 i, f i)) : \u2203 i, f i = \u2a06 i, f i"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.blsub_lt_ord",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.iSup_add_one_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{o : Ordinal} {f : \u2200 a < o, Ordinal} {c : Ordinal} (ho : o.card < c.cof) (hf : \u2200 i hi, f i hi < c) : blsub.{u, u} o f < c",
+      "new_statement": "{f : \u03b1 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : #\u03b1 < a.cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i + 1 < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.blsub_lt_ord_lift",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.lift_iSup_add_one_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{o : Ordinal.{u}} {f : \u2200 a < o, Ordinal} {c : Ordinal} (ho : Cardinal.lift.{v, u} o.card < c.cof) (hf : \u2200 i hi, f i hi < c) : blsub.{u, v} o f < c",
+      "new_statement": "{f : \u03b2 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : Cardinal.lift.{u} #\u03b2 < (lift.{v} a).cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i + 1 < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.bsup_lt_ord",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.iSup_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{o : Ordinal} {f : \u2200 a < o, Ordinal} {c : Ordinal} (ho : o.card < c.cof) : (\u2200 i hi, f i hi < c) \u2192 bsup.{u, u} o f < c",
+      "new_statement": "{f : \u03b1 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : #\u03b1 < a.cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.bsup_lt_ord_lift",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.lift_iSup_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{o : Ordinal} {f : \u2200 a < o, Ordinal} {c : Ordinal} (ho : Cardinal.lift.{v, u} o.card < c.cof) (hf : \u2200 i hi, f i hi < c) : bsup.{u, v} o f < c",
+      "new_statement": "{f : \u03b2 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : Cardinal.lift.{u} #\u03b2 < (lift.{v} a).cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.cof_blsub_le",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.cof_iSup_add_one_le",
+      "since": "2026-03-22",
+      "old_statement": "{o} (f : \u2200 a < o, Ordinal) : cof (blsub.{u, u} o f) \u2264 o.card",
+      "new_statement": "(f : \u03b1 \u2192 Ordinal.{u}) : cof (\u2a06 i, f i + 1) \u2264 #\u03b1"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.cof_blsub_le_lift",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.cof_lift_iSup_add_one_le",
+      "since": "2026-03-22",
+      "old_statement": "{o} (f : \u2200 a < o, Ordinal) : cof (blsub.{u, v} o f) \u2264 Cardinal.lift.{v, u} o.card",
+      "new_statement": "[Small.{u} \u03b2] (f : \u03b2 \u2192 Ordinal.{u}) : cof (lift.{v} (\u2a06 i, f i + 1)) \u2264 Cardinal.lift.{u} (#\u03b2)"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.cof_bsup_le",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.iSup_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{o : Ordinal} {f : \u2200 a < o, Ordinal} : (\u2200 i h, f i h < bsup.{u, u} o f) \u2192 cof (bsup.{u, u} o f) \u2264 o.card",
+      "new_statement": "{f : \u03b1 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : #\u03b1 < a.cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.cof_bsup_le_lift",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.lift_iSup_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{o : Ordinal} {f : \u2200 a < o, Ordinal} (H : \u2200 i h, f i h < bsup.{u, v} o f) : cof (bsup.{u, v} o f) \u2264 Cardinal.lift.{v, u} o.card",
+      "new_statement": "{f : \u03b2 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : Cardinal.lift.{u} #\u03b2 < (lift.{v} a).cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.cof_iSup_le",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.iSup_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{\u03b9} {f : \u03b9 \u2192 Ordinal} (H : \u2200 i, f i < iSup f) : cof (iSup f) \u2264 #\u03b9",
+      "new_statement": "{f : \u03b1 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : #\u03b1 < a.cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.cof_iSup_le_lift",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.lift_iSup_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{\u03b9} {f : \u03b9 \u2192 Ordinal} (H : \u2200 i, f i < iSup f) : cof (iSup f) \u2264 Cardinal.lift.{v, u} #\u03b9",
+      "new_statement": "{f : \u03b2 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : Cardinal.lift.{u} #\u03b2 < (lift.{v} a).cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.cof_lsub_le",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.cof_iSup_add_one_le",
+      "since": "2026-03-22",
+      "old_statement": "{\u03b9} (f : \u03b9 \u2192 Ordinal) : cof (lsub.{u, u} f) \u2264 #\u03b9",
+      "new_statement": "(f : \u03b1 \u2192 Ordinal.{u}) : cof (\u2a06 i, f i + 1) \u2264 #\u03b1"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.cof_lsub_le_lift",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.cof_lift_iSup_add_one_le",
+      "since": "2026-03-22",
+      "old_statement": "{\u03b9} (f : \u03b9 \u2192 Ordinal) : cof (lsub.{u, v} f) \u2264 Cardinal.lift.{v, u} #\u03b9",
+      "new_statement": "[Small.{u} \u03b2] (f : \u03b2 \u2192 Ordinal.{u}) : cof (lift.{v} (\u2a06 i, f i + 1)) \u2264 Cardinal.lift.{u} (#\u03b2)"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.cof_succ",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.cof_add_one",
+      "since": "2026-05-25",
+      "old_statement": "(o) : cof (succ o) = 1",
+      "new_statement": "(o) : cof (o + 1) = 1"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.exists_blsub_cof",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.exists_lsub_cof",
+      "since": "2026-03-21",
+      "old_statement": "(o : Ordinal) : \u2203 f : \u2200 a < (cof o).ord, Ordinal, blsub.{u, u} _ f = o",
+      "new_statement": "(o : Ordinal) : \u2203 (\u03b9 : _) (f : \u03b9 \u2192 Ordinal), lsub.{u, u} f = o \u2227 #\u03b9 = cof o"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.iSup_lt_lift",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.lift_iSup_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{\u03b9} {f : \u03b9 \u2192 Cardinal} {c : Cardinal} (h\u03b9 : Cardinal.lift.{v, u} #\u03b9 < c.ord.cof) (hf : \u2200 i, f i < c) : iSup f < c",
+      "new_statement": "{f : \u03b2 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : Cardinal.lift.{u} #\u03b2 < (lift.{v} a).cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.iSup_lt_ord_lift",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.lift_iSup_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{\u03b9} {f : \u03b9 \u2192 Ordinal} {c : Ordinal} (h\u03b9 : Cardinal.lift.{v, u} #\u03b9 < c.cof) (hf : \u2200 i, f i < c) : iSup f < c",
+      "new_statement": "{f : \u03b2 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : Cardinal.lift.{u} #\u03b2 < (lift.{v} a).cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.le_cof_iff_blsub",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Basic.le_cof_iff",
+      "since": "2026-03-21",
+      "old_statement": "{b : Ordinal} {a : Cardinal} : a \u2264 cof b \u2194 \u2200 {o} (f : \u2200 a < o, Ordinal), blsub.{u, u} o f = b \u2192 a \u2264 o.card",
+      "new_statement": "{c : Cardinal} : c \u2264 cof \u03b1 \u2194 \u2200 s : Set \u03b1, IsCofinal s \u2192 c \u2264 #s"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.le_cof_iff_lsub",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Basic.le_cof_iff",
+      "since": "2026-03-21",
+      "old_statement": "{o : Ordinal} {a : Cardinal} : a \u2264 cof o \u2194 \u2200 {\u03b9} (f : \u03b9 \u2192 Ordinal), lsub.{u, u} f = o \u2192 a \u2264 #\u03b9",
+      "new_statement": "{c : Cardinal} : c \u2264 cof \u03b1 \u2194 \u2200 s : Set \u03b1, IsCofinal s \u2192 c \u2264 #s"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.lsub_lt_ord",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.iSup_add_one_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{\u03b9} {f : \u03b9 \u2192 Ordinal} {c : Ordinal} (h\u03b9 : #\u03b9 < c.cof) : (\u2200 i, f i < c) \u2192 lsub.{u, u} f < c",
+      "new_statement": "{f : \u03b1 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : #\u03b1 < a.cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i + 1 < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.lsub_lt_ord_lift",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.lift_iSup_add_one_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{\u03b9} {f : \u03b9 \u2192 Ordinal} {c : Ordinal} (h\u03b9 : Cardinal.lift.{v, u} #\u03b9 < c.cof) (hf : \u2200 i, f i < c) : lsub.{u, v} f < c",
+      "new_statement": "{f : \u03b2 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : Cardinal.lift.{u} #\u03b2 < (lift.{v} a).cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i + 1 < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.ENat.toENat_lt_one",
+      "new": "Mathlib.SetTheory.Cardinal.ENat.toENat_eq_zero",
+      "since": "2026-05-25",
+      "old_statement": ": toENat c < 1 \u2194 c < 1",
+      "new_statement": ": toENat c = 0 \u2194 c = 0"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Order.exists_eq_of_iSup_eq_of_not_isSuccLimit",
+      "new": "Mathlib.Order.SuccPred.CompleteLinearOrder.exists_eq_ciSup_of_not_isSuccLimit",
+      "since": "2026-04-13",
+      "old_statement": "{\u03b9 : Type u} [h\u03b9 : Nonempty \u03b9] (f : \u03b9 \u2192 Cardinal.{v}) (hf : BddAbove (range f)) {c : Cardinal.{v}} (hc : \u00ac IsSuccLimit c) (h : \u2a06 i, f i = c) : \u2203 i, f i = c",
+      "new_statement": "(hbdd : BddAbove (range f)) (hf : \u00ac IsSuccLimit (\u2a06 i, f i)) : \u2203 i, f i = \u2a06 i, f i"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Order.exists_eq_of_iSup_eq_of_not_isSuccPrelimit",
+      "new": "Mathlib.Order.SuccPred.CompleteLinearOrder.exists_eq_ciSup_of_not_isSuccPrelimit",
+      "since": "2026-04-13",
+      "old_statement": "{\u03b9 : Type u} (f : \u03b9 \u2192 Cardinal.{v}) (\u03c9 : Cardinal.{v}) (h\u03c9 : \u00ac IsSuccPrelimit \u03c9) (h : \u2a06 i : \u03b9, f i = \u03c9) : \u2203 i, f i = \u03c9",
+      "new_statement": "(hf' : \u00ac IsSuccPrelimit (\u2a06 i, f i)) : \u2203 i, f i = \u2a06 i, f i"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Regular.blsub_lt_ord_lift_of_isRegular",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.lift_iSup_add_one_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{o : Ordinal} {f : \u2200 a < o, Ordinal} {c} (hc : IsRegular c) (ho : Cardinal.lift.{v, u} o.card < c) : (\u2200 i hi, f i hi < c.ord) \u2192 Ordinal.blsub.{u, v} o f < c.ord",
+      "new_statement": "{f : \u03b2 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : Cardinal.lift.{u} #\u03b2 < (lift.{v} a).cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i + 1 < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Regular.blsub_lt_ord_of_isRegular",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.lift_iSup_add_one_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{o : Ordinal} {f : \u2200 a < o, Ordinal} {c} (hc : IsRegular c) (ho : o.card < c) : (\u2200 i hi, f i hi < c.ord) \u2192 Ordinal.blsub o f < c.ord",
+      "new_statement": "{f : \u03b2 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : Cardinal.lift.{u} #\u03b2 < (lift.{v} a).cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i + 1 < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Regular.bsup_lt_ord_lift_of_isRegular",
+      "new": "Mathlib.SetTheory.Cardinal.Regular.iSup_lt_ord_lift_of_isRegular",
+      "since": "2026-03-22",
+      "old_statement": "{o : Ordinal} {f : \u2200 a < o, Ordinal} {c} (hc : IsRegular c) (h\u03b9 : Cardinal.lift.{v, u} o.card < c) : (\u2200 i hi, f i hi < c.ord) \u2192 Ordinal.bsup.{u, v} o f < c.ord",
+      "new_statement": "{\u03b9} {f : \u03b9 \u2192 Ordinal} {c} (hc : IsRegular c) (h\u03b9 : Cardinal.lift.{v, u} #\u03b9 < c) (hf : \u2200 i, f i < c.ord) : iSup f < c.ord"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Regular.bsup_lt_ord_of_isRegular",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.lift_iSup_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{o : Ordinal} {f : \u2200 a < o, Ordinal} {c} (hc : IsRegular c) (h\u03b9 : o.card < c) : (\u2200 i hi, f i hi < c.ord) \u2192 Ordinal.bsup o f < c.ord",
+      "new_statement": "{f : \u03b2 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : Cardinal.lift.{u} #\u03b2 < (lift.{v} a).cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Regular.iSup_lt_of_isRegular",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.iSup_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{\u03b9} {f : \u03b9 \u2192 Cardinal} {c} (hc : IsRegular c) (h\u03b9 : #\u03b9 < c) : (\u2200 i, f i < c) \u2192 iSup f < c",
+      "new_statement": "{f : \u03b1 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : #\u03b1 < a.cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Regular.iSup_lt_ord_lift_of_isRegular",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.lift_iSup_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{\u03b9} {f : \u03b9 \u2192 Ordinal} {c} (hc : IsRegular c) (h\u03b9 : Cardinal.lift.{v, u} #\u03b9 < c) (hf : \u2200 i, f i < c.ord) : iSup f < c.ord",
+      "new_statement": "{f : \u03b2 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : Cardinal.lift.{u} #\u03b2 < (lift.{v} a).cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Regular.iSup_lt_ord_of_isRegular",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.iSup_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{\u03b9} {f : \u03b9 \u2192 Ordinal} {c} (hc : IsRegular c) (h\u03b9 : #\u03b9 < c) : (\u2200 i, f i < c.ord) \u2192 iSup f < c.ord",
+      "new_statement": "{f : \u03b1 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : #\u03b1 < a.cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Regular.isRegular_aleph_succ",
+      "new": "Mathlib.SetTheory.Cardinal.Regular.isRegular_aleph_add_one",
+      "since": "2026-03-23",
+      "old_statement": "(o : Ordinal) : IsRegular (\u2135_ (succ o))",
+      "new_statement": "(o : Ordinal) : IsRegular (\u2135_ (o + 1))"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Regular.isRegular_preAleph_succ",
+      "new": "Mathlib.SetTheory.Cardinal.Regular.isRegular_preAleph_add_one",
+      "since": "2026-03-23",
+      "old_statement": "{o : Ordinal} (h : \u03c9 \u2264 o) : IsRegular (preAleph (succ o))",
+      "new_statement": "{o : Ordinal} (h : \u03c9 \u2264 o) : IsRegular (preAleph (o + 1))"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Regular.lsub_lt_ord_lift_of_isRegular",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.lift_iSup_add_one_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{\u03b9} {f : \u03b9 \u2192 Ordinal} {c} (hc : IsRegular c) (h\u03b9 : Cardinal.lift.{v, u} #\u03b9 < c) (hf : \u2200 i, f i < c.ord) : Ordinal.lsub.{u, v} f < c.ord",
+      "new_statement": "{f : \u03b2 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : Cardinal.lift.{u} #\u03b2 < (lift.{v} a).cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i + 1 < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Cardinal.Regular.lsub_lt_ord_of_isRegular",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Ordinal.iSup_add_one_lt_of_lt_cof",
+      "since": "2026-03-22",
+      "old_statement": "{\u03b9} {f : \u03b9 \u2192 Ordinal} {c} (hc : IsRegular c) (h\u03b9 : #\u03b9 < c) : (\u2200 i, f i < c.ord) \u2192 Ordinal.lsub f < c.ord",
+      "new_statement": "{f : \u03b1 \u2192 Ordinal.{u}} {a : Ordinal.{u}} (ha : #\u03b1 < a.cof) (hf : \u2200 i, f i < a) : \u2a06 i, f i + 1 < a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Arithmetic.has_succ_of_type_succ_lt",
+      "new": "Mathlib.SetTheory.Ordinal.Basic.isSuccPrelimit_type_lt_iff",
+      "since": "2026-04-12",
+      "old_statement": "{\u03b1} {r : \u03b1 \u2192 \u03b1 \u2192 Prop} [wo : IsWellOrder \u03b1 r] (h : \u2200 a < type r, succ a < type r) (x : \u03b1) : \u2203 y, r x y",
+      "new_statement": "[LinearOrder \u03b1] [WellFoundedLT \u03b1] : IsSuccPrelimit (typeLT \u03b1) \u2194 NoMaxOrder \u03b1"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Arithmetic.lift_succ",
+      "new": "Mathlib.SetTheory.Ordinal.Arithmetic.lift_add_one",
+      "since": "2026-06-17",
+      "old_statement": "(a : Ordinal.{v}) : lift.{u} (succ a) = succ (lift.{u} a)",
+      "new_statement": "(a : Ordinal.{v}) : lift.{u} (a + 1) = lift.{u} a + 1"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Arithmetic.limitRecOn_succ",
+      "new": "Mathlib.SetTheory.Ordinal.Arithmetic.limitRecOn_add_one",
+      "since": "2026-05-21",
+      "old_statement": "{motive} (o H\u2081 H\u2082 H\u2083) : @limitRecOn motive (succ o) H\u2081 H\u2082 H\u2083 = H\u2082 o (@limitRecOn motive o H\u2081 H\u2082 H\u2083)",
+      "new_statement": "{motive} (o H\u2081 H\u2082 H\u2083) : @limitRecOn motive (o + 1) H\u2081 H\u2082 H\u2083 = H\u2082 o (@limitRecOn motive o H\u2081 H\u2082 H\u2083)"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Arithmetic.pred_succ",
+      "new": "Mathlib.SetTheory.Ordinal.Arithmetic.pred_add_one",
+      "since": "2026-05-25",
+      "old_statement": "(o) : pred (succ o) = o",
+      "new_statement": "(o) : pred (o + 1) = o"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Arithmetic.toType_noMax_of_succ_lt",
+      "new": "Mathlib.SetTheory.Ordinal.Basic.isSuccPrelimit_type_lt_iff",
+      "since": "2026-04-12",
+      "old_statement": "{o : Ordinal} (ho : \u2200 a < o, succ a < o) : NoMaxOrder o.ToType",
+      "new_statement": "[LinearOrder \u03b1] [WellFoundedLT \u03b1] : IsSuccPrelimit (typeLT \u03b1) \u2194 NoMaxOrder \u03b1"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Basic.card_typein_toType_lt",
+      "new": "Mathlib.SetTheory.Ordinal.Basic.mk_Iio_lt",
+      "since": "2026-03-20",
+      "old_statement": "(c : Cardinal) (x : c.ord.ToType) : card (typein (\u03b1",
+      "new_statement": "[LinearOrder \u03b1] [WellFoundedLT \u03b1] (i : \u03b1) (h : ord #\u03b1 = typeLT \u03b1) : #(Iio i) < #\u03b1"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Basic.mk_Iio_toType_ord_lt",
+      "new": "Mathlib.SetTheory.Ordinal.Basic.mk_Iio_lt",
+      "since": "2026-04-12",
+      "old_statement": "{c : Cardinal} (i : c.ord.ToType) : #(Iio i) < c",
+      "new_statement": "[LinearOrder \u03b1] [WellFoundedLT \u03b1] (i : \u03b1) (h : ord #\u03b1 = typeLT \u03b1) : #(Iio i) < #\u03b1"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Exponential.omega0_opow_mul_nat_lt",
+      "new": "Mathlib.SetTheory.Ordinal.Exponential.opow_mul_lt_opow",
+      "since": "2026-06-01",
+      "old_statement": "{a b : Ordinal} (h : a < b) (n : \u2115) : \u03c9 ^ a * n < \u03c9 ^ b",
+      "new_statement": "{b u v x : Ordinal} (hv : v < b) (hu : u < x) : b ^ u * v < b ^ x"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Exponential.opow_succ",
+      "new": "Mathlib.SetTheory.Ordinal.Exponential.opow_add_one",
+      "since": "2026-06-17",
+      "old_statement": "(a b : Ordinal) : a ^ succ b = a ^ b * a",
+      "new_statement": "(a b : Ordinal) : a ^ (b + 1) = a ^ b * a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Family.IsNormal",
+      "new": "Mathlib.Order.IsNormal.apply_of_isSuccLimit",
+      "since": "2026-03-23",
+      "old_statement": ".bsup_eq {f : Ordinal.{u} \u2192 Ordinal.{max u v}} (H : IsNormal f) {o : Ordinal.{u}} (h : IsSuccLimit o) : (Ordinal.bsup.{_, v} o fun x _ => f x) = f o",
+      "new_statement": "(hf : IsNormal f) (ha : IsSuccLimit a) : f a = \u2a06 b : Iio a, f b"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Family.IsNormal",
+      "new": "Mathlib.Order.IsNormal.apply_of_isSuccLimit",
+      "since": "2026-03-23",
+      "old_statement": ".blsub_eq {f : Ordinal.{u} \u2192 Ordinal.{max u v}} (H : IsNormal f) {o : Ordinal.{u}} (h : IsSuccLimit o) : (blsub.{_, v} o fun x _ => f x) = f o",
+      "new_statement": "(hf : IsNormal f) (ha : IsSuccLimit a) : f a = \u2a06 b : Iio a, f b"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Family.IsNormal",
+      "new": "Mathlib.Order.IsNormal.map_iSup",
+      "since": "2026-04-05",
+      "old_statement": ".bsup {f : Ordinal \u2192 Ordinal} (H : IsNormal f) {o : Ordinal} : \u2200 (g : \u2200 a < o, Ordinal), o \u2260 0 \u2192 f (bsup o g) = bsup o fun a h => f (g a h)",
+      "new_statement": "{\u03b9} [Nonempty \u03b9] {g : \u03b9 \u2192 \u03b1} (hf : IsNormal f) (hg : BddAbove (range g)) : f (\u2a06 i, g i) = \u2a06 i, f (g i)"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Family.bsup_id_add_one",
+      "new": "Mathlib.Order.ConditionallyCompletePartialOrder.Basic.csSup_Iic",
+      "since": "2026-03-23",
+      "old_statement": "(o) : (bsup.{u, u} (o + 1) fun x _ => x) = o",
+      "new_statement": ": sSup (Iic a) = a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Family.bsup_id_succ",
+      "new": "Mathlib.Order.ConditionallyCompletePartialOrder.Basic.csSup_Iic",
+      "since": "2026-03-23",
+      "old_statement": "(o) : (bsup.{u, u} (succ o) fun x _ => x) = o",
+      "new_statement": ": sSup (Iic a) = a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Family.familyOfBFamily",
+      "new": "Mathlib.SetTheory.Ordinal.Basic.typein",
+      "since": "2026-04-06",
+      "old_statement": "' {\u03b9 : Type u} (r : \u03b9 \u2192 \u03b9 \u2192 Prop) [IsWellOrder \u03b9 r] {o} (ho : type r = o) (f : \u2200 a < o, \u03b1) : \u03b9 \u2192 \u03b1",
+      "new_statement": "(r : \u03b1 \u2192 \u03b1 \u2192 Prop) [IsWellOrder \u03b1 r] : @PrincipalSeg \u03b1 Ordinal.{u} r (\u00b7 < \u00b7)"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Family.familyOfBFamily",
+      "new": "Mathlib.SetTheory.Ordinal.Basic.typein",
+      "since": "2026-04-06",
+      "old_statement": "(o : Ordinal) (f : \u2200 a < o, \u03b1) : o.ToType \u2192 \u03b1",
+      "new_statement": "(r : \u03b1 \u2192 \u03b1 \u2192 Prop) [IsWellOrder \u03b1 r] : @PrincipalSeg \u03b1 Ordinal.{u} r (\u00b7 < \u00b7)"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Family.iSup_typein_succ",
+      "new": "Mathlib.Order.ConditionallyCompletePartialOrder.Basic.csSup_Iic",
+      "since": "2026-03-27",
+      "old_statement": "{o : Ordinal} : iSup (typein ((\u00b7 < \u00b7) : (succ o).ToType \u2192 (succ o).ToType \u2192 Prop)) = o",
+      "new_statement": ": sSup (Iic a) = a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.FixedPoint.derivFamily_succ",
+      "new": "Mathlib.SetTheory.Ordinal.FixedPoint.derivFamily_add_one",
+      "since": "2026-06-17",
+      "old_statement": "(f : \u03b9 \u2192 Ordinal \u2192 Ordinal) (o) : derivFamily f (succ o) = nfpFamily f (succ (derivFamily f o))",
+      "new_statement": "(f : \u03b9 \u2192 Ordinal \u2192 Ordinal) (o) : derivFamily f (o + 1) = nfpFamily f (derivFamily f o + 1)"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.FixedPoint.deriv_succ",
+      "new": "Mathlib.SetTheory.Ordinal.FixedPoint.deriv_add_one",
+      "since": "2026-06-17",
+      "old_statement": "(f o) : deriv f (succ o) = nfp f (succ (deriv f o))",
+      "new_statement": "(f o) : deriv f (o + 1) = nfp f (deriv f o + 1)"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.FundamentalSequence.exists_fundamental_sequence",
+      "new": "Mathlib.SetTheory.Ordinal.FundamentalSequence.exists_isFundamentalSeq",
+      "since": "2026-03-23",
+      "old_statement": "(a : Ordinal.{u}) : \u2203 f, IsFundamentalSequence a a.cof.ord f",
+      "new_statement": "(ha : o.cof.ord = a) : \u2203 f : Iio a \u2192 Iio o, IsFundamentalSeq f"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Topology.IsAcc",
+      "new": "Mathlib.Topology.Defs.Filter.AccPt",
+      "since": "2026-05-24",
+      "old_statement": "(o : Ordinal) (S : Set Ordinal) : Prop",
+      "new_statement": "(x : X) (F : Filter X) : Prop"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Topology.IsClosedBelow",
+      "new": "Mathlib.Topology.Basic.isClosed_iInter",
+      "since": "2026-05-24",
+      "old_statement": ".iInter {\u03b9 : Type u} {f : \u03b9 \u2192 Set Ordinal} {o : Ordinal} (h : \u2200 i, IsClosedBelow (f i) o) : IsClosedBelow (\u22c2 i, f i) o",
+      "new_statement": "{f : \u03b9 \u2192 Set X} (h : \u2200 i, IsClosed (f i)) : IsClosed (\u22c2 i, f i)"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Topology.IsClosedBelow",
+      "new": "Mathlib.Topology.Basic.isClosed_sInter",
+      "since": "2026-05-24",
+      "old_statement": ".sInter {o : Ordinal} {S : Set (Set Ordinal)} (h : \u2200 C \u2208 S, IsClosedBelow C o) : IsClosedBelow (\u22c2\u2080 S) o",
+      "new_statement": "{s : Set (Set X)} : (\u2200 t \u2208 s, IsClosed t) \u2192 IsClosed (\u22c2\u2080 s)"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Topology.enumOrd_isNormal_iff_isClosed",
+      "new": "Mathlib.SetTheory.Cardinal.Cofinality.Enum.isNormal_enum_iff_dirSupClosed",
+      "since": "2026-05-25",
+      "old_statement": "(hs : \u00ac BddAbove s) : IsNormal (enumOrd s) \u2194 IsClosed s",
+      "new_statement": ": IsNormal (Subtype.val \u2218 enum s hs) \u2194 DirSupClosed s"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Topology.isClosedBelow_iff",
+      "new": "Mathlib.Topology.ClusterPt.isClosed_iff_accPt",
+      "since": "2026-05-24",
+      "old_statement": "{S : Set Ordinal} {o : Ordinal} : IsClosedBelow S o \u2194 \u2200 p < o, IsAcc p S \u2192 p \u2208 S",
+      "new_statement": ": IsClosed s \u2194 \u2200 a, AccPt a (\ud835\udcdf s) \u2192 a \u2208 s"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Topology.isClosed_iff_bsup",
+      "new": "Mathlib.SetTheory.Ordinal.Topology.isClosed_iff_iSup",
+      "since": "2026-04-05",
+      "old_statement": ": IsClosed s \u2194 \u2200 {o : Ordinal}, o \u2260 0 \u2192 \u2200 f : \u2200 a < o, Ordinal, (\u2200 i hi, f i hi \u2208 s) \u2192 bsup.{u, u} o f \u2208 s",
+      "new_statement": ": IsClosed s \u2194 \u2200 {\u03b9 : Type u}, Nonempty \u03b9 \u2192 \u2200 f : \u03b9 \u2192 Ordinal, (\u2200 i, f i \u2208 s) \u2192 \u2a06 i, f i \u2208 s"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Topology.mem_closed_iff_bsup",
+      "new": "Mathlib.SetTheory.Ordinal.Topology.mem_closure_iff_iSup",
+      "since": "2026-04-05",
+      "old_statement": "(hs : IsClosed s) : a \u2208 s \u2194 \u2203 (o : Ordinal) (_ho : o \u2260 0) (f : \u2200 a < o, Ordinal), (\u2200 i hi, f i hi \u2208 s) \u2227 bsup.{u, u} o f = a",
+      "new_statement": ": a \u2208 closure s \u2194 \u2203 (\u03b9 : Type u) (_ : Nonempty \u03b9) (f : \u03b9 \u2192 Ordinal), (\u2200 i, f i \u2208 s) \u2227 \u2a06 i, f i = a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Topology.mem_closure_iff_bsup",
+      "new": "Mathlib.SetTheory.Ordinal.Topology.mem_closure_iff_iSup",
+      "since": "2026-04-05",
+      "old_statement": ": a \u2208 closure s \u2194 \u2203 (o : Ordinal) (_ho : o \u2260 0) (f : \u2200 a < o, Ordinal), (\u2200 i hi, f i hi \u2208 s) \u2227 bsup.{u, u} o f = a",
+      "new_statement": ": a \u2208 closure s \u2194 \u2203 (\u03b9 : Type u) (_ : Nonempty \u03b9) (f : \u03b9 \u2192 Ordinal), (\u2200 i, f i \u2208 s) \u2227 \u2a06 i, f i = a"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Univ.liftPrincipalSeg_top",
+      "new": "Mathlib.SetTheory.Ordinal.Univ.liftPrincipalSeg_top",
+      "since": "2026-03-20",
+      "old_statement": "' : liftPrincipalSeg.{u, u + 1}.top = typeLT Ordinal",
+      "new_statement": ": (liftPrincipalSeg.{u, v}).top = univ.{u, v}"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Univ.univ_id",
+      "new": "Mathlib.SetTheory.Ordinal.Univ.mk_ordinal",
+      "since": "2026-04-22",
+      "old_statement": ": univ.{u, u + 1} = #Ordinal",
+      "new_statement": ": #Ordinal = univ.{u, u + 1}"
+    },
+    {
+      "old": "Mathlib.SetTheory.Ordinal.Univ.univ_id",
+      "new": "Mathlib.SetTheory.Ordinal.Univ.type_lt_ordinal",
+      "since": "2026-03-20",
+      "old_statement": ": univ.{u, u + 1} = typeLT Ordinal",
+      "new_statement": ": typeLT Ordinal = univ.{u, u + 1}"
+    },
+    {
+      "old": "Mathlib.SetTheory.ZFC.VonNeumann.vonNeumann_succ",
+      "new": "Mathlib.SetTheory.ZFC.VonNeumann.vonNeumann_add_one",
+      "since": "2026-05-25",
+      "old_statement": "(o : Ordinal) : V_ (succ o) = powerset (V_ o)",
+      "new_statement": "(o : Ordinal) : V_ (o + 1) = powerset (V_ o)"
+    },
+    {
+      "old": "Mathlib.Topology.Algebra.Module.ContinuousLinearMap.Restrict.ker_subtypeL",
+      "new": "Mathlib.Algebra.Module.Submodule.Ker.ker_subtype",
+      "since": "2026-05-06",
+      "old_statement": "(p : Submodule R M) : (p.subtypeL : p \u2192\u2097[R] M).ker = \u22a5",
+      "new_statement": ": ker p.subtype = \u22a5"
+    }
+  ],
+  "count": 189,
+  "sha256": "0422b93e652fe527c9ce434ea66d8e3fcd0e4f3a267f49a55f7496bf30abb232",
+  "aliases_excluded": 3423,
+  "no_replacement": 308,
+  "unresolved": 337,
+  "identical_statements_excluded": 7,
+  "corpus": "Mathlib",
+  "revision": "5ed2965256430c3649e86755f9576b54eca72435",
+  "generating_command": "uv run consilean-sprint2"
+}

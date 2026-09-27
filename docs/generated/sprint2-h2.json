@@ -1,0 +1,33 @@
+{
+  "generating_command": "uv run consilean-sprint2",
+  "revision": "5ed2965256430c3649e86755f9576b54eca72435",
+  "ground_truth_sha256": "0422b93e652fe527c9ce434ea66d8e3fcd0e4f3a267f49a55f7496bf30abb232",
+  "ground_truth_count": 189,
+  "h2": {
+    "frozen_pairs": 189,
+    "evaluated": 181,
+    "missing_declaration": 8,
+    "unparsed": 141,
+    "recovered": {
+      "1": 8,
+      "5": 13,
+      "10": 13,
+      "50": 19
+    },
+    "recall": {
+      "1": 0.04419889502762431,
+      "5": 0.0718232044198895,
+      "10": 0.0718232044198895,
+      "50": 0.10497237569060773
+    },
+    "primary_k": 10
+  },
+  "h3": {
+    "status": "not_measured",
+    "reason": "H3 needs a ranking of the corpus at past Mathlib releases. This run does not check out those revisions. The since dates are stored on the frozen pairs."
+  },
+  "duplicate_list": {
+    "rows": [],
+    "reason": "No equivalence was closed by the checker in this run, so the published list is empty."
+  }
+}

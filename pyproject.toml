@@ -16,6 +16,7 @@ consilean-baseline = "consilean.baselines.cli:main"
 consilean-sprint1 = "consilean.sprint1.cli:main"
 consilean-probes = "consilean.probes.cli:main"
 consilean-coverage = "consilean.coverage.cli:main"
+consilean-sprint2 = "consilean.replay.cli:main"
 
 [dependency-groups]
 dev = ["pytest>=8"]
