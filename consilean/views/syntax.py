@@ -10,7 +10,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-_SYMBOLS = ("↔", "→", "∃", "∀", "≡", "∧", "∨", "∣", "≠", "≤", "≥")
+_SYMBOLS = ("↔", "→", "∃", "∀", "≡", "∧", "∨", "∣", "≠", "≤", "≥", "∈", "∉", "⊆", "⊇", "⁻¹", "<", ">", "/")
 _SINGLE = set("()[]{}:,^+-*=.")
 
 
@@ -74,6 +74,18 @@ class Quant:
 
 
 @dataclass(frozen=True)
+class Postfix:
+    arg: object
+    op: str
+
+
+@dataclass(frozen=True)
+class Index:
+    base: object
+    index: object
+
+
+@dataclass(frozen=True)
 class NatLit:
     value: str
 
@@ -127,6 +139,8 @@ def tokenize(source: str) -> list[str]:
             if k == j + 1:
                 break
             j = k
+        if source[i:j] in {"Type", "Sort"} and j < n and source[j] == "*":
+            j += 1
         if j == i:
             raise ParseError(source[i])
         tokens.append(source[i:j])
@@ -182,6 +196,10 @@ def alpha_statement(statement: Statement) -> Statement:
             return App(rename(expr.fn, env), rename(expr.arg, env))
         if isinstance(expr, Bin):
             return Bin(expr.op, rename(expr.left, env), rename(expr.right, env))
+        if isinstance(expr, Postfix):
+            return Postfix(rename(expr.arg, env), expr.op)
+        if isinstance(expr, Index):
+            return Index(rename(expr.base, env), rename(expr.index, env))
         if isinstance(expr, Neg):
             return Neg(rename(expr.arg, env))
         if isinstance(expr, Ascribe):
@@ -245,6 +263,10 @@ def pretty(expr: object) -> str:
         return f"{pretty(expr.base)}.{expr.field}"
     if isinstance(expr, App):
         return f"{pretty(expr.fn)} {_atom(expr.arg)}"
+    if isinstance(expr, Postfix):
+        return f"{pretty(expr.arg)}{expr.op}"
+    if isinstance(expr, Index):
+        return f"{pretty(expr.base)}[{pretty(expr.index)}]"
     if isinstance(expr, Neg):
         return f"-{_atom(expr.arg)}"
     if isinstance(expr, Ascribe):
@@ -309,6 +331,15 @@ def formula_graph(statement: Statement, *, keep_names: bool) -> tuple[list[str],
             node = new(expr.op)
             link(node, go(expr.left), "arg0")
             link(node, go(expr.right), "arg1")
+            return node
+        if isinstance(expr, Postfix):
+            node = new(expr.op)
+            link(node, go(expr.arg), "arg0")
+            return node
+        if isinstance(expr, Index):
+            node = new("index")
+            link(node, go(expr.base), "arg0")
+            link(node, go(expr.index), "arg1")
             return node
         if isinstance(expr, Neg):
             node = new("neg")
@@ -395,6 +426,10 @@ def _map(fn, expr: object) -> object:
         return App(fn(expr.fn), fn(expr.arg))
     if isinstance(expr, Bin):
         return Bin(expr.op, fn(expr.left), fn(expr.right))
+    if isinstance(expr, Postfix):
+        return Postfix(fn(expr.arg), expr.op)
+    if isinstance(expr, Index):
+        return Index(fn(expr.base), fn(expr.index))
     if isinstance(expr, Neg):
         return Neg(fn(expr.arg))
     if isinstance(expr, Ascribe):
@@ -450,18 +485,47 @@ class _Parser:
 
     def statement(self) -> Statement:
         binders: list[Binder] = []
-        while self.peek() == "(":
+        while self.peek() in {"(", "{", "["}:
+            binders.extend(self._binder_group())
+        if self.peek() == ":":
             self.pop()
-            name = self.pop()
-            if not _is_name(name):
-                raise ParseError(name)
-            self.expect(":")
-            ty = self.expr()
-            self.expect(")")
-            self.bound.add(name)
-            binders.append(Binder(name, ty))
-        self.expect(":")
+        elif binders:
+            raise ParseError("colon")
         return Statement(tuple(binders), self.expr())
+
+    def _binder_group(self) -> list[Binder]:
+        opener = self.pop()
+        closer = { "(": ")", "{": "}", "[": "]" }[opener]
+        if opener == "[" and self.peek() != "]" and not self._binder_has_colon():
+            ty = self.expr()
+            self.expect(closer)
+            return [Binder("_inst", ty)]
+        names: list[str] = []
+        while _is_name(self.peek() or ""):
+            names.append(self.pop())
+        if not names:
+            raise ParseError("binder")
+        self.expect(":")
+        ty = self.expr()
+        self.expect(closer)
+        for name in names:
+            self.bound.add(name)
+        return [Binder(name, ty) for name in names]
+
+    def _binder_has_colon(self) -> bool:
+        """Look ahead for `:` before the matching `]`."""
+        depth = 1
+        index = self.i
+        while index < len(self.tokens) and depth:
+            token = self.tokens[index]
+            if token == "[":
+                depth += 1
+            elif token == "]":
+                depth -= 1
+            elif token == ":" and depth == 1:
+                return True
+            index += 1
+        return False
 
     def expr(self) -> object:
         return self._iff()
@@ -489,7 +553,7 @@ class _Parser:
 
     def _eq(self) -> object:
         left = self._add()
-        if self.peek() not in {"=", "≡"}:
+        if self.peek() not in {"=", "≡", "≤", "≥", "<", ">", "≠", "∈", "∉", "⊆", "⊇"}:
             return left
         op = self.pop()
         right = self._add()
@@ -511,9 +575,9 @@ class _Parser:
 
     def _mul(self) -> object:
         left = self._pow()
-        while self.peek() == "*":
-            self.pop()
-            left = Bin("*", left, self._pow())
+        while self.peek() in {"*", "/"}:
+            op = self.pop()
+            left = Bin(op, left, self._pow())
         return left
 
     def _pow(self) -> object:
@@ -530,9 +594,24 @@ class _Parser:
         return self._app()
 
     def _app(self) -> object:
-        node = self._atom()
+        node = self._postfix(self._atom())
         while self._starts_atom():
-            node = App(node, self._atom())
+            node = App(node, self._postfix(self._atom()))
+        return node
+
+    def _next_is(self, token: str) -> bool:
+        return self.i + 1 < len(self.tokens) and self.tokens[self.i + 1] == token
+
+    def _postfix(self, node: object) -> object:
+        while self.peek() == "⁻¹" or (self.peek() == "[" and not self._next_is("ZMOD")):
+            if self.peek() == "⁻¹":
+                self.pop()
+                node = Postfix(node, "⁻¹")
+                continue
+            self.pop()
+            index = self.expr()
+            self.expect("]")
+            node = Index(node, index)
         return node
 
     def _starts_atom(self) -> bool:

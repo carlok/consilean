@@ -6,7 +6,7 @@
       "revision": "5ed2965256430c3649e86755f9576b54eca72435",
       "lean_files": 8529,
       "public_declarations": 211306,
-      "parsed": 26750,
+      "parsed": 67329,
       "note": "Local v4.34.0 tree. Coverage only. No pair ranking.",
       "import_modules": 8529,
       "internal_edges": 26767
@@ -16,7 +16,7 @@
       "revision": null,
       "lean_files": 1012,
       "public_declarations": 30370,
-      "parsed": 5267,
+      "parsed": 23943,
       "note": "Local missions tree, not one Lean package. No import graph.",
       "import_modules": null,
       "internal_edges": null
@@ -26,7 +26,7 @@
       "revision": "28230862f94034c80d86fa2ea8ad864e76943a03",
       "lean_files": 7958,
       "public_declarations": 84403,
-      "parsed": 13430,
+      "parsed": 27082,
       "note": "",
       "import_modules": 7958,
       "internal_edges": 15581
