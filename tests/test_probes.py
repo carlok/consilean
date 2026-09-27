@@ -41,6 +41,13 @@ def test_module_suffix_does_not_match_a_longer_name() -> None:
     assert "Measure" not in found.module.rsplit(".", 1)[-1]
 
 
+def test_implicit_binders_and_comparison_parse() -> None:
+    from consilean.views.syntax import parse_statement
+
+    sig = "{α : Type*} (a b : α) [CommRing α] : a ≤ b"
+    assert parse_statement(sig) is not None
+
+
 def test_as_forall_keeps_source_names() -> None:
     sig = " (n : OrientedNode) :\n    IsSquare (-1 : ZMod n.markovNumber.natAbs) "
     goal = as_forall(sig)
