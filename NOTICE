@@ -8,3 +8,8 @@ Apache License, Version 2.0:
   consilean/vendor/import_graph.py
   source: tools/import_graph.py
   blob: d48190298d212ca8a0233e4b6909b7c5f36a0386
+
+The Weisfeiler–Lehman round in consilean/views/wl.py follows
+euclean's pipeline/views/kernels.py
+(https://github.com/carlok/euclean), MIT License, Copyright 2026 Carlo Perassi.
+The sparse-matrix and SVD steps from that file are not included.

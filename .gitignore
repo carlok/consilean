@@ -6,3 +6,6 @@ __pycache__/
 dist/
 build/
 corpora/cache/
+*.olean
+*.ilean
+.lake/

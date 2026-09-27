@@ -13,6 +13,7 @@ dependencies = []
 
 [project.scripts]
 consilean-baseline = "consilean.baselines.cli:main"
+consilean-sprint1 = "consilean.sprint1.cli:main"
 
 [dependency-groups]
 dev = ["pytest>=8"]
