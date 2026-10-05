@@ -42,6 +42,27 @@ Replay the corpus in time slices. Top-ranked far pairs are later connected (by a
 
 H2 recall at k is the fraction of frozen pairs whose partner is among the k nearest declarations to the old one. A single global top-k list cannot hold more true pairs than k, so it is not the recall of a set. The neighbor order is the one induced by the preregistered primary score: normal-form matches first, then name-free Weisfeiler–Lehman cosine. A tie does not push the partner down. The weights are unchanged.
 
+## Amendment 2026-10-05 — H4 transport
+
+A transported proof is not a finding. Rewriting along a checked `↔` is provable by construction. H4 records a map: which transported statements already match a pinned corpus, and which of those that do not match can be restated without the bridge lemma.
+
+The match rule is frozen here, before the run. A match is exact digest equality or normal-form equality, the views from Sprint 1. The digest is the sha256 of the whitespace-normalized signature. Name-free Weisfeiler–Lehman cosine is stored on a row and is not a gate. No cosine cutoff is introduced.
+
+Neighbourhood of an endpoint: a declaration whose signature, not its docstring, contains an endpoint name or one side of the seed `↔`. The seed is [`lean/IsSquareModEq.lean`](../lean/IsSquareModEq.lean). Its sides are `IsSquare (-1 : ZMod m.natAbs)` and `∃ r : ℤ, r ^ 2 ≡ -1 [ZMOD m]`, and the same two formulas at `n.markovNumber`. The LeanFrontier endpoint names are `isSquare_neg_one_mod_markovNumber` and `exists_sq_modEq_neg_one_markovNumber`.
+
+- **H4a.** Fraction of transported statements that match some pinned corpus, per bridge and per corpus pair. No predicted value.
+- **H4b.** Not measured. A fake bridge would be an `↔` the kernel rejected. Open and timeout probes are a budget outcome, not a rejection. There is no such set.
+- **Positive control.** `to_additive` at the pinned Mathlib, if a source scan finds the attribute. Hide the additive side. Transport the multiplicative signature with the frozen segment map below, then apply the match rule. Primary denominator: every `to_additive` on a theorem, lemma, def, or abbrev. Instances are outside the declaration reader; they are counted and left out of the denominator. An additive name that is not a source declaration is not recovered. Recall at k = 1, 5, and 10 is the fraction whose additive declaration is within that rank among the normal-form matches, ordered by name-free cosine. Ties do not push the partner down. A digest match has rank 1. Seed stored with the run: `0`.
+- The segment map, applied to a camel-case or snake-case piece, longest first: `smul`/`hmul`/`mul`/`inv`/`div`/`one`/`semigroup`/`monoid`/`group` become `vadd`/`hadd`/`add`/`neg`/`sub`/`zero`/`addSemigroup`/`addMonoid`/`addGroup`, keeping the piece's initial case. In a signature, the tokens ` * ` and ` / ` become ` + ` and ` - `. `⁻¹` is not rewritten. This map is not retuned after the table exists.
+- If the scan finds no `to_additive` attribute, the control is absent.
+- **Rung 0.** Rewrite with the seed bridge and close with the original theorem. A closure is an engineering check. A failure is a tooling note, not a mathematical result.
+- **Rung 1.** The transported statement, bridge lemma not in scope, tactics and 10 second limit from H1.
+- **Rung 2.** Names of gaps that rung 1 did not close. No model call while either cap in [`corpora/sprint3-budget.toml`](../corpora/sprint3-budget.toml) is zero.
+- **Replay.** The 1/3/6/12-month variant is not measured. The preregistered H3 precision-at-k is still unmeasured, and this sprint does not invent that comparison.
+- **Stopping.** Score once. Do not retune the match rule or the segment map after the gap list.
+
+Kernel checks stay on Lean `v4.34.0`. Tau Ceti is text lookup only. Prove2Me is declarations only. Other local Mathlib projects are not pinned.
+
 ## Stopping
 
 Score the preregistered far set once. A miss on a sprint exit is written down as the result. It is not a reason to change the primary score in place. Do not start a sprint whose entry condition fails; write down why instead.

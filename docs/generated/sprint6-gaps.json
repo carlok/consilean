@@ -1,0 +1,403 @@
+{
+  "generating_command": "uv run consilean-sprint6",
+  "measured": true,
+  "reason": "",
+  "corpora": [
+    {
+      "corpus": "LeanFrontier",
+      "role": "kernel and lookup",
+      "lean": "v4.34.0"
+    },
+    {
+      "corpus": "Mathlib",
+      "role": "lookup and to_additive control",
+      "lean": "v4.34.0"
+    },
+    {
+      "corpus": "Prove2Me",
+      "role": "declarations only",
+      "reason": "Local missions tree is not one package and has no import graph. The public repository is logs."
+    },
+    {
+      "corpus": "Tau Ceti",
+      "role": "text lookup only",
+      "reason": "Lean v4.35.0-rc3. This sprint does not build that toolchain."
+    }
+  ],
+  "skipped": [
+    {
+      "corpus": "erdos-straus-offset-lean",
+      "reason": "Local project. No public pin and no license note in this repository."
+    },
+    {
+      "corpus": "magma-1518-obstruction-lean",
+      "reason": "Local project. No public pin and no license note in this repository."
+    },
+    {
+      "corpus": "diaz-modulus-lean",
+      "reason": "Local project. No public pin and no license note in this repository."
+    },
+    {
+      "corpus": "other local Mathlib projects next to this repository",
+      "reason": "Not pinned. Adding one needs a public revision and a license note."
+    }
+  ],
+  "gaps": [
+    {
+      "module": "LeanFrontier.NumberTheory.MarkovTree.ModularRoot",
+      "name": "exists_sq_modEq_neg_one_markovNumber",
+      "transported": "(n : OrientedNode) : IsSquare (-1 : ZMod n.markovNumber.natAbs)",
+      "matches": [
+        {
+          "corpus": "LeanFrontier",
+          "module": "LeanFrontier.NumberTheory.MarkovTree.QuadraticResidue",
+          "name": "isSquare_neg_one_mod_markovNumber",
+          "via": "exact_digest",
+          "cosine": 1.0000000000000002
+        },
+        {
+          "corpus": "LeanFrontier",
+          "module": "LeanFrontier.NumberTheory.MarkovTree.ModularRoot",
+          "name": "exists_sq_modEq_neg_one_markovNumber",
+          "via": "normal_form",
+          "cosine": 0.42521003213538067
+        }
+      ],
+      "gap": false,
+      "rung0": {
+        "outcome": "timeout",
+        "detail": ""
+      },
+      "rung1": {
+        "outcome": "closed",
+        "tactic": "apply?",
+        "attempts": [
+          {
+            "tactic": "rfl",
+            "outcome": "open"
+          },
+          {
+            "tactic": "simp",
+            "outcome": "open"
+          },
+          {
+            "tactic": "norm_num",
+            "outcome": "open"
+          },
+          {
+            "tactic": "tauto",
+            "outcome": "open"
+          },
+          {
+            "tactic": "omega",
+            "outcome": "open"
+          },
+          {
+            "tactic": "decide",
+            "outcome": "open"
+          },
+          {
+            "tactic": "exact?",
+            "outcome": "open"
+          },
+          {
+            "tactic": "apply?",
+            "outcome": "closed"
+          }
+        ],
+        "detail": ""
+      },
+      "engineering": "timeout"
+    },
+    {
+      "module": "LeanFrontier.NumberTheory.MarkovTree.QuadraticResidue",
+      "name": "isSquare_neg_one_mod_markovNumber",
+      "transported": "(n : OrientedNode) : \u2203 r : \u2124, r ^ 2 \u2261 -1 [ZMOD n.markovNumber]",
+      "matches": [
+        {
+          "corpus": "LeanFrontier",
+          "module": "LeanFrontier.NumberTheory.MarkovTree.ModularRoot",
+          "name": "exists_sq_modEq_neg_one_markovNumber",
+          "via": "exact_digest",
+          "cosine": 1.0
+        },
+        {
+          "corpus": "LeanFrontier",
+          "module": "LeanFrontier.NumberTheory.MarkovTree.QuadraticResidue",
+          "name": "isSquare_neg_one_mod_markovNumber",
+          "via": "normal_form",
+          "cosine": 0.42521003213538067
+        }
+      ],
+      "gap": false,
+      "rung0": {
+        "outcome": "closed",
+        "detail": ""
+      },
+      "rung1": {
+        "outcome": "closed",
+        "tactic": "apply?",
+        "attempts": [
+          {
+            "tactic": "rfl",
+            "outcome": "open"
+          },
+          {
+            "tactic": "simp",
+            "outcome": "open"
+          },
+          {
+            "tactic": "norm_num",
+            "outcome": "open"
+          },
+          {
+            "tactic": "tauto",
+            "outcome": "open"
+          },
+          {
+            "tactic": "omega",
+            "outcome": "open"
+          },
+          {
+            "tactic": "decide",
+            "outcome": "open"
+          },
+          {
+            "tactic": "exact?",
+            "outcome": "open"
+          },
+          {
+            "tactic": "apply?",
+            "outcome": "closed"
+          }
+        ],
+        "detail": ""
+      },
+      "engineering": null
+    },
+    {
+      "module": "LeanFrontier.NumberTheory.SquareRootNegOne",
+      "name": "exists_sq_modEq_neg_one_of_isCoprime_of_dvd_sq_add_sq",
+      "transported": "{m u v : \u2124} (hcop : IsCoprime m v) (hdiv : m \u2223 u ^ 2 + v ^ 2) : IsSquare (-1 : ZMod m.natAbs)",
+      "matches": [],
+      "gap": true,
+      "rung0": {
+        "outcome": "open",
+        "detail": "  IsCoprime m\u271d v\u271d \u2192 m\u271d \u2223 u\u271d ^ 2 + v\u271d ^ 2 \u2192 \u2203 r, r ^ 2 \u2261 -1 [ZMOD m\u271d]"
+      },
+      "rung1": {
+        "outcome": "closed",
+        "tactic": "apply?",
+        "attempts": [
+          {
+            "tactic": "rfl",
+            "outcome": "open"
+          },
+          {
+            "tactic": "simp",
+            "outcome": "open"
+          },
+          {
+            "tactic": "norm_num",
+            "outcome": "open"
+          },
+          {
+            "tactic": "tauto",
+            "outcome": "open"
+          },
+          {
+            "tactic": "omega",
+            "outcome": "open"
+          },
+          {
+            "tactic": "decide",
+            "outcome": "open"
+          },
+          {
+            "tactic": "exact?",
+            "outcome": "open"
+          },
+          {
+            "tactic": "apply?",
+            "outcome": "closed"
+          }
+        ],
+        "detail": ""
+      },
+      "engineering": "  IsCoprime m\u271d v\u271d \u2192 m\u271d \u2223 u\u271d ^ 2 + v\u271d ^ 2 \u2192 \u2203 r, r ^ 2 \u2261 -1 [ZMOD m\u271d]"
+    }
+  ],
+  "h4a": {
+    "LeanFrontier": {
+      "matches": 2,
+      "transported": 3,
+      "fraction": 0.6666666666666666
+    },
+    "Mathlib": {
+      "matches": 0,
+      "transported": 3,
+      "fraction": 0.0
+    },
+    "Tau Ceti": {
+      "matches": 0,
+      "transported": 3,
+      "fraction": 0.0
+    },
+    "Prove2Me": {
+      "matches": 0,
+      "transported": 3,
+      "fraction": 0.0
+    }
+  },
+  "controls": {
+    "status": "measured",
+    "reason": "",
+    "note": "The denominator is to_additive on a theorem, lemma, def, or abbrev. An additive name that is not a source declaration is not recovered. Recall among resolved names is reported separately and is not a second gate.",
+    "attributes": 14607,
+    "instances_excluded": 1016,
+    "private_excluded": 41,
+    "denominator": 13550,
+    "resolved": 374,
+    "recovered": {
+      "1": 70,
+      "5": 70,
+      "10": 70
+    },
+    "recall": {
+      "1": 0.0051660516605166054,
+      "5": 0.0051660516605166054,
+      "10": 0.0051660516605166054
+    },
+    "resolved_recall": {
+      "1": 1.0,
+      "5": 1.0,
+      "10": 1.0
+    },
+    "to_dual_attributes": 4930,
+    "to_dual_role": "Counted only. Not used as a bridge."
+  },
+  "unportable": [
+    {
+      "module": "LeanFrontier.NumberTheory.MarkovTree.ModularRoot",
+      "name": "exists_sq_modEq_neg_one_markovNumber",
+      "corpus": "Tau Ceti",
+      "outcome": "unportable",
+      "reason": "Not elaborated. Tau Ceti is Lean v4.35.0-rc3 and this sprint does not build that toolchain."
+    },
+    {
+      "module": "LeanFrontier.NumberTheory.MarkovTree.ModularRoot",
+      "name": "exists_sq_modEq_neg_one_markovNumber",
+      "corpus": "Prove2Me",
+      "outcome": "unportable",
+      "reason": "Not elaborated. The missions tree is not one Lean package."
+    },
+    {
+      "module": "LeanFrontier.NumberTheory.MarkovTree.QuadraticResidue",
+      "name": "isSquare_neg_one_mod_markovNumber",
+      "corpus": "Tau Ceti",
+      "outcome": "unportable",
+      "reason": "Not elaborated. Tau Ceti is Lean v4.35.0-rc3 and this sprint does not build that toolchain."
+    },
+    {
+      "module": "LeanFrontier.NumberTheory.MarkovTree.QuadraticResidue",
+      "name": "isSquare_neg_one_mod_markovNumber",
+      "corpus": "Prove2Me",
+      "outcome": "unportable",
+      "reason": "Not elaborated. The missions tree is not one Lean package."
+    },
+    {
+      "module": "LeanFrontier.NumberTheory.SquareRootNegOne",
+      "name": "exists_sq_modEq_neg_one_of_isCoprime_of_dvd_sq_add_sq",
+      "corpus": "Tau Ceti",
+      "outcome": "unportable",
+      "reason": "Not elaborated. Tau Ceti is Lean v4.35.0-rc3 and this sprint does not build that toolchain."
+    },
+    {
+      "module": "LeanFrontier.NumberTheory.SquareRootNegOne",
+      "name": "exists_sq_modEq_neg_one_of_isCoprime_of_dvd_sq_add_sq",
+      "corpus": "Prove2Me",
+      "outcome": "unportable",
+      "reason": "Not elaborated. The missions tree is not one Lean package."
+    }
+  ],
+  "rung2_targets": [],
+  "not_measured": {
+    "h4b": "No kernel-rejected bridge. Open and timeout probes are not rejections.",
+    "replay": "The 1/3/6/12-month variant is not this sprint.",
+    "h3_precision": "Preregistered H3 precision at k is still unmeasured.",
+    "rung2_calls": "Both Sprint 3 caps are zero. No model call.",
+    "tau_ceti_elaboration": "Tau Ceti was not elaborated. Text lookup is separate.",
+    "prove2me_elaboration": "Prove2Me was not elaborated. It is declarations only."
+  },
+  "config": {
+    "amendment": "2026-10-05",
+    "seed_bridge": "lean/IsSquareModEq.lean",
+    "match": [
+      "exact_digest",
+      "normal_form"
+    ],
+    "wl_cosine": "stored, not a gate",
+    "seed": 0,
+    "segments": [
+      [
+        "smul",
+        "vadd"
+      ],
+      [
+        "hmul",
+        "hadd"
+      ],
+      [
+        "mul",
+        "add"
+      ],
+      [
+        "inv",
+        "neg"
+      ],
+      [
+        "div",
+        "sub"
+      ],
+      [
+        "semigroup",
+        "addSemigroup"
+      ],
+      [
+        "monoid",
+        "addMonoid"
+      ],
+      [
+        "group",
+        "addGroup"
+      ],
+      [
+        "one",
+        "zero"
+      ]
+    ],
+    "operator_tokens": {
+      " * ": " + ",
+      " / ": " - "
+    },
+    "inverse_postfix": "not rewritten",
+    "tactics": [
+      "rfl",
+      "simp",
+      "norm_num",
+      "tauto",
+      "omega",
+      "decide",
+      "exact?",
+      "apply?",
+      "aesop",
+      "grind"
+    ],
+    "timeout_seconds": 10,
+    "k": [
+      1,
+      5,
+      10
+    ]
+  }
+}

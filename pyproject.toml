@@ -20,6 +20,7 @@ consilean-sprint2 = "consilean.replay.cli:main"
 consilean-h3 = "consilean.replay.h3:main"
 consilean-h2-probes = "consilean.probes.recovered:main"
 consilean-sprint3 = "consilean.agents.cli:main"
+consilean-sprint6 = "consilean.transport.cli:main"
 
 [dependency-groups]
 dev = ["pytest>=8"]
