@@ -43,8 +43,8 @@ Tables, written by that command:
 
 ## Exit
 
-The command has run once. H4a is the gap table. The control table is either a recall or a record that `to_additive` is absent. Rung 2 has no calls. H1, preregistered H3 precision at k, H4b, the month-window replay, and elaboration in Tau Ceti stay unmeasured.
+The command has run once. H4a is the gap table. The control table is either a recall or a record that `to_additive` is absent. Rung 2 has no calls. H1, H4b, the month-window replay of gaps, and elaboration in Tau Ceti stay unmeasured. Preregistered H3 precision at k is a Sprint 2 table, not this sprint.
 
 ## Still unmeasured
 
-H1. Preregistered H3 precision at k. H4b. The 1/3/6/12-month replay. Rung 2 calls. Elaboration inside Tau Ceti and Prove2Me.
+H1. H4b. The 1/3/6/12-month replay of gaps. Rung 2 calls. Elaboration inside Tau Ceti and Prove2Me. The 1% and 5% hub drops on the H3 precision run.

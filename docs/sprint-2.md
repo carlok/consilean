@@ -14,7 +14,7 @@ The frozen `since` dates all fall before the Mathlib revision used for H2, so no
 
 `uv run consilean-h3` extracts Mathlib `v4.28.0` with `git archive` into the gitignored cache and ranks the frozen pairs there. The checkout is not moved. Windows are 1, 3, 6, and 12 months after 2026-02-16. The table is [`generated/sprint2-h3.md`](generated/sprint2-h3.md). A declaration missing from that snapshot is not recovered. Bootstrap intervals for recall at 10 are in [`generated/sprint2-h3.json`](generated/sprint2-h3.json).
 
-That table is neighbor recall of the frozen deprecations. The preregistered H3 metric, precision at k against random pairs in the same distance bucket, is still unmeasured.
+That table is neighbor recall of the frozen deprecations. The preregistered precision at k is [`generated/sprint2-h3-precision.md`](generated/sprint2-h3-precision.md), from `uv run consilean-h3-precision`. The candidate set is the amendment of 5 October 2026. Hub drops of 1% and 5% are not in that run.
 
 ## Duplicate list
 

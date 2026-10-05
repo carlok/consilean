@@ -63,6 +63,18 @@ Neighbourhood of an endpoint: a declaration whose signature, not its docstring, 
 
 Kernel checks stay on Lean `v4.34.0`. Tau Ceti is text lookup only. Prove2Me is declarations only. Other local Mathlib projects are not pinned.
 
+## Amendment 2026-10-05 — H3 candidate set
+
+The H3 metric is unchanged: precision at k of the top-ranked far pairs that are later connected, compared with matched random pairs in the same distance bucket. Windows remain 1, 3, 6, and 12 months. Uncertainty remains 1000 bootstrap resamples, the 95% percentile interval, seed `0`.
+
+Mathlib is too large to score every declaration pair. The candidate universe for this run is the read-only `v4.28.0` snapshot. A candidate is two declarations that share a normal form and sit in different modules. An unparsed signature is not a candidate. This run uses hub drop 0%. Distance at least 4 is the primary far bucket. Distance at least 8, and the no-path bucket, are reported separately. The 1% and 5% hub drops are not this run.
+
+Order inside a bucket: name-free Weisfeiler–Lehman cosine, highest first. Equal cosines are ordered by the sorted pair names, so the cutoff does not depend on dict order. Primary k = 10. Also report k = 50 and k = 100.
+
+Later connected means the unordered pair of full declaration names is a frozen deprecation pair whose `since` date is inside the window. A new import edge is not a connection event in this run. The random control draws the same number of pairs from that same universe and bucket, without replacement, seed `0`.
+
+The earlier neighbor-recall table is a different measurement and stays where it is.
+
 ## Stopping
 
 Score the preregistered far set once. A miss on a sprint exit is written down as the result. It is not a reason to change the primary score in place. Do not start a sprint whose entry condition fails; write down why instead.
