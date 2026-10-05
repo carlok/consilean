@@ -1,0 +1,101 @@
+{
+  "generating_command": "uv run consilean-sprint6",
+  "config": {
+    "amendment": "2026-10-05",
+    "seed_bridge": "lean/IsSquareModEq.lean",
+    "match": [
+      "exact_digest",
+      "normal_form"
+    ],
+    "wl_cosine": "stored, not a gate",
+    "seed": 0,
+    "segments": [
+      [
+        "smul",
+        "vadd"
+      ],
+      [
+        "hmul",
+        "hadd"
+      ],
+      [
+        "mul",
+        "add"
+      ],
+      [
+        "inv",
+        "neg"
+      ],
+      [
+        "div",
+        "sub"
+      ],
+      [
+        "semigroup",
+        "addSemigroup"
+      ],
+      [
+        "monoid",
+        "addMonoid"
+      ],
+      [
+        "group",
+        "addGroup"
+      ],
+      [
+        "one",
+        "zero"
+      ]
+    ],
+    "operator_tokens": {
+      " * ": " + ",
+      " / ": " - "
+    },
+    "inverse_postfix": "not rewritten",
+    "tactics": [
+      "rfl",
+      "simp",
+      "norm_num",
+      "tauto",
+      "omega",
+      "decide",
+      "exact?",
+      "apply?",
+      "aesop",
+      "grind"
+    ],
+    "timeout_seconds": 10,
+    "k": [
+      1,
+      5,
+      10
+    ]
+  },
+  "controls": {
+    "status": "measured",
+    "reason": "",
+    "note": "The denominator is to_additive on a theorem, lemma, def, or abbrev. An additive name that is not a source declaration is not recovered. Recall among resolved names is reported separately and is not a second gate.",
+    "attributes": 14607,
+    "instances_excluded": 1016,
+    "private_excluded": 41,
+    "denominator": 13550,
+    "resolved": 374,
+    "recovered": {
+      "1": 70,
+      "5": 70,
+      "10": 70
+    },
+    "recall": {
+      "1": 0.0051660516605166054,
+      "5": 0.0051660516605166054,
+      "10": 0.0051660516605166054
+    },
+    "resolved_recall": {
+      "1": 1.0,
+      "5": 1.0,
+      "10": 1.0
+    },
+    "to_dual_attributes": 4930,
+    "to_dual_role": "Counted only. Not used as a bridge."
+  }
+}

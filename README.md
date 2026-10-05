@@ -54,6 +54,12 @@ Sprint 4 is a cross-project index: digests, near-duplicate clusters, recorded br
 
 Sprint 5 is papers, and only after a positive H1 or a positive result on the preregistered H3 metric.
 
+Sprint 6 transports statements across a checked bridge and asks whether the image already matches a pinned corpus. The full Sprint 4 index does not exist. This sprint builds the smaller lookup it needs: exact digest and normal form across the pinned corpora. Definitions, skips, and commands are in [`docs/sprint-6.md`](docs/sprint-6.md). Tables are [`docs/generated/sprint6-gaps.md`](docs/generated/sprint6-gaps.md), [`docs/generated/sprint6-controls.md`](docs/generated/sprint6-controls.md), [`docs/generated/sprint6-unportable.md`](docs/generated/sprint6-unportable.md), and [`docs/generated/sprint6-rung2-targets.md`](docs/generated/sprint6-rung2-targets.md).
+
+```bash
+uv run consilean-sprint6
+```
+
 Nothing is submitted to LeanFrontier until a probe or a checked proof closes a bridge. That repo is not edited from here.
 
 ## Requirements

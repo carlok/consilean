@@ -1,0 +1,11 @@
+# The public repository is journal entries, not the Lean missions tree.
+# https://github.com/carlok/prove2me-logs
+# Lookup, when the local missions directory is present, is declarations only.
+# That tree is not one Lean package and has no import graph.
+# Toolchain of the local missions workspace, which is not this git pin:
+# Lean v4.33.1, Mathlib 0df444a360eaa60ab8c11dca51a86af692955474.
+repo = "https://github.com/carlok/prove2me-logs"
+revision = "fc34d3c08b8a4de3b4fc2d0ce9cf08eb8700a1fb"
+namespace = "missions"
+lean = "v4.33.1"
+mathlib = "0df444a360eaa60ab8c11dca51a86af692955474"
